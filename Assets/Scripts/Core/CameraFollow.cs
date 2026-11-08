@@ -25,6 +25,19 @@ public class CameraFollow : MonoBehaviour
         if (target == null)
             return;
 
+        Vector3 desired = GetTargetPosition();
+        float t = 1f - Mathf.Exp(-sharpness * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, desired, t);
+    }
+
+    public void SnapToTarget()
+    {
+        if (target != null)
+            transform.position = GetTargetPosition();
+    }
+
+    private Vector3 GetTargetPosition()
+    {
         Vector3 desired = target.position + (Vector3)offset;
         float halfHeight = cam.orthographicSize;
         float halfWidth = halfHeight * cam.aspect;
@@ -32,7 +45,6 @@ public class CameraFollow : MonoBehaviour
         desired.y = Mathf.Clamp(desired.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
         desired.z = transform.position.z;
 
-        float t = 1f - Mathf.Exp(-sharpness * Time.deltaTime);
-        transform.position = Vector3.Lerp(transform.position, desired, t);
+        return desired;
     }
 }

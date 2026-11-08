@@ -8,6 +8,7 @@ namespace UnknownGame.GameFlow
         private readonly SaveGameService saves;
         private readonly Func<string, bool> canLoadLevel;
         private readonly string firstLevelScene;
+        public SaveGameService Saves => saves;
 
         public MenuGameFlow(SaveGameService saves, Func<string, bool> canLoadLevel, string firstLevelScene)
         {

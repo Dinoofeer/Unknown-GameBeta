@@ -148,7 +148,7 @@ public class MenuPresentation : MonoBehaviour
         ShowStatus("Cargando partida...");
         try
         {
-            GameSession.Begin(data);
+            GameSession.Begin(data, flow.Saves);
             if (SceneManager.LoadSceneAsync(data.levelScene, LoadSceneMode.Single) == null)
                 throw new InvalidOperationException("Unity no pudo iniciar la carga del nivel.");
         }
