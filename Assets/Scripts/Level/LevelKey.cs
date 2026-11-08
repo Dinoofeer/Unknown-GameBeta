@@ -20,6 +20,15 @@ public class LevelKey : MonoBehaviour
     private bool secured; // se activó un checkpoint después de cogerla
 
     public bool IsCollected => carrier != null;
+    public bool IsSecured => IsCollected && secured;
+
+    public void RestoreSecured(Transform player)
+    {
+        carrier = player;
+        secured = true;
+        col.enabled = false;
+        transform.position = player.position + (Vector3)followOffset;
+    }
 
     private void Awake()
     {

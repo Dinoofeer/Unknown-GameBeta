@@ -1,0 +1,168 @@
+.menu-document {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-root {
+    flex-grow: 1;
+    -unity-font: url("project://database/Assets/TextMesh Pro/Fonts/LiberationSans.ttf");
+}
+
+.menu-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(12, 22, 24);
+}
+
+.menu-buttons {
+    position: absolute;
+    left: 8.75%;
+    top: 40%;
+    width: 600px;
+    max-width: 82%;
+}
+
+.menu-background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-background-shade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    background-image: url("project://database/Assets/UI/Textures/MenuBackgroundShade.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.menu-button {
+    height: 66px;
+    flex-shrink: 0;
+    margin: 0 0 12px 0;
+    padding: 0 30px;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    color: rgb(105, 174, 153);
+    font-size: 36px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.menu-button.menu-button--selected {
+    background-image: url("project://database/Assets/UI/Textures/MenuSelection.svg");
+    -unity-background-image-tint-color: white;
+    -unity-background-scale-mode: stretch-to-fill;
+    color: rgb(35, 20, 32);
+}
+
+.menu-button:active {
+    color: rgb(119, 41, 61);
+}
+
+.menu-pointer {
+    position: absolute;
+    left: -48px;
+    top: 17px;
+    width: 30px;
+    height: 32px;
+    background-image: url("project://database/Assets/UI/Textures/MenuPointer.png");
+    visibility: hidden;
+}
+
+.menu-button--selected > .menu-pointer {
+    visibility: visible;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.menu-status {
+    margin: 16px 0 0 30px;
+    font-size: 22px;
+    color: rgb(236, 227, 173);
+    white-space: normal;
+}
+
+.menu-button:disabled {
+    opacity: 0.4;
+}
+
+.confirmation-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.confirmation-panel {
+    width: 680px;
+    max-width: 88%;
+    padding: 32px;
+    background-color: rgb(12, 22, 24);
+    border-width: 2px;
+    border-color: rgb(105, 174, 153);
+}
+
+.confirmation-title {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgb(236, 227, 173);
+    white-space: normal;
+}
+
+.confirmation-message {
+    margin-top: 18px;
+    font-size: 24px;
+    color: rgb(222, 231, 222);
+    white-space: normal;
+}
+
+.confirmation-actions {
+    flex-direction: row;
+    margin-top: 28px;
+}
+
+.dialog-button {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    height: 64px;
+    padding: 8px;
+    border-width: 1px;
+    border-color: rgb(105, 174, 153);
+    background-color: rgb(22, 44, 43);
+    color: rgb(222, 231, 222);
+    font-size: 23px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.dialog-button--cancel {
+    margin-right: 16px;
+}
+
+.dialog-button:hover, .dialog-button:focus {
+    background-color: rgb(236, 227, 173);
+    color: rgb(35, 20, 32);
+}

@@ -7,6 +7,9 @@ public class Checkpoint : MonoBehaviour
 {
     public static event Action<Checkpoint> Reached;
 
+    [Tooltip("Identificador estable para guardar progreso. Único dentro del nivel.")]
+    [SerializeField] private string persistentId;
+
     [Tooltip("Dónde reaparece el jugador, relativo al checkpoint.")]
     [SerializeField] private Vector2 spawnOffset = Vector2.zero;
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -16,6 +19,13 @@ public class Checkpoint : MonoBehaviour
     private bool used;
 
     public Vector2 SpawnPosition => (Vector2)transform.position + spawnOffset;
+    public string PersistentId => persistentId;
+
+    public void RestoreState(bool reached, bool active)
+    {
+        used = reached;
+        SetActiveVisual(active);
+    }
 
     private void Awake()
     {

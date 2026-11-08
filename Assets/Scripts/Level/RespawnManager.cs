@@ -52,6 +52,12 @@ public class RespawnManager : MonoBehaviour
         checkpoint.SetActiveVisual(true);
     }
 
+    public void RestoreCheckpoint(Checkpoint checkpoint)
+    {
+        OnCheckpointReached(checkpoint);
+        player.Respawn(respawnPoint);
+    }
+
     private void OnPlayerDied(Vector2 deathPosition)
     {
         StartCoroutine(RespawnAfterDelay());

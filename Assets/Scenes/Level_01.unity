@@ -133826,6 +133826,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1133015857}
     m_Modifications:
+    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+      propertyPath: persistentId
+      value: level01_cp01
+      objectReference: {fileID: 0}
     - target: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 172
@@ -133880,6 +133884,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
   m_PrefabInstance: {fileID: 1756425359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1756425361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+  m_PrefabInstance: {fileID: 1756425359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d308f31ed4fd34b4fb47e485ad0db422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
 --- !u!1001 &1765090360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134980,6 +134995,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1133015857}
     m_Modifications:
+    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+      propertyPath: persistentId
+      value: level01_cp02
+      objectReference: {fileID: 0}
     - target: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 259.5
@@ -135034,6 +135053,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
   m_PrefabInstance: {fileID: 1846857613}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1846857615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+  m_PrefabInstance: {fileID: 1846857613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d308f31ed4fd34b4fb47e485ad0db422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
 --- !u!1001 &1848066071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138971,8 +139001,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1481166594695977141, guid: 804c871945b9a7444b89f1fea7a5cbd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4388325580390447425}
   m_SourcePrefab: {fileID: 100100000, guid: 804c871945b9a7444b89f1fea7a5cbd9, type: 3}
+--- !u!114 &4388325580390447423 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8461911254726147430, guid: 804c871945b9a7444b89f1fea7a5cbd9, type: 3}
+  m_PrefabInstance: {fileID: 4388325580390447422}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989c344c2620ebd4d829b51cd2a80dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RespawnManager
+--- !u!1 &4388325580390447424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1481166594695977141, guid: 804c871945b9a7444b89f1fea7a5cbd9, type: 3}
+  m_PrefabInstance: {fileID: 4388325580390447422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4388325580390447425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4388325580390447424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab6e4abe00d0044e9cfe0f873341b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelProgressPersistence
+  respawnManager: {fileID: 4388325580390447423}
+  stats: {fileID: 1801643413}
+  player: {fileID: 1855388511}
+  key: {fileID: 1218882781}
+  cameraFollow: {fileID: 519420033}
+  checkpoints:
+  - {fileID: 1756425361}
+  - {fileID: 1846857615}
 --- !u!1001 &6962052519343199726
 PrefabInstance:
   m_ObjectHideFlags: 0
