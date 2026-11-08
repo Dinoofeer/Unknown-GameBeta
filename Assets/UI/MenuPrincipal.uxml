@@ -1,7 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
     <ui:Style src="MenuStyle.uss" />
     <ui:VisualElement name="menuRoot" class="menu-root">
-        <ui:VisualElement name="background" class="menu-background" picking-mode="Ignore" />
+        <ui:VisualElement name="background" class="menu-background" picking-mode="Ignore">
+            <ui:Image name="backgroundFallback" class="menu-background-image" picking-mode="Ignore" />
+            <ui:Image name="backgroundVideo" class="menu-background-image is-hidden" picking-mode="Ignore" />
+            <ui:VisualElement class="menu-background-shade" picking-mode="Ignore" />
+        </ui:VisualElement>
         <ui:VisualElement name="menuButtons" class="menu-buttons">
             <ui:Button name="newGameButton" text="JUGAR" class="menu-button menu-button--selected">
                 <ui:VisualElement class="menu-pointer" picking-mode="Ignore" />
