@@ -1,0 +1,75 @@
+.menu-document {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-root {
+    flex-grow: 1;
+    -unity-font: url("project://database/Assets/TextMesh Pro/Fonts/LiberationSans.ttf");
+}
+
+.menu-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(12, 22, 24);
+}
+
+.menu-buttons {
+    position: absolute;
+    left: 8.75%;
+    top: 40%;
+    width: 600px;
+    max-width: 82%;
+}
+
+.menu-button {
+    height: 66px;
+    flex-shrink: 0;
+    margin: 0 0 12px 0;
+    padding: 0 30px;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    color: rgb(105, 174, 153);
+    font-size: 36px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.menu-button.menu-button--selected {
+    background-image: url("project://database/Assets/UI/Textures/MenuSelection.svg");
+    -unity-background-image-tint-color: white;
+    -unity-background-scale-mode: stretch-to-fill;
+    color: rgb(35, 20, 32);
+}
+
+.menu-button:active {
+    color: rgb(119, 41, 61);
+}
+
+.menu-pointer {
+    position: absolute;
+    left: -48px;
+    top: 17px;
+    width: 30px;
+    height: 32px;
+    background-image: url("project://database/Assets/UI/Textures/MenuPointer.png");
+    visibility: hidden;
+}
+
+.menu-button--selected > .menu-pointer {
+    visibility: visible;
+}
+
+.is-hidden {
+    display: none;
+}
