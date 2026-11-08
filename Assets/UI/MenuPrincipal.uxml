@@ -16,6 +16,17 @@
             <ui:Button name="quitButton" text="SALIR DEL JUEGO" class="menu-button">
                 <ui:VisualElement class="menu-pointer" picking-mode="Ignore" />
             </ui:Button>
+            <ui:Label name="menuStatus" class="menu-status is-hidden" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement name="replaceConfirmation" class="confirmation-overlay is-hidden">
+            <ui:VisualElement class="confirmation-panel">
+                <ui:Label text="¿CREAR OTRA PARTIDA?" class="confirmation-title" />
+                <ui:Label text="Se reemplazará tu partida anterior y perderás su progreso. ¿Quieres empezar de nuevo?" class="confirmation-message" />
+                <ui:VisualElement class="confirmation-actions">
+                    <ui:Button name="cancelNewGameButton" text="CANCELAR" class="dialog-button dialog-button--cancel" />
+                    <ui:Button name="confirmNewGameButton" text="CREAR PARTIDA" class="dialog-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

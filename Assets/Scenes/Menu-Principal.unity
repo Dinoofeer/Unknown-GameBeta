@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c9640027c82ac4ebbfd03c59e41787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPresentation
-  previewSavedGame: 0
+  firstLevelScene: Level_01
 --- !u!114 &2051295308
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -91,3 +91,78 @@
 .is-hidden {
     display: none;
 }
+
+.menu-status {
+    margin: 16px 0 0 30px;
+    font-size: 22px;
+    color: rgb(236, 227, 173);
+    white-space: normal;
+}
+
+.menu-button:disabled {
+    opacity: 0.4;
+}
+
+.confirmation-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.confirmation-panel {
+    width: 680px;
+    max-width: 88%;
+    padding: 32px;
+    background-color: rgb(12, 22, 24);
+    border-width: 2px;
+    border-color: rgb(105, 174, 153);
+}
+
+.confirmation-title {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgb(236, 227, 173);
+    white-space: normal;
+}
+
+.confirmation-message {
+    margin-top: 18px;
+    font-size: 24px;
+    color: rgb(222, 231, 222);
+    white-space: normal;
+}
+
+.confirmation-actions {
+    flex-direction: row;
+    margin-top: 28px;
+}
+
+.dialog-button {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    height: 64px;
+    padding: 8px;
+    border-width: 1px;
+    border-color: rgb(105, 174, 153);
+    background-color: rgb(22, 44, 43);
+    color: rgb(222, 231, 222);
+    font-size: 23px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.dialog-button--cancel {
+    margin-right: 16px;
+}
+
+.dialog-button:hover, .dialog-button:focus {
+    background-color: rgb(236, 227, 173);
+    color: rgb(35, 20, 32);
+}
