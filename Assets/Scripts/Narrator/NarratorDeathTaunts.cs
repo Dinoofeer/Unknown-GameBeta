@@ -15,6 +15,6 @@ public class NarratorDeathTaunts : MonoBehaviour
     {
         deaths++;
         if (taunts != null && (deaths == 1 || deaths % everyNDeaths == 0))
-            Narrator.Say(taunts.GetRandom());
+            Narrator.SayIfIdle(taunts.GetRandom());
     }
 }

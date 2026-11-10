@@ -85,6 +85,8 @@ public class LevelKey : MonoBehaviour
         // También cubre coger la llave y morir en el mismo instante.
         if (IsCollected && !secured)
             ReturnToPedestal();
+        else if (IsSecured)
+            transform.position = carrier.position + (Vector3)followOffset;
     }
 
     // La puerta la gasta al abrirse.
