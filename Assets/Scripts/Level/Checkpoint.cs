@@ -15,6 +15,8 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color inactiveColor = Color.gray;
     [SerializeField] private Color activeColor = Color.green;
+    [Header("Audio")]
+    [SerializeField] private AudioClip reachedClip;
 
     private bool used;
 
@@ -39,6 +41,7 @@ public class Checkpoint : MonoBehaviour
             return;
 
         used = true;
+        SfxPlayer.Play(reachedClip);   // audio
         Reached?.Invoke(this);
     }
 
