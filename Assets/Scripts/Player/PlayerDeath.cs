@@ -17,12 +17,15 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     private Rigidbody2D rb;
+    private PlayerAudio playerAudio;
 
     public bool IsDead { get; private set; }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerAudio = GetComponent<PlayerAudio>(); 
+
     }
 
     public void Die()
@@ -34,6 +37,9 @@ public class PlayerDeath : MonoBehaviour
         Vector2 deathPosition = rb.position;
         if (deathEffectPrefab != null)
             Instantiate(deathEffectPrefab, deathPosition, Quaternion.identity);
+
+        if (playerAudio != null) playerAudio.PlayDeath();   
+
 
         SetAlive(false);
         Died?.Invoke(deathPosition);
