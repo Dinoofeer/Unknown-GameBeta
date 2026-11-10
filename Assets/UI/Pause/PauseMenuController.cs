@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PauseMenuView))]
 public class PauseMenuController : MonoBehaviour
 {
+    [SerializeField] private RespawnManager respawnManager;
+    [SerializeField] private CameraFollow cameraFollow;
+
     public bool IsPaused { get; private set; }
 
     private PauseMenuView view;
@@ -15,11 +18,16 @@ public class PauseMenuController : MonoBehaviour
 
     private void Awake() => view = GetComponent<PauseMenuView>();
 
-    private void OnEnable() => view.ResumeRequested += Resume;
+    private void OnEnable()
+    {
+        view.ResumeRequested += Resume;
+        view.RestartRequested += Restart;
+    }
 
     private void OnDisable()
     {
         view.ResumeRequested -= Resume;
+        view.RestartRequested -= Restart;
         Resume();
     }
 
@@ -52,6 +60,22 @@ public class PauseMenuController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         view.ShowPause();
+    }
+
+    private void Restart()
+    {
+        if (!IsPaused || view.IsExitConfirmationVisible)
+            return;
+
+        if (respawnManager == null || !respawnManager.RestartFromCheckpoint())
+        {
+            Debug.LogError("Pausa: no se pudo reiniciar. Revisa el Respawn Manager del nivel.", this);
+            return;
+        }
+
+        if (cameraFollow != null)
+            cameraFollow.SnapToTarget();
+        Resume();
     }
 
     public void Resume()

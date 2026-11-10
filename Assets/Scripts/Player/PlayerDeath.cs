@@ -41,6 +41,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void Respawn(Vector2 position)
     {
+        SetAlive(false);
         // Se mueven Rigidbody y Transform para que la interpolación no dibuje un "viaje" hasta el checkpoint.
         rb.position = position;
         transform.position = position;
