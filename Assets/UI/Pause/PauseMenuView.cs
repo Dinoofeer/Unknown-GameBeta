@@ -5,13 +5,6 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(UIDocument))]
 public class PauseMenuView : MonoBehaviour
 {
-#if UNITY_EDITOR
-    private enum PreviewMode { Hidden, Pause, ExitConfirmation }
-
-    [Tooltip("Solo previsualización del diseño. Cambiar antes de Play. No detiene el juego.")]
-    [SerializeField] private PreviewMode previewMode;
-#endif
-
     public event Action ResumeRequested;
     public event Action RestartRequested;
     public event Action ExitConfirmed;
@@ -50,12 +43,6 @@ public class PauseMenuView : MonoBehaviour
         confirmButton.clicked += OnExitConfirmed;
         Hide();
 
-#if UNITY_EDITOR
-        if (previewMode == PreviewMode.Pause)
-            ShowPause();
-        else if (previewMode == PreviewMode.ExitConfirmation)
-            ShowExitConfirmation();
-#endif
     }
 
     private void OnDisable()
@@ -100,6 +87,9 @@ public class PauseMenuView : MonoBehaviour
 
     public void Hide()
     {
+        var focused = pauseRoot.panel?.focusController.focusedElement as VisualElement;
+        if (focused != null && pauseRoot.Contains(focused))
+            focused.Blur();
         IsVisible = false;
         IsExitConfirmationVisible = false;
         pauseRoot.AddToClassList("is-hidden");

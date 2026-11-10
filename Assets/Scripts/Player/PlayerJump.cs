@@ -65,6 +65,9 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
+        if (GamePauseState.BlocksGameplayInput)
+            return;
+
         if (jumpAction.action.WasPressedThisFrame())
             jumpRequested = true;
     }

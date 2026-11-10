@@ -41,6 +41,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (GamePauseState.BlocksGameplayInput)
+        {
+            direction = 0f;
+            return;
+        }
+
         // La entrada se lee cada frame para no perder pulsaciones.
         // Se redondea a -1/0/1: si no, pulsar W o arriba a la vez
         // normalizaría el vector y bajaría la velocidad al ~70 %.
