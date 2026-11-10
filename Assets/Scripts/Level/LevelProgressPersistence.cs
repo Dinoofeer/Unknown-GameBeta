@@ -84,6 +84,20 @@ public class LevelProgressPersistence : MonoBehaviour
         return SaveProgress(key != null && key.IsSecured);
     }
 
+    public bool TrySaveBeforeLeaving(out string error)
+    {
+        if (!ready || stats == null)
+        {
+            error = "El progreso del nivel no está listo para guardarse.";
+            return false;
+        }
+
+        bool hasSecuredKey = stats.IsRunning
+            ? key != null && key.IsSecured
+            : GameSession.Current != null && GameSession.Current.hasSecuredKey;
+        return progress.TrySave(activeCheckpointId, stats.Deaths, stats.ElapsedTime, hasSecuredKey, out error);
+    }
+
     private bool SaveProgress(bool hasSecuredKey)
     {
         if (!ready || stats == null || !stats.IsRunning)
