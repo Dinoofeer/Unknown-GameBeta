@@ -12,7 +12,7 @@ public static class LevelArtGenerator
     private const string Env = "Assets/Sprites/Environment";
     private const string Tiles = "Assets/Sprites/Environment/Tiles";
     private const string Fx = "Assets/Materials/VFX";
-    private const float DamagedFromX = 210f;
+    private const float DamagedFromX = 150f;
 
     private static readonly Color MetalBase = new Color(0.33f, 0.35f, 0.40f);
     private static readonly Color RustBase = new Color(0.31f, 0.27f, 0.28f);
@@ -157,7 +157,6 @@ public static class LevelArtGenerator
         so.FindProperty("factor").floatValue = factor;
         so.FindProperty("cleanLayer").objectReferenceValue = clean;
         so.FindProperty("brokenLayer").objectReferenceValue = broken;
-        so.FindProperty("fadeRange").vector2Value = new Vector2(DamagedFromX - 10f, DamagedFromX + 15f);
         so.ApplyModifiedPropertiesWithoutUndo();
     }
 
@@ -167,7 +166,7 @@ public static class LevelArtGenerator
         sheet.transform.SetParent(parent, false);
         sheet.sprite = AssetDatabase.LoadAssetAtPath<Sprite>($"{Env}/{sprite}.png");
         sheet.drawMode = SpriteDrawMode.Tiled;
-        sheet.size = new Vector2(560f, 44f);
+        sheet.size = new Vector2(420f, 44f);
         sheet.sortingOrder = order;
         sheet.sharedMaterial = material;
         tint.a = alpha;
@@ -193,7 +192,6 @@ public static class LevelArtGenerator
         var so = new SerializedObject(zone);
         so.FindProperty("cleanZone").objectReferenceValue = dust;
         so.FindProperty("brokenZone").objectReferenceValue = sparks;
-        so.FindProperty("brokenFromX").floatValue = DamagedFromX;
         so.ApplyModifiedPropertiesWithoutUndo();
 
         GameObject debrisPrefab = BuildDebrisPrefab(material);

@@ -14,10 +14,7 @@ public static class Narrator
 {
     public static event Action<string> Said;
     public static event Action<NarratorLine[]> SequenceSaid;
-    public static event Action<string> SaidIfIdle;
 
     public static void Say(string line) => Said?.Invoke(line);
-    // Para frases prescindibles, como las burlas: si el Sistema ya está hablando, se descartan.
-    public static void SayIfIdle(string line) => SaidIfIdle?.Invoke(line);
     public static void SaySequence(NarratorLine[] lines) => SequenceSaid?.Invoke(lines);
 }
