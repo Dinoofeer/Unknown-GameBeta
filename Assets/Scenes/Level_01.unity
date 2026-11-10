@@ -123234,6 +123234,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7007612238730991531, guid: 4ebc16e8f7022a8458dfdb4b5f353e05, type: 3}
+      propertyPath: collectedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdc610cf971442446914d85edec29b93, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -131219,6 +131223,10 @@ PrefabInstance:
       value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
+      propertyPath: openClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eff3b203104729f4ea558e6b83ab9750, type: 3}
+    - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       propertyPath: requiredKey
       value: 
       objectReference: {fileID: 1218882781}
@@ -133961,6 +133969,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1133015857}
     m_Modifications:
     - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+      propertyPath: reachedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6307609af1631ea41b2ba937e4baf73f, type: 3}
+    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: persistentId
       value: level01_cp01
       objectReference: {fileID: 0}
@@ -135130,6 +135142,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1133015857}
     m_Modifications:
     - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+      propertyPath: reachedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6307609af1631ea41b2ba937e4baf73f, type: 3}
+    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: persistentId
       value: level01_cp02
       objectReference: {fileID: 0}
@@ -135348,11 +135364,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7874887269165341773, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 7874887269165341773, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7874887269165341773, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       propertyPath: m_LocalPosition.z

@@ -24,6 +24,8 @@ public class GoalDoor : MonoBehaviour
     [Tooltip("Opcional: lo que dice el Sistema al completar el nivel.")]
     [TextArea(1, 3)]
     [SerializeField] private string completedLine;
+    [Header("Audio")]
+    [SerializeField] private AudioClip openClip;
 
     private bool completed;
 
@@ -57,6 +59,7 @@ public class GoalDoor : MonoBehaviour
         if (requiredKey == null || requiredKey.IsCollected)
         {
             completed = true;
+            SfxPlayer.Play(openClip);   // audio
             if (requiredKey != null)
                 requiredKey.Consume();
             SetOpen(true);
