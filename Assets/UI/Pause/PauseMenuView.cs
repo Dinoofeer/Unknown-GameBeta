@@ -18,6 +18,8 @@ public class PauseMenuView : MonoBehaviour
     private Button[] buttons;
     private Button cancelButton;
     private Button confirmButton;
+    private Label exitStatus;
+    private bool exitBusy;
 
     private void OnEnable()
     {
@@ -30,6 +32,7 @@ public class PauseMenuView : MonoBehaviour
         buttons = new[] { root.Q<Button>("resumeButton"), root.Q<Button>("restartButton"), root.Q<Button>("exitButton") };
         cancelButton = root.Q<Button>("cancelExitButton");
         confirmButton = root.Q<Button>("confirmExitButton");
+        exitStatus = root.Q<Label>("exitStatus");
 
         foreach (Button button in buttons)
         {
@@ -65,6 +68,9 @@ public class PauseMenuView : MonoBehaviour
 
     public void ShowPause()
     {
+        if (exitBusy)
+            return;
+        ShowExitStatus(string.Empty);
         IsVisible = true;
         IsExitConfirmationVisible = false;
         pauseRoot.RemoveFromClassList("is-hidden");
@@ -76,6 +82,9 @@ public class PauseMenuView : MonoBehaviour
 
     public void ShowExitConfirmation()
     {
+        if (exitBusy)
+            return;
+        ShowExitStatus(string.Empty);
         IsVisible = true;
         IsExitConfirmationVisible = true;
         pauseRoot.RemoveFromClassList("is-hidden");
@@ -87,6 +96,8 @@ public class PauseMenuView : MonoBehaviour
 
     public void Hide()
     {
+        SetExitBusy(false);
+        ShowExitStatus(string.Empty);
         var focused = pauseRoot.panel?.focusController.focusedElement as VisualElement;
         if (focused != null && pauseRoot.Contains(focused))
             focused.Blur();
@@ -100,7 +111,34 @@ public class PauseMenuView : MonoBehaviour
 
     private void OnResume() => ResumeRequested?.Invoke();
     private void OnRestart() => RestartRequested?.Invoke();
-    private void OnExitConfirmed() => ExitConfirmed?.Invoke();
+    private void OnExitConfirmed()
+    {
+        if (!exitBusy)
+            ExitConfirmed?.Invoke();
+    }
+
+    public void SetExitBusy(bool busy)
+    {
+        exitBusy = busy;
+        cancelButton.SetEnabled(!busy);
+        confirmButton.SetEnabled(!busy);
+        if (busy)
+            ShowExitStatus("Volviendo al menú principal...");
+    }
+
+    public void ShowExitError(string message)
+    {
+        SetExitBusy(false);
+        ShowExitStatus(message);
+        cancelButton.schedule.Execute(() => cancelButton.Focus());
+    }
+
+    private void ShowExitStatus(string message)
+    {
+        exitStatus.text = message;
+        exitStatus.EnableInClassList("is-hidden", string.IsNullOrEmpty(message));
+    }
+
     private void OnPointerEnter(PointerEnterEvent evt) => ((Button)evt.currentTarget).Focus();
 
     private void OnFocusIn(FocusInEvent evt)

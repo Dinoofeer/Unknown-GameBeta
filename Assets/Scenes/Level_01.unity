@@ -122423,6 +122423,10 @@ PrefabInstance:
       propertyPath: respawnManager
       value: 
       objectReference: {fileID: 4388325580390447423}
+    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: progressPersistence
+      value: 
+      objectReference: {fileID: 4388325580390447425}
     - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

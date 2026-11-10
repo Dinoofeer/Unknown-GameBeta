@@ -18,6 +18,7 @@
         <ui:VisualElement name="exitConfirmation" class="confirmation-overlay is-hidden">
             <ui:VisualElement class="confirmation-panel pause-exit-panel">
                 <ui:Label text="JAJAJA sabia que no ibas a poder escapar, Mediocre" class="confirmation-title pause-exit-message" />
+                <ui:Label name="exitStatus" class="confirmation-message pause-exit-message is-hidden" />
                 <ui:VisualElement class="confirmation-actions">
                     <ui:Button name="cancelExitButton" text="CANCELAR" class="dialog-button dialog-button--cancel" />
                     <ui:Button name="confirmExitButton" text="SALIR" class="dialog-button" />
