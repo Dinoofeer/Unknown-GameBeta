@@ -11,7 +11,7 @@ public class StatsHUD : MonoBehaviour
     [SerializeField] private TMP_Text deathsText;
 
     [Header("Calavera")]
-    [SerialSizeField] private Image skullIcon;  //imagen de la calavera que cambia de color al morir
+    [SerializeField] private Image skullIcon;  //imagen de la calavera que cambia de color al morir
     [SerializeField] private Sprite skullNormal;
     [SerializeField] private Sprite skullHit; //calavera roja que se muestra al morir
 
