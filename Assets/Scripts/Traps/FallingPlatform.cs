@@ -16,6 +16,9 @@ public class FallingPlatform : MonoBehaviour
     [SerializeField, Min(0f)] private float fallGravityScale = 3f;
     [Tooltip("Segundos de caída tras los que deja de simularse (ya está fuera de la pantalla).")]
     [SerializeField, Min(0f)] private float disableAfterFalling = 2f;
+    [Header("Audio")]
+    [SerializeField] private AudioClip shakeClip;
+    [SerializeField] private AudioClip breakClip;
 
     private Rigidbody2D rb;
     private Collider2D col;
@@ -41,7 +44,7 @@ public class FallingPlatform : MonoBehaviour
         // GDD: cualquier contacto del jugador activa el temporizador, también tocar el borde de lado.
         if (fallRoutine != null || !collision.collider.CompareTag("Player"))
             return;
-
+            SfxPlayer.Play(shakeClip);
         fallRoutine = StartCoroutine(FallAfterDelay());
     }
 
@@ -65,6 +68,7 @@ public class FallingPlatform : MonoBehaviour
             visual.localPosition = visualStartLocalPosition;
 
         // Sin collider: el jugador pierde el apoyo al instante y la plataforma cae atravesándolo todo.
+        SfxPlayer.Play(breakClip);
         col.enabled = false;
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = fallGravityScale;
