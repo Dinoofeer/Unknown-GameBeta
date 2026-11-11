@@ -1436,6 +1436,27 @@ Copia previa en `Archive/Level_01_v15c_antes_nivelcompletado.unity`. [Aprobado p
 
 ---
 
+## Integración de sprites del Nivel 1 y cambios de `develop` (2026-11-11)
+
+Commits de unión: `0770893` (`feature/sprites_level01`) y `0816ed4` (`develop`); reaplicación en `1d76881`. Respaldo previo: commit `7501225`.
+
+| Etiqueta | Decisión |
+|---|---|
+| Unión | Entran los sprites del Nivel 1, la fuente Press Start 2P y la calavera del HUD, los audios nuevos y los ajustes del menú de pausa. |
+| Conflicto | `Level_01.unity`: se tomó la escena de ellos (misma geometría que nuestra v15) y se reaplicó por script lo nuestro: disparadores con las frases #1–#11 del GDD, frase #12 en la ventana, burlas por muerte (`NarratorDeathTaunts`), `trollTrap` en el checkpoint falso y la ventana «Nivel completado». El menú de pausa y `LevelProgressPersistence` se dejan como vienen de su rama. |
+| Conflicto | `FallingPlatform`, `FallingSpike`, `InvisibleBlock`: se conservan las dos líneas (`TrollTrap.Mark()` nuestro y `SfxPlayer.Play(...)` de ellos). |
+| [Decisión] | La ventana «Nivel completado» usa ahora Press Start 2P, que ya está en el proyecto. |
+
+| Prueba (recorrido completo automatizado) | Resultado |
+|---|---|
+| Frases del Sistema | Las 12 del GDD, en orden y en su sitio. |
+| Ventana al cruzar la puerta | Visible: "Nivel completado", "Tiempo: 01:26", "Muertes: 0" y la frase #12. |
+| Consola | 0 errores, 0 avisos. |
+
+**No probado:** aspecto visual de los sprites y la ventana en pantalla, y teclado físico.
+
+---
+
 ## Diálogos del Sistema – Nivel 1
 
 > **Desfasado desde el 2026-11-04:** esta tabla describe el nivel original. Las frases vigentes están en "Nivel 1: rediseño troll".
