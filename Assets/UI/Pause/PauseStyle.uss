@@ -1,0 +1,36 @@
+.pause-root {
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.pause-content {
+    width: 680px;
+    max-width: 82%;
+}
+
+.pause-content--covered {
+    display: none;
+}
+
+.pause-title {
+    color: rgb(236, 227, 173);
+    font-size: 52px;
+    -unity-font-style: bold;
+}
+
+.pause-taunt {
+    margin-top: 14px;
+    margin-bottom: 30px;
+    color: rgb(222, 231, 222);
+    font-size: 26px;
+    white-space: normal;
+}
+
+.pause-exit-panel {
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+.pause-exit-message {
+    -unity-text-align: middle-center;
+}

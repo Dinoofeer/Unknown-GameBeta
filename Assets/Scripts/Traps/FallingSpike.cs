@@ -75,8 +75,14 @@ public class FallingSpike : MonoBehaviour
     private IEnumerator ShakeAndFall()
     {
         float elapsed = 0f;
-        while (elapsed < shakeDuration)
+        while (elapsed < shakeDuration || Time.timeScale <= 0f)
         {
+            if (Time.timeScale <= 0f)
+            {
+                yield return null;
+                continue;
+            }
+
             visual.localPosition = visualStartLocalPosition + (Vector3)(Random.insideUnitCircle * shakeAmplitude);
             elapsed += Time.deltaTime;
             yield return null;

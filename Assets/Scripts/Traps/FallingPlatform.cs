@@ -48,8 +48,14 @@ public class FallingPlatform : MonoBehaviour
     private IEnumerator FallAfterDelay()
     {
         float elapsed = 0f;
-        while (elapsed < fallDelay)
+        while (elapsed < fallDelay || Time.timeScale <= 0f)
         {
+            if (Time.timeScale <= 0f)
+            {
+                yield return null;
+                continue;
+            }
+
             if (shakeBeforeFalling && visual != null)
                 visual.localPosition = visualStartLocalPosition + (Vector3)(Random.insideUnitCircle * shakeAmplitude);
             elapsed += Time.deltaTime;

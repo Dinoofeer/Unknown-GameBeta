@@ -936,6 +936,435 @@ Copia previa en `Scenes/Archive/Level_01_v3.unity` (abre; no está en Build Sett
 
 ---
 
+## Nivel 1: mejoras tras la prueba de Jesús, etapa 1 (2026-11-05)
+
+Copia previa en `Scenes/Archive/Level_01_v4.unity` (no está en Build Settings).
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Propuesta completa por etapas, sin mecánicas nuevas: pisos y fosos que no se pasen andando, ruta alta del muro más accesible, cola de frases, nivel más largo. Para la etapa 2: separar los checkpoints y añadir un checkpoint real a mitad del tramo inicial. **Contradice el GDD ("1-2 por nivel")**, con aprobación expresa de Jesús. |
+| Causa | A 8 u/s se avanza 1,6 u en los 0,2 s de retardo, y la cápsula del jugador sube sola caídas de hasta unas 0,25. Por eso se pasaban andando los pisos de 2–3 de ancho. Los fosos estrechos se cruzaban cayendo. Las pruebas anteriores no lo detectaron porque colocaban al jugador parado o saltando. |
+| [Decisión] | Suelo falso de 4 de ancho como mínimo. `S1_SueloQueCede` x 14–20 es un solo piso de 6. `S2_Orilla` x 140–144, `S3_SueloFalso` x 226–230, `S4_SueloFalso` x 300–304, `S5_SueloFalso` x 309–313. |
+| [Decisión] | `S2_Aterrizaje` x 85–92 (7 de ancho): con 4 aún se cruzaba, porque se aterriza ya dentro del piso. Obliga al doble salto desde la isla. |
+| [Decisión] | Fosos: x 118–123 (pilar x 123–125) y x 181–186 (pilar x 186–188). El pincho que cae sobre el pilar de x 186 queda para la etapa 2. |
+| [Decisión] | Muro: `S2_Muro_Escalon` a 0,35 s. Escalón fijo nuevo en x 94–95 (arriba y = 2,5). Plataforma alta recortada a x 92–93,5 para dejar paso desde el escalón fijo. `S2_Muro_Bloque` movido a (95,5; 10,25): el salto largo vale hasta x 92,8; desde x 93,1 lo golpea y mueres. La grieta del atajo ya estaba desactivada. |
+| [Decisión] | `NarratorUI`: cola de frases. La frase nueva espera a la actual. Con otra en cola, se mantiene 1,5 s en vez de 2,5 s (`holdSecondsWithQueue`). `Narrator.SayIfIdle`: las burlas se descartan si el Sistema está hablando, porque las frases de trigger suenan una sola vez y se perderían. |
+
+### Pruebas (Play Mode, teclado simulado salvo lo indicado)
+
+| Zona | Andando sin saltar | Saltando |
+|---|---|---|
+| Inicio x 14–20 | Muere en x 18,6 | Pasa con salto máximo |
+| Descanso x 47–51 | Muere | Pasa con salto leve |
+| Aterrizaje x 85–92 | Muere (salto leve o máximo desde la isla y seguir) | Pasa con doble salto máximo |
+| Foso x 118–123 | Muere | Pasa, cae en el pilar |
+| Orilla x 140–144 | Muere | Pasa con salto leve |
+| Foso x 181–186 | Muere | Pasa, cae en el pilar |
+| Suelo x 226–230 | Muere | Pasa con salto leve |
+| Suelo x 300–304 | Muere | Pasa con doble salto máximo |
+| Suelo x 309–313 | Muere | Pasa con salto leve |
+
+| Prueba | Resultado |
+|---|---|
+| Muro, ruta A (escalón que cae) | Completa sin morir. |
+| Muro, ruta B (escalón fijo) | Completa sin morir, medida con el bloque aún en x 95. Con el bloque en 95,5 solo se repitió la ruta A; el tramo final que comparten pasa. |
+| Diálogos | "¿Te vas tan pronto?" sale en t = 0 y se mantiene hasta t = 3,61 s; "Bienvenido..." espera a que termine, aunque se llega a x 7 a los 0,66 s. |
+| Burlas | Con el Sistema callado, sale. Hablando, se descarta y no corta la frase. |
+| Recorrido completo inicio → portal | Sin morir: x = 315,22, 52,2 s de script. Fija velocidades por script. |
+| Consola | 0 errores y 0 avisos. |
+
+**No probado:**
+
+- Teclado físico en manos de una persona.
+- Aterrizar muy adentro de un suelo falso y seguir corriendo, salvo en x 85–92. En x 309–313, un doble salto aterriza hacia x 310: podría cruzarse.
+- Si la cola retrasa demasiado alguna frase: la separación entre frases se ajusta en la etapa 2.
+
+**Pendiente, etapa 2:** ruta falsa x 52–62, separar checkpoints y checkpoint extra, bloques invisibles más estorbosos, pincho sobre el pilar de x 186, sección x 218–232, reto de la llave, alargar el nivel a unas 420–450 u y separar frases.
+
+---
+
+## Nivel 1: rediseño de la ruta x 52–66 (2026-11-06)
+
+Copia previa en `Scenes/Archive/Level_01_v5.unity`. Sin scripts ni mecánicas nuevas. La captura de Jesús es esta zona, no el muro de x 96.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Rediseñar la zona para darle más desafío. Antes era una ruta falsa sin salida. |
+| [Decisión] | Ruta alta real, con esta secuencia: `S2_Ruta_Cae` x 52–56 (arriba y = 4, 0,35 s, sin temblor) → salto al ladrillo x 57,5–59,5 (arriba y = 5) → doble salto al muro → salto a la isla. |
+| [Decisión] | `S2_Ruta_Bloque` (58; 8): frena el salto máximo lanzado desde cerca. El salto leve pasa por debajo. Desde x 53 el máximo no llega a tocarlo. |
+| [Decisión] | `S2_Ruta_Pincho` x 58, en una losa x 57–59, y 12–13. Franja de activación x 56,5–57,5. Quedarse donde se aterriza mata; a partir de x 59 se está a salvo. |
+| [Decisión] | Muro x 62–66 rebajado de y = 14 a y = 8,5 para poder cruzarlo. Pinchos de pared hasta y = 8 (nuevo en y = 7,5). |
+| [Decisión] | Pinchos en el suelo x 54–60. Seguros: x 52–54 y x 60–62. Bajar del ladrillo corriendo mata contra los pinchos de pared. |
+| [Decisión] | Atajo: `S2_FakeWall` sin grieta (solo mancha), porque ya hay otra ruta visible. Se reactiva con el hijo `Grieta`. Antes esa grieta era la pista de la única salida. |
+| [Decisión] | Segunda forma de subir: caer vivo en x 52–54 o estar en x 60–61 y subir al ladrillo con doble salto. Un piso caído no bloquea la ruta. |
+
+### Pruebas (teclado simulado)
+
+| Prueba | Resultado |
+|---|---|
+| Andar sobre el piso desde x 51,6 | Muere en x 59 |
+| Andar por el suelo desde x 53 | Muere en x 53,6 |
+| Ruta alta completa hasta la isla x 75,5 | Viva |
+| Salto máximo desde x 55 | Revela el bloque y aterriza en el ladrillo. Medido antes de mover el pincho |
+| Quedarse donde se aterriza / avanzar a x 59,2 y esperar 2 s | Muere / vivo |
+| x 53 → ladrillo, x 53 → suelo x 60–62, x 60,7 → ladrillo, con doble salto | Vivo en los tres |
+| Pared falsa desde x 60,5 | Vivo, sale en x 65,6 |
+| Bajar del ladrillo corriendo hacia la pared | Muere en los pinchos |
+| Reinicio | Piso, bloque y pincho vuelven tras morir. Piso y bloque medidos antes del último ajuste, que no los tocó |
+| Recorrido completo inicio → portal, velocidades por script | Sin morir: x = 315,22, 52,5 s de script |
+| Consola | 0 errores y 0 avisos |
+
+**No probado:** teclado físico; si se descubre el atajo sin grieta; si el pincho interactúa con el bloque ya revelado (el bloque queda justo en su columna); bajar al suelo x 60–62 desde el ladrillo a velocidad controlada; llegar a x 60–62 a la primera sin saber que está ahí.
+
+---
+
+## Nivel 1: mejoras, etapa 2 (2026-11-06)
+
+Copia previa en `Scenes/Archive/Level_01_v6.unity`. Sin scripts ni mecánicas nuevas, sin alargar el nivel (queda para la etapa 3).
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Tercer checkpoint real, a mitad del tramo inicial. **Contradice el GDD ("1-2 por nivel")**, con aprobación expresa de Jesús. |
+| [Aprobado por Jesús] | Separar el checkpoint falso del real, bloques invisibles más estorbosos, dar sentido a la sección x 218–232, reto ligero para la llave. |
+| [Decisión] | `Checkpoint_Medio` x 103,5, donde se juntan las dos rutas del muro, reaparece en x 102,7, antes de la franja de `S2_Pincho_A`. |
+| [Decisión] | `S3_CheckpointFalso` x 165; `Checkpoint` real x 205,5 (reaparece en x 206,3); separación 40,5. Entre ambos: pasillo con pinchos, pincho que cae, foso con pilar y ayudante. `T_CheckpointFalso` sigue en x 157. |
+| [Decisión] | Pasillo: pinchos y techo bajo movidos a x 170–172 (techo x 169–173) para no quedar pegados al falso. |
+| [Decisión] | Bloques: `S1_Bloque_Muro`, `_B`, `_C` en fila x 23–26, y 5,4. `S1_Bloque_Foso`, `_B`, `_C` en fila x 34–37, y 7,8. El leve pasa por debajo. |
+| [Decisión] | `S3_Pincho_Pilar` x 186,25 en una losa x 185–188, y 8–9, franja 14 de alto. En x 186,5 solo había unas décimas a salvo. Tarda unos 1,2 s en llegar: da tiempo a apartarse hacia x 187,4. |
+| [Decisión] | Dilema x 218–236. Arriba: `S3_Dilema_Escalon` x 218–220 (0,35 s) → plataforma x 222–226 → `S3_FakeWall_Alta` x 232–236, y 0–4 → cadena. Abajo: pinchos x 218–226, suelo falso, y `S3_FakeWall` (ahora y -3 a -0,5) con pinchos ocultos en x 233–235. Las dos tienen grieta. Arriba es más lenta y segura; abajo, más rápida y con trampa. |
+| [Decisión] | Llave: repisa partida en `S5_RepisaLlave` x 317,5–319,5 (0,35 s) y `S5_RepisaLlave_B` x 320,5–322 (0,3 s). Pinchos de techo x 317–321, y 11,25. Se coge con salto corto casi vertical y dejándose caer. |
+| [Decisión] | `S5_SueloFalso` alargado a x 309–314,5: aterrizar dentro de él y seguir corriendo ya mata. |
+| Hallazgo | El falso no se salta con salto corto: su altura supera casi todo el arco. Hace falta máximo o doble. Se deja así. |
+| Hallazgo | Tras coger la llave, bajar corriendo hacia la izquierda sobrevuela la puerta y cae en el suelo falso, y se pierde la llave. Se deja como trampa; hay que bajar y entrar por la derecha. Jesús puede cambiarlo. |
+
+### Pruebas (teclado simulado salvo lo indicado)
+
+| Zona | Resultado |
+|---|---|
+| Fila x 23–26 | Salto máximo: se frena y vuelve abajo. Doble salto subiendo primero: llega al muro. |
+| Fila x 34–37 | Máximo desde x 32: revela y muere. Desde x 33 y 33,4: revela y aun así llega. Leve: pasa sin revelar. |
+| Checkpoints | Medio: reaparece (102,70; 0,51). Falso: mata y devuelve a x 102,7. Real: reaparece (206,30; -2,49). |
+| Pasillo | Andando mueres. Salto máximo bajo el techo mata. |
+| Pilar | Andando mueres. Con el pincho en x 186,5: quedarse en x 186,4 mata, y x 187,6 está a salvo. Con el pincho en x 186,25: x 187,42 a salvo. Ayudante accesible. |
+| Dilema | Andar por abajo mata (pinchos). Pared baja andando mata; saltando pasa. Ruta alta completa hasta la cadena. |
+| Llave | Máximo mata en el techo. Andar sin saltar no la coge. Salto vertical y caída: la coge. |
+| Suelo x 309–314,5 | Andando mueres. Doble salto, aterrizar dentro y seguir: mueres. Salto máximo desde x 308,4: pasa. |
+| Recorrido completo por script (velocidades fijadas), ruta alta del dilema | Sin morir, con llave: completa en x = 317,15, 56 s de script. |
+| Consola | 0 errores y 0 avisos. |
+
+**No probado:** teclado físico. Con teclado simulado: salto máximo sobre el falso y salto leve bajo el techo (solo con el recorrido por script). Quedarse en x 186,4 con el pincho ya en x 186,25. Si la ruta alta del muro, cayendo más allá de x 103,5, salta por encima de la bandera. Si se entiende que la pared baja tiene pinchos sin morir primero. Si el pincho interactúa con el ayudante revelado.
+
+---
+
+## Nivel 1: mejoras, etapa 3 (2026-11-06)
+
+Copia previa en `Scenes/Archive/Level_01_v7.unity`. Sin mecánicas nuevas. **Longitud final: 463 u** (antes 331). Todas las x anteriores de este registro quedan desplazadas; las vigentes son las de esta sección.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Alargar el nivel y separar las frases para que no se pierda la narrativa. |
+| [Decisión] | 463 u en vez de 420–450: es lo que exige separar las frases 30 u o más sin retirar más frases. |
+| [Decisión] | Se retiran `T_Mentira` y `T_Orilla` (provisionales propias): no cabían a 30 u de sus vecinas sin perder el sentido de las demás. |
+| [Decisión] | `Checkpoint_Medio` pasa a x 159, antes del muro, para repartir el tramo (157 y 160,5 u). Reaparece en x 159,5. |
+| Riesgo | Con 3 reales y el falso a 40 u del real, no se llega a 120 u o menos entre checkpoints en los dos primeros tramos. Un cuarto real hacia x 240 lo resolvería; pendiente de Jesús. |
+| [Decisión] | `LevelArtGenerator.DamagedFromX` = 210. El óxido empieza en el tramo tras la orilla, un poco antes de la salida falsa (x 248). |
+| Hallazgo | Tras coger la llave sigue valiendo: bajar corriendo hacia la izquierda sobrevuela la puerta y cae en el suelo falso. |
+
+### Disposición vigente (x)
+
+| Zona | x | Contenido |
+|---|---|---|
+| Inicio | 0–30 | **Nuevo:** pinchos x 13 y x 21–23. |
+| Suelo falso | 36–42 | `S1_SueloQueCede`. |
+| Muro y bloques | 45–48 | Fila de bloques; muro x 48. **Nuevo:** pinchos x 55–57. |
+| Foso | 64–70 | Fila de bloques x 64–67; suelo que cede x 68–70. |
+| Previo al descanso | 75–97 | **Nuevo:** pinchos x 79–81, `S1_Pincho_Previo` x 85. Descanso real hasta x 103. |
+| Descanso falso | 103–107 | `S1_SueloDescanso`. |
+| Ruta x 108–122 | 108–122 | Piso que cae, ladrillo, bloque, pincho, muro y pared falsa (`S2_FakeWall` x 118–122). |
+| Islas | 122–151 | Fija x 126. **Nuevo:** fija x 132 y `S2_Isla_Nueva` x 136. Islas x 141,5 y x 146,5. |
+| Aterrizaje | 151–158 | `S2_Aterrizaje`. `Checkpoint_Medio` x 159. |
+| Muro x 162 | 156–166 | Escalón que cae, escalón fijo, plataforma, atajo. |
+| Entrada del pasillo | 167–181 | **Nuevo:** `S2_SueloFalso_Entrada` x 170–174; pinchos x 177–179 con `S2_Roca_Entrada`. |
+| Pasillo | 181–198 | Pinchos que caen, pinchos de suelo. |
+| Hueco | 198–218 | Pilar x 203–205, ayudantes, columna x 211–212. |
+| Orilla | 220–224 | `S2_Orilla`. **Nuevo:** pinchos x 230–232 con `S2_Orilla_Bloque`. |
+| Salida falsa | 240–250 | Muro x 240, salida x 248. |
+| Pasillo previo | 252–272 | **Nuevo:** pinchos x 257–259, `S3_Pincho_Pasillo` x 264, `S3_SueloFalso_Pasillo` x 267–271. |
+| Checkpoint falso | 279 | Pasillo con techo x 283–287, pincho x 291. |
+| Foso y pilar | 295–316 | Pilar x 300–302, `S3_Pincho_Pilar` x 300,25. |
+| Checkpoint real | 319,5 | Túnel x 320–332. |
+| Dilema | 332–350 | Escalón, plataforma, pared alta y baja x 346–350. |
+| Cadena y CP2 | 350–373,5 | Cadena; `Checkpoint2` x 373,5. |
+| Rocas e islas | 378–412 | Foso con rocas; islas. |
+| Suelo falso | 414–418 | `S4_SueloFalso`. Foso x 418–421. |
+| Cámara final | 422–440 | **Nuevo:** pinchos x 428–430, `S5_Pincho_Camara` x 434,5. |
+| Puerta y llave | 441–463 | `S5_SueloFalso` x 441–446,5; puerta x 448; llave x 451. |
+
+Manchas nuevas en los pinchos y suelos falsos de los tramos x 75–97, x 122–151, x 167–181, x 225–239, x 252–272 y x 422–440. Sin mancha nueva: los primeros saltos x 13, x 21 y x 55, para no asustar antes de tiempo.
+
+### Frases
+
+| Frase | x | Separación |
+|---|---|---|
+| `T_Inicio_GDD` | 2 | — |
+| `T_Demo` | 32 | 30 |
+| `T_Suelo` | 62 | 30 |
+| `T_Descanso1` | 92 | 30 |
+| `T_ParedesFalsas` | 122 | 30 |
+| `T_DobleSalto` | 152 | 30 |
+| `T_Atajo` (secreta) | 165,4 | 13, solo por el atajo |
+| `T_Techo` | 182 | 30 con `T_DobleSalto` |
+| `T_Hueco` | 212 | 30 |
+| `T_SalidaFalsa` | 242 | 30 |
+| `T_CheckpointFalso` | 272 | 30; 7 antes de la bandera |
+| `T_Tunel` | 319 | 47 |
+| `T_Checkpoint2` | 371 | 52 |
+| `T_Salida` | 414 | 43 |
+| `T_Puerta` | 444 | 30 |
+| `T_Llave` | 451 | 7; solo al llegar a la llave, por otro camino |
+
+### Pruebas
+
+| Prueba | Resultado |
+|---|---|
+| Recorrido completo, velocidades por script | Sin morir, con llave y portal: x = 449,15, 72,5 s de script. |
+| Andar y saltar, teclado simulado | Mueren al andar y pasan al saltar: x 13, x 21–23, x 36–42, x 55–57, x 79–81, x 170–174, x 177–179, x 230–232, x 257–259, x 267–271 y x 428–430. Solo andar: x 103–107, x 220–224 y x 441–446,5, también mueren. |
+| Roca x 177 | El salto corto pasa; el máximo muere. |
+| Pinchos que caen | Parar debajo mata en x 264 y x 434,5. |
+| Reaparición | Medio (159,5; 0,51). Falso devuelve a x 159,5. Real (320,30; -2,49). CP2 (374,30; -1,99). |
+| Ritmo de frases a 8 u/s | Hasta `T_DobleSalto`: cada frase aparece al llegar a su x, sin retraso acumulado. La pasada se cortó en x 162. |
+| Consola | 0 errores y 0 avisos. |
+
+**No probado:** teclado físico; `S1_Pincho_Previo` x 85 parado debajo (la prueba arrancó tocando pinchos); ritmo de frases más allá de x 162; `S2_Isla_Nueva`, escalón y ruta alta del muro con teclado simulado después de desplazarlos (el script pasa las islas, no la ruta alta del muro); reinicio de las trampas nuevas una por una; rendimiento con el nivel más largo.
+
+---
+
+## Nivel 1: corrección de checkpoints, islas y bloques (2026-11-06)
+
+Copia previa en `Scenes/Archive/Level_01_v8.unity`. Sin mecánicas ni scripts nuevos. Longitud igual: 463 u. Corrige las tablas de la etapa 3 en lo que se indica aquí.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Se quita `Checkpoint_Medio` (x 159). |
+| [Aprobado por Jesús] | El primer checkpoint es el falso: `S3_CheckpointFalso` pasa de x 279 a x 183,5, en el pasillo plano, tras la primera salida falsa de la entrada. |
+| [Aprobado por Jesús] | El checkpoint real pasa de x 319,5 a x 289, invertido en el pasillo con pinchos arriba y abajo (x 284–286). Reaparece en (289,80; -2,49). Luz `Green_Checkpoint` movida con él. |
+| [Aprobado por Jesús] | Pinchos que caen en la sección de islas: tres `S4_Pincho_Isla` en x 400,5, x 404,5 y x 408,5. |
+| [Aprobado por Jesús] | `S5_Bloque_A` y `S5_Bloque_B` (x 419,5 y x 420,5) suben de y 0,9 a y 3,4 para que el jugador no quede debajo al saltar. |
+| [Decisión] | `S2_Pincho_A` (x 188) pasa a `triggerOffsetX` = 1, con franja x 186,5–187,5: no cae al tomar la bandera falsa ni antes de x 186,5. |
+| [Decisión] | Pinchos de islas con `triggerOffsetX` = 1, franja de 14 de alto y losa `Solid` x 399–410 en y 10–11 de la que cuelgan. Con offset 4 mataban en el aire al saltar sin pararse. La losa en y 7 dejaba poco margen. |
+| [Decisión] | `T_CheckpointFalso` pasa a x 174; `T_Techo` se retira, porque ya no cabía a distancia razonable de la bandera falsa. |
+| Interpretación | "Pinchos que caigan del suelo" se implementó con la mecánica existente: caen desde arriba sobre las islas. Que salgan del suelo sería mecánica nueva, sujeta a aprobación. |
+| Consecuencia | El falso mata y devuelve al inicio (2; 0,51), porque antes de él no hay checkpoint real. Distancias: inicio → real 287 u; real → `Checkpoint2` 84,5 u; `Checkpoint2` → puerta ~75 u. |
+| Pendiente de Jesús | Una última sección antes de la parte final del nivel. Aún no está definida; no se ha construido nada. |
+
+### Frases vigentes (x)
+
+`T_Inicio_GDD` 2, `T_Demo` 32, `T_Suelo` 62, `T_Descanso1` 92, `T_ParedesFalsas` 122, `T_DobleSalto` 152, `T_Atajo` 165,4, `T_CheckpointFalso` 174, `T_Hueco` 212, `T_SalidaFalsa` 242, `T_Tunel` 319, `T_Checkpoint2` 371, `T_Salida` 414, `T_Puerta` 444, `T_Llave` 451. Retiradas: `T_Mentira`, `T_Orilla`, `T_Techo`.
+
+### Pruebas
+
+| Prueba | Resultado |
+|---|---|
+| Recorrido completo, velocidades por script | Sin morir, con llave y portal: x = 449,15, 72,6 s de script. |
+| Andar a la bandera falsa, teclado simulado | Muere en x 182,76 con el pincho colgante sin caer (y 5,75). Reaparece en (2; 0,51). |
+| Saltar la bandera falsa | Salto corto y máximo la pasan vivos. Pararse bajo `S2_Pincho_A` mata. |
+| Checkpoint real x 289 | Andar a los pinchos mata en x 283,6. Salto corto llega vivo a la bandera. Reaparece en (289,80; -2,49) y 2 s quieto ahí no matan. |
+| Cadena de islas sin pararse, con losa en y 7 | x 400, x 404, x 408 y tierra x 413: vivo. No se repitió entera con la losa en y 10; el script del recorrido sí la pasa. |
+| Margen del pincho x 400, losa y 10 | Quedarse mata a 0,79 s. Esperar 0–0,6 s y saltar sale vivo; esperar 0,8 s mata. |
+| Bloques x 419–421 | Doble máximo desde x 412,6 y máximo más leve desde x 413 llegan a la cámara con los bloques revelados. Doble máximo desde x 413,4 pasa sin revelarlos. |
+| Consola | 0 errores y 0 avisos en el recorrido completo. |
+
+**Sin explicar:** en una tanda, esperar 0,2 s en x 400 y saltar murió cayendo en x 401,51. Repetido 3 veces con el mismo script no se reprodujo. Es 1 caso de 4 a 0,2 s; no sé si fue el script o el juego.
+
+**No probado:** teclado físico; `S1_Pincho_Previo` x 85 con un arranque limpio; ritmo de frases más allá de x 162; ruta alta del muro con teclado simulado; el salto a la altura exacta bajo los bloques x 419–421 desde otros puntos; rendimiento.
+
+### Revisión y copia v9 (2026-11-08)
+
+- **"Se perdió la versión":** no se perdió. En el editor estaba abierta `Archive/Level_01_v8.unity`, la copia anterior a estas correcciones; según `Editor.log` se abrió a mano. `Level_01.unity` (guardada el 2026-11-06 a las 22:56) conserva todas las correcciones, comprobado en disco y en el editor.
+- `Archive/Level_01_v9.unity`: copia byte a byte de `Level_01` con estas correcciones.
+- **Muerte sin explicar en x 400:** 0 de 14 al repetirla (esperas de 0,15, 0,2 y 0,25 s) y 0 de 3 antes. En todas, el salto salió desde el suelo (vy 10–10,6). No se pudo reproducir; se atribuye al script de aquella tanda y no se cambió nada del nivel.
+- Recorrido completo por script: sin morir, con llave y portal (x 449,15; 72,5 s). Consola: 0 errores y 0 avisos.
+
+### Pinchos de las islas y bloques "?" más bajos (2026-11-08, v10)
+
+Copia previa en `Archive/Level_01_v9b_antes.unity` (igual que v9). Copia final en `Archive/Level_01_v10.unity`, idéntica a `Level_01`.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Los pinchos de las islas siguen cayendo desde arriba. Se bajan para que caigan antes. |
+| [Aprobado por Jesús] | Los bloques `S5_Bloque_A/B` se bajan para que estorben más. |
+| [Decisión] | `S4_Pincho_Isla` x 400,5, x 404,5 y x 408,5: raíz de y 10 a **y 7**. La losa `Solid` x 399–410 pasa de y 10–11 a y 7–8. Franja sin cambios (offset 1, 1 × 14). Distancia de la punta a la cabeza del jugador: de 11,6 a 8,6 u. Caída teórica: 0,3 s de temblor + 0,76 s (antes 0,89 s). |
+| [Decisión] | `S5_Bloque_A/B`: de y 3,4 a **y 1,9**. Se descartó y 1,4: al saltar desde x 415,8 el bloque tiraba al jugador al foso las 3 veces. |
+
+| Prueba (teclado simulado) | y 10 / 3,4 (antes) | y 7 / 1,9 (ahora) |
+|---|---|---|
+| Quedarse quieto en la isla x 400 | Muere a 0,79 s | Muere a 0,58 s |
+| Esperar en x 400 y saltar | Pasa hasta 0,6 s | Pasa hasta 0,4 s; a 0,5 s muere |
+| Cadena x 400 → 404 → 408 → tierra sin pararse | Pasa | Pasa |
+| Bloques: 21 saltos desde x 412,6 a x 417,4 (doble máximo, máximo + leve, solo máximo) | — | 0 muertes por bloque; 4 revelan el bloque y el jugador sigue. Las 3 muertes son saltos máximos sencillos desde x ≤ 414,2 que se quedan cortos, igual a cualquier altura. |
+| Recorrido completo por script | Sin morir | Sin morir, llave y portal (x 449,15; 72,5 s) |
+| Consola | — | 0 errores, 0 avisos |
+
+Quedarse en x 404 también mata (0,64 s), pero porque esa isla es la plataforma que cae, no por el pincho.
+
+**No probado:** teclado físico; saltos desde x 418 o más (ya sobre el foso); con y 1,9, bloques revelados que luego se pisan por arriba.
+
+### Pinchos de las islas más rápidos; cuadros "?" pendientes (2026-11-08, v11)
+
+Copia previa en `Archive/Level_01_v10b_antes.unity` (idéntica a v10). Copia final en `Archive/Level_01_v11.unity`.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Pinchos de las islas: misma altura (y 7), caída más rápida. `fallGravityScale` de 3 a **5** en los tres `S4_Pincho_Isla`. Temblor sin cambios (0,3 s). Caída teórica de la punta a la cabeza (8,6 u): de 0,76 s a 0,59 s; total desde que se activan, de 1,06 s a 0,89 s. |
+| Pendiente de Jesús | Cuadros `S5_Bloque_A/B`: quiere que el jugador salte, choque y vuelva al sitio desde donde saltó. Siguen en y 1,9 (ver hallazgo). |
+
+| Prueba de los pinchos (teclado simulado) | Gravedad 3 | Gravedad 5 |
+|---|---|---|
+| Quedarse en x 400 | Muere a 0,58 s | Muere a 0,42 s |
+| Quedarse en x 408 | — | Muere a 0,44 s |
+| Esperar en x 400 y saltar | Pasa hasta 0,4 s | Pasa hasta 0,25 s; a 0,3 s muere |
+| Cadena sin pararse | Pasa | Pasa 3 de 3 |
+
+Recorrido completo por script: sin morir, llave y portal (x 449,15; 73,7 s). Consola: 0 errores, 0 avisos.
+
+**Hallazgo sobre los cuadros.** Se probaron 4 tipos de salto desde 6 puntos (x 412,6 a 416,6), con los cuadros a y 1,9, 1,4 y 0,9, sin soltar la derecha y volviendo a la izquierda al chocar (con el doble salto si quedaba). En ningún caso el jugador volvió al sitio de salto:
+- `InvisibleBlock` solo anula la velocidad vertical. El jugador sigue avanzando a 8 u/s y cae al foso (x 418–421).
+- Volver a la izquierda tampoco salva: si saltó desde `S4_SueloFalso` (x 414–418), ese suelo ya ha caído.
+- Bajarlos solo añade muertes: a y 1,4 y 0,9 matan desde x 415,8 y 416,6.
+- Con los cuadros sobre el pilar (x 412,5–413,5; y 0,4 y 0,9; prueba sin guardar), el jugador ya ha pasado bajo ellos antes de llegar arriba y casi nunca choca. Cuando choca, cae al foso igual.
+
+Para que "choque y vuelva", el choque tendría que frenar o empujar hacia atrás. Eso cambia la mecánica 03 en el código, y no se ha hecho sin aprobación.
+
+### Cuadros "?" a y 1,4 (2026-11-08, v12)
+
+[Aprobado por Jesús] Opción C: `S5_Bloque_A/B` de y 1,9 a **y 1,4**, sin tocar código. Chocar con ellos tira al foso: es una muerte, no una vuelta. Copia final en `Archive/Level_01_v12.unity`; la previa es v11.
+
+Cómo se pasa, según las pruebas de y 1,4 (teclado simulado):
+- **Seguro:** saltar desde el pilar (x 412,6–414,2) con doble máximo, máximo más leve o leve más máximo. Pasan por encima sin chocar.
+- **Seguro:** desde el suelo falso en x 415 con doble máximo, máximo más leve o solo máximo.
+- **Trampa:** saltar desde x 415,8 mata con cualquier salto; desde x 416,6 depende del salto.
+- **Sin relación con los cuadros:** el salto máximo solo desde el pilar se queda corto y cae al foso.
+
+Recorrido completo por script: sin morir, llave y portal (x 449,15; 72,4 s). Consola: 0 errores, 0 avisos. No se añadió mancha nueva en el foso: no la pidió Jesús.
+
+### Pared alta y cuadros "?" como escalón (2026-11-08, v13)
+
+Copia previa en `Archive/Level_01_v12b_antes.unity` (igual que v12). Copia final en `Archive/Level_01_v13.unity`. Sin código nuevo.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Opción 2: pared tan alta que el doble salto directo no llega; hay que revelar los cuadros "?" y usarlos de escalón. El suelo que cae (x 414–418) se mantiene. |
+| [Decisión] | Pared x 421–423 en `Solid`: de y −0,5 a **y 5** (+5,5). Copia la tile que ya había en x 421; detrás, el suelo de la cámara sigue en y −0,5. |
+| [Decisión] | `S5_Bloque_A` de (419,5; 1,4) a **(413,5; 0)**, sobre el pilar. `S5_Bloque_B` de (420,5; 1,4) a **(414,5; 0)**, sobre el borde del suelo que cae: es la trampa para quien salta desde ahí. |
+
+**Ruta (teclado simulado):**
+1. Ponerse debajo de A, en x 413,5 sobre el pilar, y dar un salto leve. A aparece y el jugador vuelve al pilar.
+2. Ir al borde izquierdo del pilar (x 412,4), hacer doble salto hacia arriba y meterse encima de A. Queda en y 1,01 y aguanta 3 s sin caer.
+3. Desde A, saltar a la derecha. Doble máximo, máximo + leve y leve + máximo llegan a la cima o a la cámara. Esperar mucho el segundo salto, o salir andando de A antes de saltar, mata.
+4. Bajar de la cima saltando. Si se baja andando, se cae sobre los pinchos x 428–430.
+
+| Prueba | Resultado |
+|---|---|
+| Doble salto directo desde el pilar o el suelo que cae (7 puntos × 3 saltos) | Ninguno pasa. Desde x ≥ 413,8 mueren; desde el pilar se chocan con A y caen en el suelo que cae. |
+| Andar | Muere. |
+| Llegar al pilar desde la isla x 408 | Vivo, sin revelar A. |
+| Recorrido completo por script con la ruta nueva | Sin morir, llave y portal (x 449,15; 75,0 s). |
+| Consola | 0 errores, 0 avisos. |
+
+**Riesgos:** los cuadros se ocultan al morir, así que hay que revelarlos en cada vida. El borde de la pared deja caer justo sobre los pinchos x 428–430. Los tiles nuevos de la pared no pasaron por `LevelArtGenerator.ApplyToScene` y pueden verse distintos en los bordes.
+
+**No probado:** teclado físico; revelar B desde otros puntos; aspecto visual de la pared.
+
+### Sección final nueva: salto de fe y pilares (2026-11-08, v14)
+
+Copia previa en `Archive/Level_01_v13b_antes.unity`; final en `Archive/Level_01_v14.unity`. Sin código nuevo. Se volvió a pasar `LevelArtGenerator.ApplyToScene`. **Longitud del nivel: 508 u** (antes 463).
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | La puerta pasa arriba, al final. Hay que caer desde arriba (salto de fe: al saltar no se ve la primera plataforma) a pilares estrechos, algunos con pinchos, y saltar varios hasta la puerta. |
+| [Aprobado por Jesús] | Llave arriba, como estaba (x 451; repisa con techo de pinchos). Pilares fijos y que caen mezclados. Puerta más alta que los pilares: el último salto es hacia arriba. Pista del salto de fe a criterio. |
+| [Decisión] | El salto de fe se logra con la geometría, sin tocar `CameraFollow`. Desde el borde, la cámara ve hasta y 2,5 y el primer pilar tiene la cima en y 0. Se ve cuando el jugador ya ha caído a y ≈ 2,5. |
+| [Decisión] | Pista discreta: mancha gris en el borde del salto (x 465,4) y frase nueva provisional `T_SaltoFe` (x 464,5): "Abajo no hay nada. Te lo prometo." |
+| [Decisión] | `T_Puerta` se mueve de x 444 a x 498. La puerta (`DataPortal`) y su luz `Cyan_Portal` pasan de (448; 0,5) a (502,5; 6). |
+| [Decisión] | `CameraFollow.maxBounds.x` de 463 a 508. `KillZone`: centro x 249 y ancho 520 (cubre x −11 a 509). |
+
+**Disposición (x; cima y):**
+
+| Elemento | Posición |
+|---|---|
+| Salida del pozo de la llave | Se abre la pared x 461–463 entre y 7,5 y 9,5. Desde arriba del pozo (el mismo por el que se sube a la llave) se sigue a la derecha. |
+| Repisa del salto | x 463–466, cima 7,5 (acantilado `Solid`). Mancha gris en el borde. |
+| Pozo | x 466–499, suelo en y −6,5 con pinchos `S6_Pinchos_Pozo` en todo el fondo y 3 manchas grises. |
+| P1, fijo (`Platforms`, ladrillo) | x 475–477, cima 0. |
+| P2, cae (`S6_Pilar2_Cae`, copia de la repisa de la llave, `fallDelay` 0,35) | Centro (481; −0,5), 2 × 1, cima 0. |
+| P3, fijo con pinchos a la izquierda (`S6_Pinchos_P3`, x 485,5) | x 485–488, cima 1. Se pisa la parte derecha. |
+| P4, cae (`S6_Pilar4_Cae`) | Centro (492; 0,5), cima 1. |
+| P5, fijo y estrecho | x 496–497, cima 2. |
+| Repisa de la puerta | x 499–506, cima 5. Puerta en x 502,5. Pared final x 506–508. |
+
+**Recorrido:** coger la llave → bajar → volver al pozo de x 458–461 y subir con doble salto → a la derecha por la salida nueva → saltar desde el borde (salto leve o máximo) → P1 → leve a P2 (sin pararse, cae) → máximo a la parte derecha de P3 → leve a P4 (cae) → leve a P5 → máximo o doble a la repisa → puerta.
+
+| Prueba (teclado simulado salvo lo indicado) | Resultado |
+|---|---|
+| Andar y dejarse caer desde el borde | Muere (cae en x ≈ 474, antes de P1). |
+| Salto leve / máximo desde el borde | Aterrizan en P1 (x 475,9 / 476,2). |
+| Doble máximo desde el borde | Aterriza en P2 (x 481). |
+| Máximo + leve desde el borde | Muere (cae entre P2 y P3). |
+| Recorrido de pilares P1 → repisa de la puerta | 3 de 3 vivos. |
+| Quedarse en P2 | Cae y muere. |
+| Caer en la mitad con pinchos de P3 | Muere. |
+| P5 → repisa con un solo máximo | Llega. |
+| Nivel completo por script, con llave | Sin morir; portal abierto en x 501,4, 83,0 s. |
+| Consola | 0 errores, 0 avisos. |
+
+**Riesgos:**
+- Si el jugador sale por la salida nueva sin la llave, llega a la puerta cerrada y no puede volver: tiene que morir y reaparece en `Checkpoint2` (x 373,5).
+- Morir en el pozo o en los pilares devuelve a `Checkpoint2`, a unas 100 u de la sección: se repite la pared alta y la llave.
+- La primera pasada del script murió en x 189,6, en la zona de pinchos x 190–192, que no se tocó: saltó tarde por un tirón del editor. Con más margen en el script pasó.
+
+**No probado:** teclado físico; aspecto visual de la sección nueva en el juego; ritmo de la frase nueva junto a `T_Llave`.
+
+### Sección final: bloques sueltos en lugar de pilares (2026-11-08, v15)
+
+Copia previa en `Archive/Level_01_v14b_antes.unity` (= v14); final en `Archive/Level_01_v15.unity`. Sin código nuevo. Se volvió a pasar `LevelArtGenerator.ApplyToScene`. **Longitud: 525 u.** Sustituye la disposición de pilares de v14: se mantienen la llave, la salida, la repisa del salto, la pista y `T_SaltoFe`.
+
+[Aprobado por Jesús] Después del salto de fe, una secuencia de bloques sueltos de ladrillo, separados, que suben bloque a bloque hasta la puerta; algunos con pinchos. Los detalles son [Decisión] dentro de lo pedido.
+
+| Bloque | x | Cima y | Tipo | Salto desde el anterior |
+|---|---|---|---|---|
+| B1 | 475–477 | 0 | Fijo | Salto de fe: leve o máximo desde el borde (x 465,3). |
+| B2 | 480–482 | 1 | Fijo | Leve. |
+| B3 | 485,5–487,5 | 1,5 | Cae (`S6_Bloque3_Cae`, 0,35 s) | Leve, sin pararse. |
+| B4 | 491–493 | 3 | Fijo; pinchos en la mitad izquierda (`S6_Pinchos_B4`, x 491,5) | Máximo, cayendo en la mitad derecha. |
+| B5 | 496–498 | 4,5 | Fijo; pinchos debajo (`S6_Pinchos_B5_Abajo`, x 496,5 y 497,5) | Máximo; quedarse corto contra su cara inferior mata. |
+| B6 | 501–503 | 5,5 | Cae (`S6_Bloque6_Cae`) | Leve, sin pararse. |
+| B7 | 506–508 | 7 | Fijo; pinchos en la mitad derecha (`S6_Pinchos_B7`, x 507,5) | Máximo, cayendo en la mitad izquierda. |
+| B8 | 510–512 | 8,5 | Fijo | Máximo, por encima de los pinchos de B7. |
+| Repisa de la puerta | 515–523 | 12,5 | `Solid` | **Doble salto** hacia arriba: con un solo máximo no llega. |
+
+- La puerta (`DataPortal`) y su luz `Cyan_Portal` están en (519; 13,5); `T_Puerta` en x 513. La pared final va de x 523 a 525.
+- Bloques fijos en `Platforms` (`Tile_Platform`, ladrillo); los que caen son copias de la repisa de la llave en 2 × 2.
+- Fondo del pozo x 466–515 en y −6,5, con `S6_Pinchos_Pozo` en todo su ancho. Manchas grises nuevas en x 489, 495,2 y 504,5.
+- `CameraFollow.maxBounds.x` = 525. `KillZone`: centro x 257,5, ancho 537 (x −11 a 526).
+
+| Prueba (teclado simulado) | Resultado |
+|---|---|
+| Salto de fe leve / máximo | Aterrizan en B1 (x 476,1). |
+| Secuencia completa B1 → repisa de la puerta | 3 de 3 vivos. |
+| Quedarse en B3 | Cae y muere. |
+| B3 → mitad izquierda de B4 | Muere en los pinchos. |
+| B4 → B5 con salto leve | Llega (no se queda corto). |
+| Andar a la derecha en B7 | Muere en los pinchos. |
+| B8 → repisa: un solo máximo / doble máximo / máximo + leve | Muere (2 de 2) / llega (3 de 3) / llega. |
+| Nivel completo por script, con llave | Sin morir; portal en x 517,9, 85,8 s. |
+| Consola | 0 errores, 0 avisos. |
+
+**Riesgos:** los mismos de v14: salir sin la llave deja al jugador encerrado en la repisa, y morir en esta sección devuelve a `Checkpoint2`.
+
+**No probado:** teclado físico; aspecto visual.
+
+---
+
 ## Diálogos del Sistema – Nivel 1
 
 > **Desfasado desde el 2026-11-04:** esta tabla describe el nivel original. Las frases vigentes están en "Nivel 1: rediseño troll".
@@ -1030,6 +1459,23 @@ Inventario de `Assets` revisado el 2026-10-27. `TextMesh Pro/` y `Welcome/` son 
 - `Archive/Level_01_v1.unity`: copia de `Level_01` antes de la fusión; abre bien. No está en Build Settings. Usa los mismos prefabs, así que si se cambia un prefab también cambia en la copia.
 - `Archive/Level_01_v2.unity`: nivel fusionado (etapas 1 a 3) antes del rediseño troll; abre bien. No está en Build Settings. Mismos prefabs: si se cambia un prefab también cambia aquí.
 - `Archive/Level_01_v3.unity`: nivel antes de los pisos disfrazados y las trampas sorpresa; abre bien. No está en Build Settings. Comparte prefabs y tiles.
+- `Archive/Level_01_v4.unity`: nivel antes de la etapa 1 de mejoras; se copió pero no se abrió para comprobarla. No está en Build Settings.
+- `Archive/Level_01_v5.unity`: nivel antes del rediseño de x 52–66; se copió pero no se abrió para comprobarla. No está en Build Settings.
+- `Archive/Level_01_v6.unity`: nivel antes de la etapa 2 de mejoras; se copió pero no se abrió para comprobarla. No está en Build Settings.
+- `Archive/Level_01_v7.unity`: nivel antes de la etapa 3 (331 u); se copió pero no se abrió para comprobarla. No está en Build Settings.
+- `Archive/Level_01_v8.unity`: nivel antes de la corrección de checkpoints, islas y bloques (463 u); se copió pero no se abrió para comprobarla. No está en Build Settings.
+- `Archive/Level_01_v9.unity`: copia idéntica de `Level_01` con la corrección de checkpoints, islas y bloques (2026-11-08). No está en Build Settings. **Las copias de `Archive` no son el nivel que se edita.**
+- `Archive/Level_01_v9b_antes.unity`: igual que v9; copia de seguridad antes de bajar pinchos y bloques. No está en Build Settings.
+- `Archive/Level_01_v10.unity`: copia idéntica de `Level_01` con pinchos de islas a y 7 y bloques S5 a y 1,9 (2026-11-08). No está en Build Settings.
+- `Archive/Level_01_v10b_antes.unity`: igual que v10; copia de seguridad antes de acelerar los pinchos. No está en Build Settings.
+- `Archive/Level_01_v11.unity`: copia idéntica de `Level_01` con los pinchos de las islas a gravedad 5 (2026-11-08). No está en Build Settings.
+- `Archive/Level_01_v12.unity`: copia idéntica de `Level_01` con los cuadros S5 a y 1,4 (2026-11-08). No está en Build Settings.
+- `Archive/Level_01_v12b_antes.unity`: igual que v12; copia de seguridad antes de la pared alta. No está en Build Settings.
+- `Archive/Level_01_v13.unity`: copia idéntica de `Level_01` con la pared x 421–423 hasta y 5 y los cuadros como escalón (2026-11-08). No está en Build Settings.
+- `Archive/Level_01_v13b_antes.unity`: igual que v13; copia de seguridad antes de la sección final nueva. No está en Build Settings.
+- `Archive/Level_01_v14.unity`: copia idéntica de `Level_01` con el salto de fe, los pilares y la puerta arriba (508 u, 2026-11-08). No está en Build Settings.
+- `Archive/Level_01_v14b_antes.unity`: igual que v14; copia de seguridad antes de los bloques sueltos. No está en Build Settings.
+- `Archive/Level_01_v15.unity`: copia idéntica de `Level_01` con la secuencia de 8 bloques sueltos y la puerta en (519; 13,5) (525 u, 2026-11-08). No está en Build Settings.
 - `Backups/Level_01_Backup_2026-11-04.unity`: copia idéntica anterior; se puede borrar a mano.
 - `SampleScene.unity`: viene de la plantilla de Unity y no se usa. Se quitó de Build Settings el 2026-10-27, pero el archivo sigue en el proyecto.
 
@@ -1148,6 +1594,13 @@ En `Sandbox_Player`, la geometría `Level_Greybox/*` (suelos, muros y techo) y `
 | 2026-11-04 | Muro x 96–100 con atajo troll por pared falsa y ruta de arriba más difícil (decisión de Jesús). Pruebas automáticas OK; falta teclado. |
 | 2026-11-04 | Pisos disfrazados que tapan los fosos, caída a 0,2 s, trampas en tramos vacíos y arte nuevo con parallax, partículas y luces (decisión de Jesús). Pruebas automáticas OK; falta teclado físico. |
 | 2026-11-04 | Coyote time de 0,1 s (decisión de Jesús) y corrección del doble salto, que se gastaba casi sin efecto al subir. Columna en el hueco de x 131 y escalón movido a x 90–91. Pruebas con teclado simulado OK; falta teclado físico. |
+| 2026-11-06 | Corrección de `Level_01`: sin checkpoint medio, falso en x 183,5, real invertido en x 289, pinchos que caen en las islas y bloques x 419–421 más altos (decisión de Jesús). Recorrido por script OK, consola limpia; falta teclado físico. Copia en `Archive/Level_01_v8.unity`. |
+| 2026-11-08 | Pinchos de las islas de y 10 a y 7 y bloques S5 de y 3,4 a y 1,9 (decisión de Jesús). Pruebas con teclado simulado y recorrido por script OK, consola limpia. Copias `v9`, `v9b_antes` y `v10`. |
+| 2026-11-08 | Pinchos de las islas con gravedad 5 (decisión de Jesús). Recorrido por script OK, consola limpia. Copias `v10b_antes` y `v11`. Cuadros S5: "choca y vuelve" no se consigue sin cambiar la mecánica; pendiente de Jesús. |
+| 2026-11-08 | Cuadros S5 a y 1,4 (opción C de Jesús). Recorrido por script OK, consola limpia. Copia `v12`. |
+| 2026-11-08 | Pared x 421–423 hasta y 5 y cuadros S5 sobre el pilar como escalón (opción 2 de Jesús). Recorrido por script OK, consola limpia. Copias `v12b_antes` y `v13`. |
+| 2026-11-08 | Sección final nueva (propuesta de Jesús): salto de fe, 5 pilares (3 fijos y 2 que caen, uno con pinchos) y puerta arriba en x 502,5. Nivel de 508 u. Recorrido por script OK, consola limpia. Copias `v13b_antes` y `v14`. |
+| 2026-11-08 | Sección final rehecha con 8 bloques sueltos que suben hasta la puerta (corrección de Jesús). Nivel de 525 u. Recorrido por script OK, consola limpia. Copias `v14b_antes` y `v15`. |
 
 ---
 
