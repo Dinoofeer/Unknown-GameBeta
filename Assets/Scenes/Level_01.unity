@@ -646,8 +646,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -965,8 +973,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -1806,8 +1822,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -2986,6 +3010,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S2_Ayudante_B
@@ -3148,6 +3176,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S5_Pincho_Camara
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 8
@@ -4097,6 +4133,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Muro_Pincho
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerOffsetX
       value: 0
@@ -5897,6 +5941,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S1_Bloque_Foso
@@ -7010,8 +7058,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -9689,6 +9745,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S2_Ruta_Bloque
@@ -9908,8 +9968,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -10028,6 +10096,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
       value: 12
       objectReference: {fileID: 0}
@@ -10137,8 +10213,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -10712,8 +10796,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -10969,8 +11061,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -183472,6 +183572,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S3_Ayudante_B
@@ -183822,6 +183926,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S2_Ayudante_A
@@ -184449,6 +184557,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
       value: 12
       objectReference: {fileID: 0}
@@ -185063,8 +185179,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -185490,8 +185614,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -185639,6 +185771,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S2_Orilla_Bloque
@@ -186130,8 +186266,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -187140,6 +187284,8 @@ MonoBehaviour:
   visual: {fileID: 765651125}
   fallGravityScale: 12
   disableAfterFalling: 2
+  shakeClip: {fileID: 0}
+  breakClip: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
 --- !u!61 &723094728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188976,6 +189122,14 @@ PrefabInstance:
       value: S3_Pincho
       objectReference: {fileID: 0}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerOffsetX
       value: 3.8
       objectReference: {fileID: 0}
@@ -189049,6 +189203,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S4_Pincho_Isla
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 14
@@ -189278,8 +189440,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -189516,6 +189686,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S1_Bloque_Muro
@@ -190395,8 +190569,16 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -191015,6 +191197,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S1_Bloque_Foso_C
@@ -192641,6 +192827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S5_Bloque_B
@@ -192707,6 +192897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S3_Ayudante_A
@@ -194002,8 +194196,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -194302,6 +194504,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2963701711565335965, guid: d748799ff05a36f458a9da9467a8b35b, type: 3}
   m_PrefabInstance: {fileID: 1124355712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1131708930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2066339740914709086, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f3e6228ca228684e9423fb19ab61f26, type: 3}
+    - target: {fileID: 2066339740914709086, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426358041007389447, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_Name
+      value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150053083068628718, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: moveSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f3e6228ca228684e9423fb19ab61f26, type: 3}
+    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: cameraFollow
+      value: 
+      objectReference: {fileID: 519420033}
+    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: respawnManager
+      value: 
+      objectReference: {fileID: 4388325580390447423}
+    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: progressPersistence
+      value: 
+      objectReference: {fileID: 4388325580390447425}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
 --- !u!1 &1133015856
 GameObject:
   m_ObjectHideFlags: 0
@@ -197751,8 +198034,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -198232,6 +198523,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S2_Muro_Bloque
@@ -198262,6 +198557,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S3_Pincho_Pilar
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 14
@@ -198513,8 +198816,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -199019,6 +199330,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Pincho_Previo
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 7
@@ -200125,6 +200444,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S4_Pincho_Isla
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 14
@@ -201759,8 +202086,16 @@ PrefabInstance:
       value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -201908,6 +202243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S1_Bloque_Muro_C
@@ -202799,8 +203138,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -203737,6 +204084,8 @@ MonoBehaviour:
   visual: {fileID: 393230605}
   fallGravityScale: 12
   disableAfterFalling: 2
+  shakeClip: {fileID: 0}
+  breakClip: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
 --- !u!61 &1518673678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -206598,6 +206947,14 @@ PrefabInstance:
       value: S3_Pincho_Pasillo
       objectReference: {fileID: 0}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerOffsetX
       value: 3
       objectReference: {fileID: 0}
@@ -206869,6 +207226,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Ruta_Pincho
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 8
@@ -207355,6 +207720,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Pincho_B
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerOffsetX
       value: 3.8
@@ -208083,6 +208456,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S3_Pincho_CP1
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerOffsetX
       value: 3
@@ -210568,13 +210949,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1133015857}
     m_Modifications:
     - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
-      propertyPath: persistentId
-      value: level01_cp01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: reachedClip
       value: 
       objectReference: {fileID: 8300000, guid: 6307609af1631ea41b2ba937e4baf73f, type: 3}
+    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+      propertyPath: persistentId
+      value: level01_cp01
+      objectReference: {fileID: 0}
     - target: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 289
@@ -210660,6 +211041,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+--- !u!4 &1756425360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+  m_PrefabInstance: {fileID: 1756425359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1756425361 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
@@ -210669,13 +211055,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d308f31ed4fd34b4fb47e485ad0db422, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
---- !u!4 &1756425360 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
-  m_PrefabInstance: {fileID: 1756425359}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1765090360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210761,8 +211142,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -211150,8 +211539,16 @@ PrefabInstance:
       value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -212095,6 +212492,14 @@ PrefabInstance:
       value: S2_Pincho_A
       objectReference: {fileID: 0}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerOffsetX
       value: 1
       objectReference: {fileID: 0}
@@ -212231,13 +212636,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1133015857}
     m_Modifications:
     - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
-      propertyPath: persistentId
-      value: level01_cp02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: reachedClip
       value: 
       objectReference: {fileID: 8300000, guid: 6307609af1631ea41b2ba937e4baf73f, type: 3}
+    - target: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+      propertyPath: persistentId
+      value: level01_cp02
+      objectReference: {fileID: 0}
     - target: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 373.5
@@ -212323,6 +212728,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+--- !u!4 &1846857614 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
+  m_PrefabInstance: {fileID: 1846857613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1846857615 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5974101363325223301, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
@@ -212332,13 +212742,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d308f31ed4fd34b4fb47e485ad0db422, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
---- !u!4 &1846857614 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7339257012460757028, guid: 13cbfa07a6d0c1d4a926a88215c95ce3, type: 3}
-  m_PrefabInstance: {fileID: 1846857613}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1848066071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212625,11 +213030,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7874887269165341773, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 7874887269165341773, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 7874887269165341773, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -212884,6 +213289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S5_Bloque_A
@@ -213450,8 +213859,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -214171,6 +214588,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S1_Bloque_Muro_B
@@ -214572,8 +214993,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -214619,6 +215048,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: S4_Pincho_Isla
       objectReference: {fileID: 0}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: alertClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a57d6937f6092b64d85c2689ac13aea8, type: 3}
+    - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: impactClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcd6fce820f34b41b59f182c83135c4, type: 3}
     - target: {fileID: 4152905729553174663, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
       propertyPath: triggerSize.y
       value: 14
@@ -214823,6 +215260,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247395804728050472, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: revealClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0568efc1f8ae5724cbb73d3a1b74c91b, type: 3}
     - target: {fileID: 9045136481623882345, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
       propertyPath: m_Name
       value: S1_Bloque_Foso_B
@@ -215322,8 +215763,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: breakClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a9ab9ff3bad8c4bb45a90385a07b3b, type: 3}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallDelay
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
+      propertyPath: shakeClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7511928361579358020, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: fallGravityScale
@@ -216154,7 +216603,7 @@ MonoBehaviour:
   jumpClip: {fileID: 8300000, guid: cf6d0d05514219d4f9c2529f76878901, type: 3}
   doubleJumpClip: {fileID: 8300000, guid: cf6d0d05514219d4f9c2529f76878901, type: 3}
   deathClip: {fileID: 8300000, guid: 89fb5f35cc34c6640bbfca6d1dc21bf3, type: 3}
-  jumpVolume: 4.64
+  jumpVolume: 1.4
   deathVolume: 10
 --- !u!82 &2054011536
 AudioSource:
@@ -217802,7 +218251,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 989c344c2620ebd4d829b51cd2a80dcf, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RespawnManager
 --- !u!1 &4388325580390447424 stripped
 GameObject:
@@ -217819,7 +218268,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fab6e4abe00d0044e9cfe0f873341b3c, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelProgressPersistence
   respawnManager: {fileID: 4388325580390447423}
   stats: {fileID: 1801643413}
@@ -217886,75 +218335,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb018ddd019586f4d93d963c398be785, type: 3}
---- !u!1001 &1131708930
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2426358041007389447, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_Name
-      value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: cameraFollow
-      value:
-      objectReference: {fileID: 519420033}
-    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: respawnManager
-      value:
-      objectReference: {fileID: 4388325580390447423}
-    - target: {fileID: 6170549557899890923, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: progressPersistence
-      value:
-      objectReference: {fileID: 4388325580390447425}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6310261884164617875, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a612dcd5a5ec8c6448546703e3a1b44c, type: 3}
 --- !u!1 &91536006
 GameObject:
   m_ObjectHideFlags: 0

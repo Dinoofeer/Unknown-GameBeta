@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6738300482384361570}
   - component: {fileID: 3558836994674416373}
   - component: {fileID: 6170549557899890923}
+  - component: {fileID: 4150053083068628718}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -81,3 +82,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d387a56169a8184fa4d7b33edac282c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
+  respawnManager: {fileID: 0}
+  cameraFollow: {fileID: 0}
+  progressPersistence: {fileID: 0}
+  mainMenuScene: Menu-Principal
+--- !u!114 &4150053083068628718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426358041007389447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fd8376394004744abc7e826fea9b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuAudioButton
+  clickSound: {fileID: 8300000, guid: 4f3e6228ca228684e9423fb19ab61f26, type: 3}
