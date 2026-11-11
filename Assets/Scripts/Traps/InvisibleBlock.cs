@@ -15,6 +15,8 @@ public class InvisibleBlock : MonoBehaviour
     [Header("Reaparición (Mecánica 04)")]
     [Tooltip("Si está activo, el bloque sigue visible después de que el jugador muera.")]
     [SerializeField] private bool stayRevealedAfterDeath = false;
+    [Header("Audio")]
+    [SerializeField] private AudioClip revealClip;
 
     private bool revealed;
 
@@ -55,6 +57,7 @@ public class InvisibleBlock : MonoBehaviour
     private void Reveal(Collider2D playerCollider, Rigidbody2D playerRb)
     {
         revealed = true;
+        SfxPlayer.Play(revealClip);   // audio
         spriteRenderer.enabled = true;
         solidCollider.enabled = true;
         detector.enabled = false;
