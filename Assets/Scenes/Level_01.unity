@@ -212663,6 +212663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5980822928129553633, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 776318171, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -212676,6 +212680,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5918477175565064202, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2054011535}
+    - targetCorrespondingSourceObject: {fileID: 5918477175565064202, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054011537}
   m_SourcePrefab: {fileID: 100100000, guid: 59f135570152a9f4f81b75bd130258c1, type: 3}
 --- !u!114 &1855388511 stripped
 MonoBehaviour:
@@ -218909,6 +218916,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2054011537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054011531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be52d469de90bf747a6c0c4beb6284c0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::EmmetAnimation
+  idleFrames:
+  - {fileID: 776318171, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 1470166145, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 1240475035, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1927413421, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1277710307, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1733765996, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 422023568, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -246153103, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  walkFrames:
+  - {fileID: 1838058240, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 493924061, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 234083145, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 2076352814, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1982549804, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 2115593695, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 200365339, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1939948632, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  riseFrames:
+  - {fileID: 2092444723, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 1724472349, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1736141321, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  fallFrames:
+  - {fileID: -1109347944, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -351274273, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  deathFrames:
+  - {fileID: 270126774, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -228308556, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 960275788, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -319956085, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1268620934, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1573663861, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -722874113, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -147819945, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  respawnFrames:
+  - {fileID: -1119730991, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -827931203, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1199294241, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 670143927, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1136761056, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -1646724237, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: -630095116, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
+  - {fileID: 843752442, guid: addeece017f3a574f82a81d21ca6a58a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
