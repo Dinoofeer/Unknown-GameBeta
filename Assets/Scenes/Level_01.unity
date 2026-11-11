@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -233,6 +237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -357,6 +365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -419,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -784,6 +800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -846,6 +866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -911,7 +935,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1025,6 +1049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1157,6 +1185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1339,6 +1371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1401,6 +1437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1563,6 +1603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Techo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1846,6 +1890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1908,6 +1956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1970,6 +2022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2098,6 +2154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2252,6 +2312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2314,6 +2378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2376,6 +2444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2438,6 +2510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2744,6 +2820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2910,6 +2990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Ayudante_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2972,6 +3056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3034,6 +3122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3116,6 +3208,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3497,6 +3593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3645,6 +3745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3707,6 +3811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3769,6 +3877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3893,6 +4005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4029,6 +4145,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4091,6 +4211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4153,6 +4277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4289,6 +4417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4351,6 +4483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4475,6 +4611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4537,6 +4677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4665,6 +4809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4727,6 +4875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4879,6 +5031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4941,6 +5097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5003,6 +5163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5169,6 +5333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5231,6 +5399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5359,6 +5531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5725,6 +5901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Bloque_Foso
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6045,6 +6225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Techo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6107,6 +6291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6169,6 +6357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6297,6 +6489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6451,6 +6647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6513,6 +6713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6695,6 +6899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_MuroSuelo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6889,6 +7097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7055,6 +7267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7117,6 +7333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9410,7 +9630,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65df152fa3f119849bdd74fdc883f154, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9473,6 +9693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Ruta_Bloque
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9997,6 +10221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10059,6 +10287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10121,6 +10353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10249,6 +10485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10311,6 +10551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10373,6 +10617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10434,7 +10682,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -10548,6 +10796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10804,6 +11056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10928,6 +11184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10990,6 +11250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183212,6 +183476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S3_Ayudante_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183430,6 +183698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183554,6 +183826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Ayudante_A
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183616,6 +183892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_B4
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183678,6 +183958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183934,6 +184218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183996,6 +184284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -184058,6 +184350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -184672,6 +184968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -184733,7 +185033,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -184847,6 +185147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -184971,6 +185275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185269,6 +185577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185331,6 +185643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Orilla_Bloque
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185455,6 +185771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185517,6 +185837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185579,6 +185903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185772,7 +186100,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -185886,6 +186214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185948,6 +186280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -186010,6 +186346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -186072,6 +186412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -186134,6 +186478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187049,6 +187397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187111,6 +187463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187173,6 +187529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187301,6 +187661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187363,6 +187727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187491,6 +187859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187697,6 +188069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187829,6 +188205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187891,6 +188271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188073,6 +188457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188135,6 +188523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188226,7 +188618,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65df152fa3f119849bdd74fdc883f154, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -188355,6 +188747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188487,6 +188883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188549,6 +188949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188619,6 +189023,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -3.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188705,6 +189113,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188767,6 +189179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188832,7 +189248,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -189038,6 +189454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189100,6 +189520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Bloque_Muro
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189162,6 +189586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189224,6 +189652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189286,6 +189718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189724,6 +190160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189921,7 +190361,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -190513,6 +190953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -190575,6 +191019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Bloque_Foso_C
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -190637,6 +191085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -190761,6 +191213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -190823,6 +191279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -190885,6 +191345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -190947,6 +191411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191009,6 +191477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191191,6 +191663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191253,6 +191729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191315,6 +191795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191501,6 +191985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191629,6 +192117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191757,6 +192249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191819,6 +192315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191881,6 +192381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -191943,6 +192447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192005,6 +192513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192067,6 +192579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192129,6 +192645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S5_Bloque_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192191,6 +192711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S3_Ayudante_A
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192258,6 +192782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192320,6 +192848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192382,6 +192914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192607,6 +193143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192669,6 +193209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_B5_Abajo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192731,6 +193275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192855,6 +193403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193009,6 +193561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193071,6 +193627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193133,6 +193693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193195,6 +193759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193257,6 +193825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193319,6 +193891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193518,6 +194094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193580,6 +194160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193642,6 +194226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -196382,6 +196970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -196444,6 +197036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -196990,6 +197586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -197052,6 +197652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -197234,6 +197838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -197475,6 +198083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -197624,6 +198236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S2_Muro_Bloque
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -197706,6 +198322,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198043,6 +198663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198171,6 +198795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198233,6 +198861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198361,6 +198993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Techo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198443,6 +199079,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198505,6 +199145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198567,6 +199211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198629,6 +199277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198691,6 +199343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198753,6 +199409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198815,6 +199475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198877,6 +199541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -198939,6 +199607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199001,6 +199673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199063,6 +199739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199191,6 +199871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199505,6 +200189,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199641,6 +200329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199835,6 +200527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -199897,6 +200593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200063,6 +200763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200337,6 +201041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200404,6 +201112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200466,6 +201178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200528,6 +201244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200590,6 +201310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200726,6 +201450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200788,6 +201516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200916,6 +201648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201110,6 +201846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201172,6 +201912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Bloque_Muro_C
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201234,6 +201978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201296,6 +202044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201358,6 +202110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201420,6 +202176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201482,6 +202242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201544,6 +202308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201606,6 +202374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201668,6 +202440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201730,6 +202506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201924,6 +202704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201985,7 +202769,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -202173,6 +202957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202235,6 +203023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202297,6 +203089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202359,6 +203155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202534,6 +203334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202601,6 +203405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202663,6 +203471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202725,6 +203537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202787,6 +203603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202849,6 +203669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205441,6 +206265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205569,6 +206397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205631,6 +206463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205805,6 +206641,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205867,6 +206707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205929,6 +206773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205991,6 +206839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206073,6 +206925,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206271,6 +207127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206333,6 +207193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206395,6 +207259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206457,6 +207325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206527,6 +207399,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -3.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206589,6 +207465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206651,6 +207531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206805,6 +207689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206867,6 +207755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206929,6 +207821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -206996,6 +207892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207058,6 +207958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207223,6 +208127,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207563,6 +208471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207625,6 +208537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207687,6 +208603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207920,6 +208840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208076,6 +209000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208138,6 +209066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208246,6 +209178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208370,6 +209306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208498,6 +209438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208560,6 +209504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208622,6 +209570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208684,6 +209636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208746,6 +209702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209128,6 +210088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209264,6 +210228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209326,6 +210294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209388,6 +210360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209450,6 +210426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209561,6 +210541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209707,7 +210691,7 @@ PrefabInstance:
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2114632737, guid: 5a953802a7578084f919d6673b45dd5e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ebb304f8bb11d947a7b825babe35242, type: 3}
     - target: {fileID: 5586371942547833791, guid: 556143d20d2f8ef4b916f13551281d89, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -209821,6 +210805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -209945,6 +210933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210007,6 +210999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210201,6 +211197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210355,6 +211355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210417,6 +211421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210479,6 +211487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210672,6 +211684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210946,6 +211962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211008,6 +212028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211078,6 +212102,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211287,6 +212315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211349,6 +212381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211477,6 +212513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211629,6 +212669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_MuroTecho
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211761,6 +212805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S5_Bloque_A
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211823,6 +212871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211885,6 +212937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212075,6 +213131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212142,6 +213202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Techo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212204,6 +213268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212386,6 +213454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_MuroSuelo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212522,6 +213594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212752,6 +213828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212814,6 +213894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -212942,6 +214026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213004,6 +214092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Bloque_Muro_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213128,6 +214220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213282,6 +214378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213500,6 +214600,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 7664042614544551233, guid: 6e91ff549db72984cb35cda09bb56711, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: b5b42ffd529e479438ea0d69656e1225, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213624,6 +214728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S1_Bloque_Foso_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5651417101486091071, guid: f0fb19a5485e13946a3b358b70157864, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 2b0e56d9086677642839c2da8b0ad0d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213686,6 +214794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Techo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213748,6 +214860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213810,6 +214926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -213872,6 +214992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Pared
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214000,6 +215124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214178,6 +215306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214240,6 +215372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214302,6 +215438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_B5_Abajo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214411,6 +215551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214473,6 +215617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214535,6 +215683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214671,6 +215823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_B7
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214733,6 +215889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214795,6 +215955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -214857,6 +216021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215142,6 +216310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215204,6 +216376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215370,6 +216546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215432,6 +216612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215494,6 +216678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215556,6 +216744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215618,6 +216810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215800,6 +216996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215862,6 +217062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215924,6 +217128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -215986,6 +217194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -216048,6 +217260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -216172,6 +217388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S6_Pinchos_Pozo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -216234,6 +217454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_Techo
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -216296,6 +217520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_MuroTecho
       objectReference: {fileID: 0}
+    - target: {fileID: 3094015257989376867, guid: dde76f0110053754d994d03f493b7941, type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 21300000, guid: 852fb7fa0a8963f4eb42a6fd28e6afa0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
