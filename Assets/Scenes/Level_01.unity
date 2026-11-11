@@ -214848,7 +214848,7 @@ MonoBehaviour:
   jumpClip: {fileID: 8300000, guid: cf6d0d05514219d4f9c2529f76878901, type: 3}
   doubleJumpClip: {fileID: 8300000, guid: cf6d0d05514219d4f9c2529f76878901, type: 3}
   deathClip: {fileID: 8300000, guid: 89fb5f35cc34c6640bbfca6d1dc21bf3, type: 3}
-  jumpVolume: 4.64
+  jumpVolume: 2
   deathVolume: 10
 --- !u!82 &2054011536
 AudioSource:
