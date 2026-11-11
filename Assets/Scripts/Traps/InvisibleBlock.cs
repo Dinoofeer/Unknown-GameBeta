@@ -55,6 +55,7 @@ public class InvisibleBlock : MonoBehaviour
     private void Reveal(Collider2D playerCollider, Rigidbody2D playerRb)
     {
         revealed = true;
+        TrollTrap.Mark();
         spriteRenderer.enabled = true;
         solidCollider.enabled = true;
         detector.enabled = false;

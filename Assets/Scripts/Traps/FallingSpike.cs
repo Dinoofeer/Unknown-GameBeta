@@ -69,6 +69,7 @@ public class FallingSpike : MonoBehaviour
         if (fallRoutine != null || !other.CompareTag("Player"))
             return;
 
+        TrollTrap.Mark();
         fallRoutine = StartCoroutine(ShakeAndFall());
     }
 

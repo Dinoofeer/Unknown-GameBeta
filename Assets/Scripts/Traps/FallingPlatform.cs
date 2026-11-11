@@ -65,6 +65,7 @@ public class FallingPlatform : MonoBehaviour
             visual.localPosition = visualStartLocalPosition;
 
         // Sin collider: el jugador pierde el apoyo al instante y la plataforma cae atravesándolo todo.
+        TrollTrap.Mark();
         col.enabled = false;
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = fallGravityScale;

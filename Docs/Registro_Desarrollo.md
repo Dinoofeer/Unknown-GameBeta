@@ -1365,6 +1365,77 @@ Copia previa en `Archive/Level_01_v14b_antes.unity` (= v14); final en `Archive/L
 
 ---
 
+## Frases del Sistema iguales al GDD (2026-11-10)
+
+Rama `Nivel01`, ya con el menú y el audio de `feature/audio`. Copia previa en `Archive/Level_01_v15b_antes_frases.unity`. Fuente única: GDD, `03 - Historia y Mundo/04 - Diálogos y Narrativa.md`, Nivel 1.
+
+| Etiqueta | Decisión |
+|---|---|
+| [Aprobado por Jesús] | Solo se usan frases del GDD, con el texto literal. Se quita todo lo demás. |
+| [GDD] | Burlas al morir con las tres reglas: frase única en la primera muerte del juego; otra frase única en la primera muerte en trampa troll (si la primera muerte ya fue troll, se guarda para la siguiente muerte troll); burla al azar cada 3 muertes entre las 6 del GDD. |
+| [Decisión] | "Trampa troll", según la definición del GDD: plataforma que cae, checkpoint falso, pincho que cae, bloque invisible y pared falsa. Cuenta como troll una muerte que ocurre hasta 2 s después de activar una de ellas (`TrollTrap.Window`). Los pinchos visibles y el vacío no cuentan. |
+| [Decisión] | Las frases fijas mantienen su orden en el GDD, pero se colocan en el sitio equivalente del nivel actual (tabla). |
+| Pendiente | El cuadro del Sistema sigue encolando las frases en vez de reemplazarlas (regla de Interfaz Visual). Se cambiará junto con la ventana Sistema.exe, la fuente y el sonido por letra. |
+
+| # GDD | Momento (GDD) | Dónde sale ahora |
+|---|---|---|
+| 1 | Al aparecer | `T_Inicio_GDD` (x 2), primera frase de la secuencia. |
+| 2 | Justo después de la 1 | `T_Inicio_GDD`, segunda frase de la secuencia. |
+| 3 | Antes de la primera trampa (pinchos) | `T_PrimerosPinchos` (x 10), antes de los pinchos de x 13. Va en cola tras la 1 y la 2, así que quien corre la lee algo tarde. |
+| 4 | Muro del doble salto | `T_DobleSalto` (x 152). |
+| 5 | Campo de pinchos | `T_CampoPinchos` (x 319), túnel con pinchos. |
+| 6 | Checkpoint falso | `T_CheckpointFalso` (x 174). |
+| 7 | Hueco con plataforma invisible | `T_Hueco` (x 212). |
+| 8 | Al recoger la llave | `T_Llave` (x 451). |
+| 9 | Antes del checkpoint real | `T_AntesCheckpoint` (x 276), antes del checkpoint de x 289. |
+| 10 | Antes de la última trampa | `T_UltimaTrampa` (x 464,5), en el borde del salto de fe. |
+| 11 | Frente al portal | `T_Puerta` (x 513), se repite cada vez que se entra. |
+| 12 | Al completar el nivel | `GoalDoor.completedLine`. |
+| Primera muerte | — | `NarratorDeathTaunts.firstDeathLine`. |
+| Primera muerte troll | — | `NarratorDeathTaunts.firstTrollDeathLine`. |
+| Cada 3 muertes | — | `Data/Narrator/NivelUno_Burlas`: las 6 frases del GDD. |
+
+**Eliminado:** `T_Demo` ("Bienvenido a la demo…"), `T_Suelo` ("¿Ves? Solo era el suelo…"), `T_Descanso1` ("Descansa, Novato…"), `T_ParedesFalsas` ("Las paredes de este juego…"), `T_Atajo` ("...Eso no estaba en el manual."), `T_SalidaFalsa` ("¿La salida? Ah, eso…"), `T_Checkpoint2` (su frase pasa a x 276), `T_Salida` (su frase pasa al salto de fe), `T_SaltoFe` ("Abajo no hay nada…"), la broma de la puerta en tres frases y la burla "Es la demo, Novato. La DEMO.". La primera frase del inicio y la #5 se corrigieron al texto del GDD.
+
+**Código:** nuevo `Traps/TrollTrap.cs`. Cambian `NarratorDeathTaunts.cs` (las tres reglas), `LethalHazard.cs` (opción `trollTrap`; activada en `S3_CheckpointFalso` y en el prefab `FakeCheckpoint`) y, para marcar la trampa troll, `FallingPlatform`, `FallingSpike`, `InvisibleBlock` y `FakeWall`.
+
+| Prueba | Resultado |
+|---|---|
+| Recorrido completo por script con registro de frases | Salen las 12 frases fijas, una vez cada una y en este orden: 1 y 2 (inicio), 3 (x 9), 4 (151), 6 (173), 7 (211), 9 (275), 5 (318), 8 (451), 10 (463,5), 11 (512) y 12 al cruzar la puerta. Sin morir; consola limpia. |
+| Muertes forzadas | 1.ª en pinchos visibles → "Y ahí va la primera…"; 2.ª en checkpoint falso → "Esa trampa lleva años…"; 3.ª y 6.ª → burla al azar del GDD; 4.ª en checkpoint falso → nada (la frase troll ya salió); 5.ª → nada. |
+| Recorrido por script | Una de dos pasadas murió en el primer bloque tras el salto de fe; tres saltos aislados aterrizan bien. Probablemente es un tirón del script, como el de x 189,6. |
+
+**Fuera del nivel:** el menú de pausa (de un compañero) tiene textos del Sistema que no están en el GDD: "Enserio necesitas un respiro? Apenas vamos empezando" y "JAJAJA sabia que no ibas a poder escapar, Mediocre". No se han tocado; pendiente de Jesús.
+
+## Ventana «Nivel completado» y restauración de pausa y guardado (2026-11-10)
+
+Copia previa en `Archive/Level_01_v15c_antes_nivelcompletado.unity`. [Aprobado por Jesús]: implementar solo lo que define el GDD, sin nada provisional.
+
+| Etiqueta | Decisión |
+|---|---|
+| [GDD] | Interfaz Visual, estado Éxito: ventana emergente «Nivel completado» con borde verde azulado (#3A9B8D). Muestra tiempo, muertes y un comentario mordaz de Sistema.exe. Aparece de golpe, sin transiciones suaves. Cuerpo gris carbón (#342F33) y texto crema (#FDFEC2), de la paleta. |
+| [GDD] | El comentario es la frase #12 ("...Eso no debía pasar…"). Para no mostrarla dos veces, se dice en la ventana y no en el cuadro del Sistema (`GoalDoor.lineShownByCompleteView`). |
+| [GDD] | Datos y Persistencia: se guarda al completar el nivel (`LevelProgressPersistence` escucha `GoalDoor.LevelCompleted` y llama a `SaveNow`). |
+| [Decisión] | Al abrirse la ventana se desactivan el movimiento y el salto y se anula la velocidad horizontal, porque sin control el personaje se deslizaba. El cronómetro ya se paraba. |
+| [Decisión] | Fuente: la del HUD (LiberationSans). Press Start 2P no está en el proyecto. |
+| Hallazgo | Al unir `Nivel01` con `feature/audio`, `Level_01` perdió el menú de pausa (`PauseMenu`) y el guardado de checkpoints (`LevelProgressPersistence`) que hizo `feature/menu`, y los ids de los checkpoints. Se restauraron con la configuración de su rama: `LevelProgressPersistence` en `RespawnManager` (respawn, stats, jugador, llave, cámara, checkpoints) e ids `level01_cp01` (x 289) y `level01_cp02` (x 373,5). |
+
+**Huecos del GDD (pendientes del equipo, no se implementan):** botones o cierre de la ventana, efecto de transición al cambiar de nivel, qué hacer sin nivel siguiente, animación de apertura de la puerta (sin fotogramas) y fanfarria de victoria (sin archivo). Hoy, la única salida tras completar es la pausa (ESC) → volver al menú.
+
+**Código:** nuevo `UI/LevelCompleteView.cs`. Cambian `GoalDoor.cs` (`CompletedLine` y `lineShownByCompleteView`) y `LevelProgressPersistence.cs` (guardar al completar).
+
+| Prueba (teclado simulado) | Resultado |
+|---|---|
+| ESC en mitad del nivel | Pausa (timeScale 0) y vuelve con otro ESC. |
+| Cruzar la puerta con la llave | La ventana aparece en el mismo instante: "Nivel completado", "Tiempo: 00:02", "Muertes: 0" y la frase #12. |
+| Pulsar derecha y salto 1 s con la ventana abierta | El personaje no se mueve; cronómetro parado. |
+| ESC con la ventana abierta | Pausa y reanuda. |
+| Consola | 0 errores, 0 avisos. |
+
+**No probado:** el aspecto de la ventana en pantalla (la captura de cámara no incluye la UI), el flujo Menú → Continuar después de completar, y teclado físico.
+
+---
+
 ## Diálogos del Sistema – Nivel 1
 
 > **Desfasado desde el 2026-11-04:** esta tabla describe el nivel original. Las frases vigentes están en "Nivel 1: rediseño troll".
