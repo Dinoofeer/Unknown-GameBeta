@@ -20,6 +20,9 @@ public class FallingSpike : MonoBehaviour
     [SerializeField, Min(0f)] private float fallGravityScale = 3f;
     [Tooltip("Por seguridad: segundos de caída tras los que se desactiva si no ha tocado suelo.")]
     [SerializeField, Min(0f)] private float disableAfterFalling = 2f;
+    [Header("Audio")]
+    [SerializeField] private AudioClip alertClip;
+    [SerializeField] private AudioClip impactClip; //audio
 
     [Header("Referencias")]
     [Tooltip("Hijo que cae, con su collider trigger y LethalHazard.")]
@@ -68,7 +71,7 @@ public class FallingSpike : MonoBehaviour
     {
         if (fallRoutine != null || !other.CompareTag("Player"))
             return;
-
+        SfxPlayer.Play(alertClip);//audio
         fallRoutine = StartCoroutine(ShakeAndFall());
     }
 
@@ -93,11 +96,16 @@ public class FallingSpike : MonoBehaviour
         spike.gravityScale = fallGravityScale;
 
         float fallStart = Time.time;
+        bool hitGround;
         do
         {
             yield return new WaitForFixedUpdate();
+            hitGround = TouchesGround();
         }
-        while (!TouchesGround() && Time.time - fallStart < disableAfterFalling);
+        while (!hitGround && Time.time - fallStart < disableAfterFalling);
+
+        if (hitGround)
+            SfxPlayer.Play(impactClip); //audio
 
         // El suelo queda libre: no debe bloquear el camino.
         spike.gameObject.SetActive(false);

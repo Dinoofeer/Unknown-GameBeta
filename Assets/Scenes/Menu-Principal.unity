@@ -520,6 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuAudioButton
   clickSound: {fileID: 8300000, guid: 4f3e6228ca228684e9423fb19ab61f26, type: 3}
+  moveSound: {fileID: 8300000, guid: 4f3e6228ca228684e9423fb19ab61f26, type: 3}
 --- !u!82 &2051295313
 AudioSource:
   m_ObjectHideFlags: 0
