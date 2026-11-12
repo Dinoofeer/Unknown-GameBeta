@@ -17,8 +17,20 @@ public class LevelProgressPersistence : MonoBehaviour
     private string activeCheckpointId;
     private bool ready;
 
-    private void OnEnable() => Checkpoint.Reached += OnCheckpointReached;
-    private void OnDisable() => Checkpoint.Reached -= OnCheckpointReached;
+    private void OnEnable()
+    {
+        Checkpoint.Reached += OnCheckpointReached;
+        GoalDoor.LevelCompleted += OnLevelCompleted;
+    }
+
+    private void OnDisable()
+    {
+        Checkpoint.Reached -= OnCheckpointReached;
+        GoalDoor.LevelCompleted -= OnLevelCompleted;
+    }
+
+    // GDD (Datos y Persistencia): también se guarda al completar el nivel.
+    private void OnLevelCompleted() => SaveNow();
 
     private void Start()
     {
@@ -82,6 +94,20 @@ public class LevelProgressPersistence : MonoBehaviour
     public bool SaveNow()
     {
         return SaveProgress(key != null && key.IsSecured);
+    }
+
+    public bool TrySaveBeforeLeaving(out string error)
+    {
+        if (!ready || stats == null)
+        {
+            error = "El progreso del nivel no está listo para guardarse.";
+            return false;
+        }
+
+        bool hasSecuredKey = stats.IsRunning
+            ? key != null && key.IsSecured
+            : GameSession.Current != null && GameSession.Current.hasSecuredKey;
+        return progress.TrySave(activeCheckpointId, stats.Deaths, stats.ElapsedTime, hasSecuredKey, out error);
     }
 
     private bool SaveProgress(bool hasSecuredKey)

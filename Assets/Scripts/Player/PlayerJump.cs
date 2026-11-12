@@ -29,6 +29,7 @@ public class PlayerJump : MonoBehaviour
 
     private Rigidbody2D rb;
     private PlayerGroundCheck groundCheck;
+    private PlayerAudio playerAudio;
 
     private bool jumpRequested;   // pulsación leída en Update, aplicada en FixedUpdate
     private bool hasDoubleJump;
@@ -37,11 +38,13 @@ public class PlayerJump : MonoBehaviour
     private float lastGroundedTime;
     private float jumpStartY;
     private float jumpStartTime;
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         groundCheck = GetComponent<PlayerGroundCheck>();
+        playerAudio = GetComponent<PlayerAudio>();
     }
 
     private void OnEnable()
@@ -65,6 +68,9 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
+        if (GamePauseState.BlocksGameplayInput)
+            return;
+
         if (jumpAction.action.WasPressedThisFrame())
             jumpRequested = true;
     }
@@ -90,6 +96,8 @@ public class PlayerJump : MonoBehaviour
             {
                 coyoteAvailable = false;
                 StartJump();
+                    if (playerAudio != null) playerAudio.PlayJump();   // <- nueva
+
             }
             else if (hasDoubleJump)
             {
@@ -101,6 +109,8 @@ public class PlayerJump : MonoBehaviour
                 {
                     hasDoubleJump = false;
                     StartJump();
+                        if (playerAudio != null) playerAudio.PlayDoubleJump();   // <- nueva
+
                 }
             }
         }
@@ -148,4 +158,6 @@ public class PlayerJump : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, speed);
     }
+
+    
 }
