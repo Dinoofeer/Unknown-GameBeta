@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(UIDocument))]
 public class MenuPresentation : MonoBehaviour
 {
-    [SerializeField] private string firstLevelScene = "Level_03";
+    [SerializeField] private string firstLevelScene = "Level_01";
 
     private Button[] buttons;
     private VisualElement root;

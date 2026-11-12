@@ -3659,7 +3659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "\xBFUna pared? Qu\xE9 pena que solo sepas saltar una vez... \xBFo no?"
+      value: "R\xE1pido. Esas plataformas no esperan a nadie. Yo s\xED."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5771,7 +5771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "Plataformas y pinchos. Hasta un ni\xF1o podr\xEDa superarlo."
+      value: "Un p\xEDxel de m\xE1s y se acab\xF3. Siempre es un p\xEDxel."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -188637,7 +188637,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1225167953694352482, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 276
+      value: 367
       objectReference: {fileID: 0}
     - target: {fileID: 1225167953694352482, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -188681,7 +188681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "\xBFSigues aqu\xED? Qu\xE9 terco. Descansa... no tengo prisa."
+      value: "\xDAltimo punto de control. Despu\xE9s de esto no hay nada\u2026 o eso dicen."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -189569,7 +189569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: Un saltito sobre esos pinchos. Sin miedo, Novato.
+      value: "Mira bien d\xF3nde pisas. Esta parte se romp\xEDa distinto."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -193005,7 +193005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "Ese hueco no se salta. Cr\xE9eme: lo s\xE9."
+      value: "D\xE9jate caer. Abajo hay suelo\u2026 casi siempre."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -198387,11 +198387,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "La puerta solo se abre con su llave. \xBFLa traes... o la dejaste por ah\xED?"
+      value: No vas a cruzar esa puerta. Nadie la cruza.
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: repeat
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: fullOnlyFirstTime
@@ -201127,6 +201127,10 @@ PrefabInstance:
     - target: {fileID: 3402705777092775304, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: m_Name
       value: T_CheckpointFalso
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402705777092775304, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
@@ -205534,7 +205538,7 @@ PrefabInstance:
       objectReference: {fileID: 1218882781}
     - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       propertyPath: completedLine
-      value: "...Eso no deb\xEDa pasar. Bueno. El siguiente nivel no ser\xE1 tan amable."
+      value: Umbral de salida alcanzado.
       objectReference: {fileID: 0}
     - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       propertyPath: lockedColor.b
@@ -208142,11 +208146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: 
+      value: "\xDAltimo nivel, Novato. Aqu\xED es donde uno se rinde. Cr\xE9eme."
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: sequence.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: sequence.Array.data[0].text
@@ -209870,7 +209874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314d8e7267e6aec4581d02a9ea529df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NarratorTrigger
-  line: "La salida est\xE1 justo ah\xED. \xA1Salta con todas tus fuerzas!"
+  line: "Detente. Aqu\xED se est\xE1 bien. No necesitas salir."
   repeat: 0
   sequence: []
   fullOnlyFirstTime: 0
@@ -211932,6 +211936,10 @@ PrefabInstance:
     - target: {fileID: 3402705777092775304, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: m_Name
       value: T_Llave
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402705777092775304, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
@@ -219909,12 +219917,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1801643413}
     - target: {fileID: 4758734955561723054, guid: fb018ddd019586f4d93d963c398be785, type: 3}
+      propertyPath: taunts
+      value:
+      objectReference: {fileID: 11400000, guid: 613727a55952a4b4ba5a3d6e0a6c3c2a, type: 2}
+    - target: {fileID: 4758734955561723054, guid: fb018ddd019586f4d93d963c398be785, type: 3}
       propertyPath: firstDeathLine
-      value: "Y ah\xED va la primera. Voy a disfrutar cont\xE1ndolas todas."
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4758734955561723054, guid: fb018ddd019586f4d93d963c398be785, type: 3}
       propertyPath: firstTrollDeathLine
-      value: "Esa trampa lleva a\xF1os esperando a alguien como t\xFA."
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4947175547456698221, guid: fb018ddd019586f4d93d963c398be785, type: 3}
       propertyPath: m_LocalPosition.x

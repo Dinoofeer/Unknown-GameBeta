@@ -8571,6 +8571,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 499506772}
     - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
+      propertyPath: completedLine
+      value: "Disfr\xFAtalo. De aqu\xED en adelante, nadie sale."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       propertyPath: lockedColor.b
       value: 0.68
       objectReference: {fileID: 0}
@@ -8659,7 +8663,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2641959389562342077, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1306973948}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6913475204995391625, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1504862782}
   m_SourcePrefab: {fileID: 100100000, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
 --- !u!4 &1504862780 stripped
 Transform:
@@ -18200,6 +18207,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1504862781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6913475204995391625, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
+  m_PrefabInstance: {fileID: 1504862779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1504862782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504862781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18da246d73b46ec468dfe5359f5e03a2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::LevelExitTransition
+  nextScene: Level_03
+  stats: {fileID: 168502287}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
