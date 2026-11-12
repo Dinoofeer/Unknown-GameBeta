@@ -45,6 +45,22 @@ namespace UnknownGame.Save.Tests
         }
 
         [Test]
+        public void AdvancingKeepsRunTotalsAndPreventsWritesFromPreviousLevel()
+        {
+            Assert.That(progress.TrySave("despertar_cp01", 4, 90f, true, out var error), Is.True, error);
+            Assert.That(progress.TryAdvance("Level_02", 5, 115f, out var next, out error), Is.True, error);
+            Assert.That(next.runId, Is.EqualTo(current.runId));
+            Assert.That(next.checkpointId, Is.Empty);
+            Assert.That(next.hasSecuredKey, Is.False);
+            Assert.That(progress.TrySave("despertar_cp01", 6, 120f, false, out _), Is.False);
+
+            Assert.That(saves.Load(out var loaded, out error), Is.EqualTo(SaveLoadStatus.Loaded), error);
+            Assert.That(loaded.levelScene, Is.EqualTo("Level_02"));
+            Assert.That(loaded.deaths, Is.EqualTo(5));
+            Assert.That(loaded.elapsedSeconds, Is.EqualTo(115f));
+        }
+
+        [Test]
         public void ClosingUpdatesStatsWithoutMovingLastCheckpoint()
         {
             Assert.That(progress.TrySave("level01_cp01", 2, 60f, false, out var error), Is.True, error);
