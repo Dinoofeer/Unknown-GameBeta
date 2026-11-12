@@ -7,6 +7,9 @@ public class StatsHUD : MonoBehaviour
     [SerializeField] private RunStats stats;
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text deathsText;
+    [SerializeField] private bool compactFormat;
+    [SerializeField] private LevelKey key;
+    [SerializeField] private GameObject keyIndicator;
     [Tooltip("Escala máxima del salto del contador al morir.")]
     [SerializeField, Min(1f)] private float punchScale = 1.4f;
     [SerializeField, Min(0.01f)] private float punchDuration = 0.25f;
@@ -22,12 +25,19 @@ public class StatsHUD : MonoBehaviour
         float time = stats.ElapsedTime;
         int minutes = (int)(time / 60f);
         float seconds = time % 60f;
-        timerText.text = $"{minutes:00}:{seconds:00.00}";
+        timerText.text = compactFormat ? $"{minutes:00}:{(int)seconds:00}" : $"{minutes:00}:{seconds:00.00}";
+
+        if (keyIndicator != null)
+        {
+            bool hasKey = key != null && key.IsCollected;
+            if (keyIndicator.activeSelf != hasKey)
+                keyIndicator.SetActive(hasKey);
+        }
 
         if (stats.Deaths != shownDeaths)
         {
             shownDeaths = stats.Deaths;
-            deathsText.text = $"Muertes: {shownDeaths}";
+            deathsText.text = compactFormat ? shownDeaths.ToString() : $"Muertes: {shownDeaths}";
             if (shownDeaths > 0)
                 punchTimer = punchDuration;
         }
