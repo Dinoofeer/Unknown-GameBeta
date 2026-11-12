@@ -14,10 +14,14 @@ public sealed class TimedLaser : MonoBehaviour
 
     private BoxCollider2D area;
     private Collider2D playerCollider;
-    private float phase;
-    private float Period => activeTime + offTime;
+    private int phaseStep;
+    private int activeSteps;
+    private int cycleSteps;
+    private int offsetSteps;
+    private int openingWarningSteps;
+    private int closingWarningSteps;
 
-    public bool IsActive => phase < activeTime;
+    public bool IsActive => phaseStep < activeSteps;
 
     private void Awake()
     {
@@ -26,7 +30,17 @@ public sealed class TimedLaser : MonoBehaviour
         {
             Debug.LogError("El láser necesita referencias al jugador y a sus dos renderizadores.", this);
             enabled = false;
+            return;
         }
+
+        // Los pasos enteros mantienen alineadas las ventanas de todos los láseres.
+        float step = Time.fixedDeltaTime;
+        activeSteps = Mathf.Max(1, Mathf.RoundToInt(activeTime / step));
+        int offSteps = Mathf.Max(1, Mathf.RoundToInt(offTime / step));
+        cycleSteps = activeSteps + offSteps;
+        offsetSteps = Mathf.RoundToInt(phaseOffset / step) % cycleSteps;
+        openingWarningSteps = Mathf.RoundToInt(openingWarning / step);
+        closingWarningSteps = Mathf.RoundToInt(closingWarning / step);
     }
 
     private void OnEnable()
@@ -44,7 +58,7 @@ public sealed class TimedLaser : MonoBehaviour
 
     private void FixedUpdate()
     {
-        phase = Mathf.Repeat(phase + Time.fixedDeltaTime, Period);
+        phaseStep = (phaseStep + 1) % cycleSteps;
         UpdateVisuals();
 
         // Comprueba también a quien ya estaba dentro cuando volvió a encenderse.
@@ -60,15 +74,15 @@ public sealed class TimedLaser : MonoBehaviour
 
     private void ResetPhase()
     {
-        phase = Mathf.Repeat(phaseOffset, Period);
+        phaseStep = offsetSteps;
         UpdateVisuals();
     }
 
     private void UpdateVisuals()
     {
         bool active = IsActive;
-        bool opening = active && activeTime - phase <= openingWarning;
-        bool closing = !active && Period - phase <= closingWarning;
+        bool opening = active && activeSteps - phaseStep <= openingWarningSteps;
+        bool closing = !active && cycleSteps - phaseStep <= closingWarningSteps;
         beam.enabled = active;
         beam.color = opening ? new Color(0.14f, 0.52f, 0.9f, 0.49f) : new Color(0.14f, 0.58f, 0.95f, 0.72f);
         core.enabled = active || closing;
