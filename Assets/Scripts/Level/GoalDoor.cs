@@ -29,6 +29,10 @@ public class GoalDoor : MonoBehaviour
 
     private bool completed;
 
+    public string CompletedLine => completedLine;
+    [Tooltip("Si hay una ventana de nivel completado que muestra la frase, el Sistema no la repite en su cuadro.")]
+    [SerializeField] private bool lineShownByCompleteView = false;
+
     private void Awake()
     {
         if (blockingCollider == null)
@@ -65,7 +69,7 @@ public class GoalDoor : MonoBehaviour
             SetOpen(true);
             Debug.Log("Nivel completado.");
             LevelCompleted?.Invoke();
-            if (!string.IsNullOrEmpty(completedLine))
+            if (!string.IsNullOrEmpty(completedLine) && !lineShownByCompleteView)
                 Narrator.Say(completedLine);
         }
         else if (lethalWhenLocked && other.attachedRigidbody != null

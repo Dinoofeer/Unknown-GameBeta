@@ -17,8 +17,20 @@ public class LevelProgressPersistence : MonoBehaviour
     private string activeCheckpointId;
     private bool ready;
 
-    private void OnEnable() => Checkpoint.Reached += OnCheckpointReached;
-    private void OnDisable() => Checkpoint.Reached -= OnCheckpointReached;
+    private void OnEnable()
+    {
+        Checkpoint.Reached += OnCheckpointReached;
+        GoalDoor.LevelCompleted += OnLevelCompleted;
+    }
+
+    private void OnDisable()
+    {
+        Checkpoint.Reached -= OnCheckpointReached;
+        GoalDoor.LevelCompleted -= OnLevelCompleted;
+    }
+
+    // GDD (Datos y Persistencia): también se guarda al completar el nivel.
+    private void OnLevelCompleted() => SaveNow();
 
     private void Start()
     {
