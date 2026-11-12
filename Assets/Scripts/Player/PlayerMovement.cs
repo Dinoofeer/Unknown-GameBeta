@@ -15,11 +15,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Min(0f)] private float maxSpeed = 8f;
 
     private Rigidbody2D rb;
+    private CorridorDash corridorDash;
     private float direction; // -1, 0 o 1
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        TryGetComponent(out corridorDash);
     }
 
     private void OnEnable()
@@ -37,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // Al morir se desactiva: que no conserve la dirección al reaparecer.
         direction = 0f;
+        if (corridorDash != null)
+            corridorDash.ResetDash();
     }
 
     private void Update()
@@ -57,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Asignar la velocidad directamente da arranque y frenado instantáneos.
-        rb.linearVelocity = new Vector2(direction * maxSpeed, rb.linearVelocity.y);
+        float speed = corridorDash != null && corridorDash.isActiveAndEnabled
+            ? corridorDash.ResolveSpeed(direction, maxSpeed)
+            : direction * maxSpeed;
+        rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
     }
 }
