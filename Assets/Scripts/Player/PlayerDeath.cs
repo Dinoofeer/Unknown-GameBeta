@@ -45,6 +45,9 @@ public class PlayerDeath : MonoBehaviour
         Died?.Invoke(deathPosition);
     }
 
+    // [ContextMenu("Probar : morir")]
+    // private void TestDie() => Die();
+
     public void Respawn(Vector2 position)
     {
         SetAlive(false);

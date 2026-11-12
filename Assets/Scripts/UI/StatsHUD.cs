@@ -60,8 +60,8 @@ public class StatsHUD : MonoBehaviour
     {
         float time = stats.ElapsedTime;
         int minutes = (int)(time / 60f);
-        float seconds = time % 60f;
-        timerText.text = $"{minutes:00}:{seconds:00.00}"; // formato MM:SS del GDD
+        int seconds = (int)(time % 60f);
+        timerText.text = $"{minutes:00}:{seconds:00}"; // formato MM:SS del GDD
     }
 
     private void UpdateDeaths()
