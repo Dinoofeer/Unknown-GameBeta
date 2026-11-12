@@ -240,7 +240,7 @@ MonoBehaviour:
   stats: {fileID: 0}
   timerText: {fileID: 1113559837307948324}
   deathsText: {fileID: 2667999000194825332}
-  skullIcon: {fileID: 0}
+  skullIcon: {fileID: 3658601955199616705}
   skullNormal: {fileID: 0}
   skullHit: {fileID: 0}
   punchScale: 1.4

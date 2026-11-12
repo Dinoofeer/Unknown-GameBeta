@@ -5,7 +5,7 @@ namespace UnknownGame.Save
     [Serializable]
     public sealed class SaveGameData
     {
-        public const int CurrentVersion = 1;
+        public const int CurrentVersion = 2;
 
         public int version;
         public string runId;

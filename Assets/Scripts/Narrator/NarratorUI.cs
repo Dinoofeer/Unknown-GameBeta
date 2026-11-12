@@ -8,6 +8,8 @@ using UnityEngine;
 public class NarratorUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text messageText;
+    [SerializeField] private GameObject messageWindow;
+    [SerializeField] private RectTransform cursor;
     [SerializeField, Min(1f)] private float charactersPerSecond = 40f;
     [SerializeField, Min(0f)] private float holdSeconds = 2.5f;
     [Tooltip("Segundos en pantalla cuando ya hay otra frase esperando, para que la cola no se retrase demasiado.")]
@@ -18,7 +20,7 @@ public class NarratorUI : MonoBehaviour
 
     private void Awake()
     {
-        messageText.text = string.Empty;
+        SetMessage(string.Empty);
     }
 
     private void OnEnable()
@@ -78,7 +80,7 @@ public class NarratorUI : MonoBehaviour
             yield return null;
         }
 
-        messageText.text = string.Empty;
+        SetMessage(string.Empty);
         PlayNext();
     }
 
@@ -86,22 +88,47 @@ public class NarratorUI : MonoBehaviour
     {
         foreach (NarratorLine line in lines)
         {
-            messageText.text = string.Empty;
+            SetMessage(string.Empty);
             if (!string.IsNullOrEmpty(line.text))
                 yield return TypeLine(line.text);
             yield return new WaitForSeconds(line.seconds);
         }
-        messageText.text = string.Empty;
+        SetMessage(string.Empty);
         PlayNext();
     }
 
     private IEnumerator TypeLine(string line)
     {
-        messageText.text = line;
+        messageText.maxVisibleCharacters = 0;
+        SetMessage(line);
         for (int i = 0; i <= line.Length; i++)
         {
             messageText.maxVisibleCharacters = i;
             yield return new WaitForSeconds(1f / charactersPerSecond);
         }
+    }
+
+    private void SetMessage(string message)
+    {
+        messageText.text = message;
+        if (messageWindow != null)
+            messageWindow.SetActive(message.Length > 0);
+    }
+
+    private void LateUpdate()
+    {
+        if (cursor == null || !messageText.isActiveAndEnabled)
+            return;
+
+        TMP_TextInfo textInfo = messageText.textInfo;
+        int last = Mathf.Min(messageText.maxVisibleCharacters, textInfo.characterCount) - 1;
+        bool visible = last >= 0 && Mathf.Repeat(Time.time, 0.8f) < 0.48f;
+        cursor.gameObject.SetActive(visible);
+        if (!visible)
+            return;
+
+        TMP_CharacterInfo glyph = textInfo.characterInfo[last];
+        float rightEdge = messageText.rectTransform.rect.xMax - cursor.rect.width;
+        cursor.localPosition = new Vector3(Mathf.Min(glyph.xAdvance + 2f, rightEdge), glyph.baseLine - 2f, 0f);
     }
 }
