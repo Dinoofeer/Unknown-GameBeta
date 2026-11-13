@@ -201122,7 +201122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "\xA1Mira, un punto de control! T\xF3calo, es gratis."
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -211931,7 +211931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "\xBFUna llave? Cu\xEDdala bien... si te mueres, se queda aqu\xED conmigo."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6287793160347093373, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: m_Size.x
