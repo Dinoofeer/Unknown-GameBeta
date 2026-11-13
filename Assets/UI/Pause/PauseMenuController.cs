@@ -53,6 +53,8 @@ public class PauseMenuController : MonoBehaviour
 
         if (!IsPaused)
             Pause();
+        else if (view.IsSettingsVisible)
+            view.CloseSettings();
         else if (view.IsExitConfirmationVisible)
             view.ShowPause();
         else

@@ -11,10 +11,17 @@ public class PauseMenuView : MonoBehaviour
 
     public bool IsVisible { get; private set; }
     public bool IsExitConfirmationVisible { get; private set; }
+    public bool IsSettingsVisible { get; private set; }
 
     private VisualElement pauseRoot;
     private VisualElement content;
     private VisualElement confirmation;
+    private VisualElement settings;
+    private Slider master;
+    private Slider music;
+    private Slider sfx;
+    private Toggle fullScreen;
+    private Button closeSettingsButton;
     private Button[] buttons;
     private Button cancelButton;
     private Button confirmButton;
@@ -29,7 +36,13 @@ public class PauseMenuView : MonoBehaviour
         pauseRoot = root.Q("pauseRoot");
         content = root.Q("pauseContent");
         confirmation = root.Q("exitConfirmation");
-        buttons = new[] { root.Q<Button>("resumeButton"), root.Q<Button>("restartButton"), root.Q<Button>("exitButton") };
+        settings = root.Q("settingsPanel");
+        master = root.Q<Slider>("masterVolume");
+        music = root.Q<Slider>("musicVolume");
+        sfx = root.Q<Slider>("sfxVolume");
+        fullScreen = root.Q<Toggle>("fullScreenToggle");
+        closeSettingsButton = root.Q<Button>("closeSettingsButton");
+        buttons = new[] { root.Q<Button>("resumeButton"), root.Q<Button>("restartButton"), root.Q<Button>("settingsButton"), root.Q<Button>("exitButton") };
         cancelButton = root.Q<Button>("cancelExitButton");
         confirmButton = root.Q<Button>("confirmExitButton");
         exitStatus = root.Q<Label>("exitStatus");
@@ -41,7 +54,13 @@ public class PauseMenuView : MonoBehaviour
         }
         buttons[0].clicked += OnResume;
         buttons[1].clicked += OnRestart;
-        buttons[2].clicked += ShowExitConfirmation;
+        buttons[2].clicked += ShowSettings;
+        buttons[3].clicked += ShowExitConfirmation;
+        closeSettingsButton.clicked += CloseSettings;
+        master.RegisterValueChangedCallback(OnMaster);
+        music.RegisterValueChangedCallback(OnMusic);
+        sfx.RegisterValueChangedCallback(OnSfx);
+        fullScreen.RegisterValueChangedCallback(OnFullScreen);
         cancelButton.clicked += ShowPause;
         confirmButton.clicked += OnExitConfirmed;
         Hide();
@@ -59,7 +78,16 @@ public class PauseMenuView : MonoBehaviour
         }
         buttons[0].clicked -= OnResume;
         buttons[1].clicked -= OnRestart;
-        buttons[2].clicked -= ShowExitConfirmation;
+        buttons[2].clicked -= ShowSettings;
+        buttons[3].clicked -= ShowExitConfirmation;
+        closeSettingsButton.clicked -= CloseSettings;
+        master.UnregisterValueChangedCallback(OnMaster);
+        music.UnregisterValueChangedCallback(OnMusic);
+        sfx.UnregisterValueChangedCallback(OnSfx);
+        fullScreen.UnregisterValueChangedCallback(OnFullScreen);
+        if (IsSettingsVisible)
+            GameSettings.Save();
+        IsSettingsVisible = false;
         cancelButton.clicked -= ShowPause;
         confirmButton.clicked -= OnExitConfirmed;
         IsVisible = false;
@@ -94,8 +122,42 @@ public class PauseMenuView : MonoBehaviour
         cancelButton.schedule.Execute(() => cancelButton.Focus());
     }
 
+    private void ShowSettings()
+    {
+        if (exitBusy)
+            return;
+        master.SetValueWithoutNotify(GameSettings.Master);
+        music.SetValueWithoutNotify(GameSettings.Music);
+        sfx.SetValueWithoutNotify(GameSettings.Sfx);
+        fullScreen.SetValueWithoutNotify(GameSettings.FullScreen);
+        IsSettingsVisible = true;
+        content.SetEnabled(false);
+        content.AddToClassList("pause-content--covered");
+        settings.RemoveFromClassList("is-hidden");
+        master.schedule.Execute(() => master.Focus());
+    }
+
+    public void CloseSettings()
+    {
+        if (!IsSettingsVisible)
+            return;
+        GameSettings.Save();
+        IsSettingsVisible = false;
+        settings.AddToClassList("is-hidden");
+        content.SetEnabled(true);
+        content.RemoveFromClassList("pause-content--covered");
+        buttons[2].schedule.Execute(() => buttons[2].Focus());
+    }
+
+    private void OnMaster(ChangeEvent<float> evt) => GameSettings.Master = evt.newValue;
+    private void OnMusic(ChangeEvent<float> evt) => GameSettings.Music = evt.newValue;
+    private void OnSfx(ChangeEvent<float> evt) => GameSettings.Sfx = evt.newValue;
+    private void OnFullScreen(ChangeEvent<bool> evt) => GameSettings.FullScreen = evt.newValue;
+
     public void Hide()
     {
+        if (IsSettingsVisible)
+            CloseSettings();
         SetExitBusy(false);
         ShowExitStatus(string.Empty);
         var focused = pauseRoot.panel?.focusController.focusedElement as VisualElement;

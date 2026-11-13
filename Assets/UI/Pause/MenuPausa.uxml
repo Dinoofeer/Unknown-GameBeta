@@ -11,9 +11,26 @@
             <ui:Button name="restartButton" text="REINICIAR" class="menu-button">
                 <ui:VisualElement class="menu-pointer" picking-mode="Ignore" />
             </ui:Button>
+            <ui:Button name="settingsButton" text="CONFIGURACIÓN" class="menu-button">
+                <ui:VisualElement class="menu-pointer" picking-mode="Ignore" />
+            </ui:Button>
             <ui:Button name="exitButton" text="SALIR" class="menu-button">
                 <ui:VisualElement class="menu-pointer" picking-mode="Ignore" />
             </ui:Button>
+        </ui:VisualElement>
+        <ui:VisualElement name="settingsPanel" class="confirmation-overlay is-hidden">
+            <ui:VisualElement class="confirmation-panel settings-panel">
+                <ui:Label text="CONFIGURACIÓN" class="confirmation-title" />
+                <ui:Label text="AUDIO" class="settings-section" />
+                <ui:Slider name="masterVolume" label="VOLUMEN GENERAL" low-value="0" high-value="1" value="1" class="settings-slider" />
+                <ui:Slider name="musicVolume" label="MÚSICA" low-value="0" high-value="1" value="1" class="settings-slider" />
+                <ui:Slider name="sfxVolume" label="EFECTOS" low-value="0" high-value="1" value="1" class="settings-slider" />
+                <ui:Label text="VIDEO" class="settings-section" />
+                <ui:Toggle name="fullScreenToggle" label="PANTALLA COMPLETA" value="true" class="settings-toggle" />
+                <ui:VisualElement class="confirmation-actions">
+                    <ui:Button name="closeSettingsButton" text="VOLVER" class="dialog-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="exitConfirmation" class="confirmation-overlay is-hidden">
             <ui:VisualElement class="confirmation-panel pause-exit-panel">
