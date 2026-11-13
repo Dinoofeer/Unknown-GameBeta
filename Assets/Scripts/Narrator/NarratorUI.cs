@@ -15,12 +15,31 @@ public class NarratorUI : MonoBehaviour
     [Tooltip("Segundos en pantalla cuando ya hay otra frase esperando, para que la cola no se retrase demasiado.")]
     [SerializeField, Min(0f)] private float holdSecondsWithQueue = 1.5f;
 
+    [Header("Estado Advertencia (GDD, Interfaz Visual)")]
+    [Tooltip("Borde de la ventana; en Advertencia pasa a rojo oscuro.")]
+    [SerializeField] private UnityEngine.UI.Outline windowBorder;
+    [Tooltip("Icono [!] que solo se ve en Advertencia.")]
+    [SerializeField] private GameObject warningIcon;
+    [SerializeField] private Color warningColor = new Color32(0x8F, 0x2A, 0x31, 0xFF); // rojo oscuro de la paleta
+
     private readonly Queue<IEnumerator> pending = new Queue<IEnumerator>();
     private Coroutine showRoutine;
+    private Color normalBorderColor;
 
     private void Awake()
     {
+        if (windowBorder != null)
+            normalBorderColor = windowBorder.effectColor;
+        SetWarning(false);
         SetMessage(string.Empty);
+    }
+
+    private void SetWarning(bool on)
+    {
+        if (windowBorder != null)
+            windowBorder.effectColor = on ? warningColor : normalBorderColor;
+        if (warningIcon != null)
+            warningIcon.SetActive(on);
     }
 
     private void OnEnable()
@@ -28,6 +47,7 @@ public class NarratorUI : MonoBehaviour
         Narrator.Said += Show;
         Narrator.SaidIfIdle += ShowIfIdle;
         Narrator.SequenceSaid += ShowSequence;
+        Narrator.SilenceShown += ShowSilence;
     }
 
     private void OnDisable()
@@ -35,8 +55,27 @@ public class NarratorUI : MonoBehaviour
         Narrator.Said -= Show;
         Narrator.SaidIfIdle -= ShowIfIdle;
         Narrator.SequenceSaid -= ShowSequence;
+        Narrator.SilenceShown -= ShowSilence;
         pending.Clear();
         showRoutine = null;
+    }
+
+    // Silencio del Sistema (sala de servidores): ventana abierta, sin texto, solo el cursor parpadeando.
+    private bool silent;
+
+    private void ShowSilence(float seconds) => Enqueue(SilenceRoutine(seconds));
+
+    private IEnumerator SilenceRoutine(float seconds)
+    {
+        silent = true;
+        messageText.text = string.Empty;
+        messageText.maxVisibleCharacters = 0;
+        if (messageWindow != null)
+            messageWindow.SetActive(true);
+        yield return new WaitForSeconds(seconds);
+        silent = false;
+        SetMessage(string.Empty);
+        PlayNext();
     }
 
     private void Show(string line)
@@ -89,10 +128,12 @@ public class NarratorUI : MonoBehaviour
         foreach (NarratorLine line in lines)
         {
             SetMessage(string.Empty);
+            SetWarning(line.warning);
             if (!string.IsNullOrEmpty(line.text))
                 yield return TypeLine(line.text);
             yield return new WaitForSeconds(line.seconds);
         }
+        SetWarning(false);
         SetMessage(string.Empty);
         PlayNext();
     }
@@ -119,6 +160,16 @@ public class NarratorUI : MonoBehaviour
     {
         if (cursor == null || !messageText.isActiveAndEnabled)
             return;
+
+        if (silent)
+        {
+            // Sin texto: el cursor parpadea al principio de la línea, como si fuera a escribir y no lo hiciera.
+            bool on = Mathf.Repeat(Time.time, 0.8f) < 0.48f;
+            cursor.gameObject.SetActive(on);
+            Rect r = messageText.rectTransform.rect;
+            cursor.localPosition = new Vector3(r.xMin + 2f, r.yMax - messageText.fontSize - 2f, 0f);
+            return;
+        }
 
         TMP_TextInfo textInfo = messageText.textInfo;
         int last = Mathf.Min(messageText.maxVisibleCharacters, textInfo.characterCount) - 1;

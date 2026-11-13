@@ -28,7 +28,10 @@ public class MenuPresentation : MonoBehaviour
         Button newGame = root.Q<Button>("newGameButton");
         Button continueGame = root.Q<Button>("continueGameButton");
         Button quit = root.Q<Button>("quitButton");
-        buttons = new[] { newGame, continueGame, quit };
+        // El botón de Configuración (MenuSettings) entra en la selección visual del menú; va al final
+        // para no cambiar los índices que usa OnDisable.
+        Button settings = root.Q<Button>("settingsButton");
+        buttons = settings != null ? new[] { newGame, continueGame, quit, settings } : new[] { newGame, continueGame, quit };
         menuButtons = root.Q("menuButtons");
         confirmation = root.Q("replaceConfirmation");
         confirmButton = root.Q<Button>("confirmNewGameButton");

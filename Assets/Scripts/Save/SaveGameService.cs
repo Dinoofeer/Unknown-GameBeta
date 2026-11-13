@@ -135,8 +135,9 @@ namespace UnknownGame.Save
                 }
 
                 // La partida anterior se sustituye solo cuando la nueva escritura ha terminado.
+                // GDD (Datos y Persistencia): antes de sobrescribir se deja una réplica .bak.
                 if (File.Exists(SaveFilePath))
-                    File.Replace(temporaryPath, SaveFilePath, null);
+                    File.Replace(temporaryPath, SaveFilePath, Path.ChangeExtension(SaveFilePath, ".bak"));
                 else
                     File.Move(temporaryPath, SaveFilePath);
 

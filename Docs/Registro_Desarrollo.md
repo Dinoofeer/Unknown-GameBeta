@@ -1436,6 +1436,117 @@ Copia previa en `Archive/Level_01_v15c_antes_nivelcompletado.unity`. [Aprobado p
 
 ---
 
+## Ajustes para cumplir el GDD antes de la entrega (2026-11-13)
+
+Contexto: el GDD ya no se puede modificar y la evaluación es contra él tal como está. Copias previas en `Scenes/Archive/Level_0X_antes_gdd_final.unity` (y `Level_02/03_antes_frases_gdd.unity`).
+
+| Cambio | Justificación en el GDD | Dónde |
+|---|---|---|
+| Frases del nivel 3 completas como en el GDD (#3, #4, #5); se quitan "Umbral de salida alcanzado.", las 3 frases viejas de la puerta y las 2 del nivel 1 | Diálogos › Nivel 3; "Ninguna frase se repite entre niveles" | `Level_03` |
+| Se quita la frase del fragmento oculto | No existe en el GDD | `HiddenFragment.cs` |
+| Las 9 frases restantes de la tabla del nivel 2 (la #10 ya estaba en la ventana final); se conserva la de la ficha del Sistema | Diálogos › Nivel 2; Enemigos y NPC | `Level_02`, `Referencias del recorrido/Sistema - 0X` |
+| Indicaciones del tutorial solo de teclado | Alcance › No incluido: mandos | `TutorialHints.cs` |
+| Error de guardado solo en consola, sin frase en pantalla | No hay frase del GDD para ese caso | `LevelExitTransition.cs` |
+| Reaparición en 0,15 s | Alcance y Requisitos Técnicos: menos de 0,2 s | `RespawnManager` (los 3 niveles) |
+| Copia `.bak` al sobrescribir el guardado | Datos y Persistencia › Formato y escritura | `SaveGameService.cs` |
+| Destello rojo breve con parpadeo al morir | Interfaz Visual › Estados › Muerte | `DeathFlash.cs`, `HUD/DestelloMuerte` |
+| Música al 65 % y atenuada al morir o mientras habla el Sistema | Audio y Música › Mezcla | `MusicMix.cs` en la fuente de música |
+| Pixel Perfect Camera 640×360 (tamaño ortográfico 5,625) en los 3 niveles | Entornos › Medidas; Riesgos técnicos | Cámara de `Level_01` y `Level_03` (el 2 ya la tenía) |
+| Sin sombras en tiempo real (39 luces) | Entornos › Iluminación; Requisitos Técnicos | Los 3 niveles |
+| Manchas antiguas: 5 en el nivel 1, 6 en el nivel 2 (el 3 ya tenía 55) | Premisa › Preparación del giro: "aumentan en cada nivel" | `ManchasAntiguas` |
+
+**Pruebas (script):** nivel 3 completo sin morir, con las 8 frases en orden y ventana final (sin comentario); 10 frases del nivel 2 al pasar por sus puntos; en los 3 niveles, muerte → destello visible, reaparición en ~150 ms y música de 0,65 a 0,26 y de vuelta. Consola: 0 errores, 0 avisos.
+
+**No probado:** aspecto en pantalla del destello, de la cámara 640×360 (en los niveles 1 y 3 se ve un 20 % menos de escenario que antes, porque el tamaño ortográfico pasa de 7 a 5,625) y de las luces sin sombra; teclado físico.
+
+### Final único "Salir" y sala de servidores (2026-11-13)
+
+Copia previa en `Scenes/Archive/Level_03_antes_final.unity`.
+
+| Cambio | Justificación en el GDD | Dónde |
+|---|---|---|
+| Al completar el nivel 3, tras 3 s, se pasa a la sala de servidores | Premisa › Eventos 4 y 5: "Acceso a la sala de servidores" | `Level_03/SalidaNivel` (`LevelExitTransition`) |
+| Sala de servidores sin trampas y sin frases del Sistema | Premisa › Acto 3: "No es un nivel con trampas"; Diálogos › Sala de servidores: "el Sistema guarda silencio" | `Scenes/SalaServidores.unity` |
+| 30 manchas antiguas grises en suelo, paredes y techo como pruebas del jugador anterior | Premisa › Preparación del giro: manchas = "las muertes del jugador anterior" | `SalaServidores/ManchasAntiguas` |
+| Portal de datos sin llave como salida | Premisa › Acto 3: "desde donde sale del juego"; Eventos 6: "el juego deja salir a Emmet" | `SalaServidores/DataPortal` + `SalidaJuego` |
+| Pantalla final con el párrafo literal de Premisa › Finales › "Qué ocurre", en Press Start 2P crema sobre gris carbón | Premisa › Finales › "Cómo se muestra": párrafo en pantalla | `Scenes/Final.unity`, `UI/FinalScreen.cs` |
+| Vuelta al menú principal: con cualquier tecla tras 3 s o sola a los 15 s; corte directo, sin créditos | El GDD no define créditos ni transición | `FinalScreen.cs` |
+| `SalaServidores` y `Final` añadidas a Build Settings tras `Level_03` | — | `ProjectSettings/EditorBuildSettings.asset` |
+
+El guardado no tiene un campo "juego completado". Al salir de la sala, `LevelExitTransition` guarda la escena `Final` como punto de la partida, así que "Continuar" lleva a la pantalla final.
+
+**Prueba (script):** Level_03 completado → sala de servidores a los 6 s (sin trampas y sin frases) → portal → pantalla final con el párrafo en Press Start 2P → menú principal a los 15 s. Consola: sin errores. Solo queda el aviso del vídeo del menú, que ya existía.
+
+**No probado:** aspecto visual de la sala y de la pantalla final, y "Continuar" desde el menú después del final.
+
+### Configuración en el menú principal (2026-11-13)
+
+Copia previa en `Scenes/Archive/Menu-Principal_antes_config.unity`. El menú de pausa no se toca.
+
+| Cambio | Justificación en el GDD | Dónde |
+|---|---|---|
+| Botón "CONFIGURACIÓN" en el menú principal, con panel AUDIO (VOLUMEN GENERAL, MÚSICA, EFECTOS) y VIDEO (PANTALLA COMPLETA) | UI y Menús: Menú principal › Configuración › Audio y Video; Interfaz Visual › Pantallas | `MenuPrincipal.uxml`, `MenuStyle.uss`, `MenuSettings.cs` |
+| Valores `volumenMaster`, `volumenMusica`, `volumenSFX` (0 a 1) y `pantallaCompleta`, guardados en JSON con `.tmp` y réplica `.bak`, y aplicados al arrancar | Datos y Persistencia › configuracion; Formato y escritura | `Core/GameSettings.cs` → `configuracion.json` |
+| La música (niveles y menú) y los efectos (SfxPlayer y PlayerAudio) usan esos volúmenes | Audio y Música › Mezcla | `MusicMix.cs`, `SfxPlayer.cs`, `PlayerAudio.cs` |
+| `MenuPresentation` incluye el botón nuevo en su selección visual | — | `MenuPresentation.cs` (una línea) |
+
+**Decisión:** la configuración va en un archivo propio (`configuracion.json`) y no dentro de la partida, porque "Crear partida" reemplaza la partida y borraría los ajustes. El GDD pide un único JSON; se anota como diferencia. Controles y Accesibilidad no se incluyen porque sus tablas están vacías en el GDD. El texto del botón "VOLVER" no está en el GDD; es el mínimo necesario para cerrar el panel (también se cierra con ESC).
+
+**Prueba (script):** botón visible; al abrir, el menú queda bloqueado; general 0,8 → AudioListener 0,80; música 0,5 → música del menú de 0,68 a 0,34; efectos 0,3; al cerrar se guarda; al reabrir conserva los valores; segundo guardado crea el `.bak`. Se dejaron los valores en 1/1/1/pantalla completa. Consola: sin errores.
+
+**No probado:** aspecto del panel en pantalla y navegación con flechas del teclado dentro del panel.
+
+### Sala de servidores rediseñada (2026-11-13) [Aprobado por Jesús]
+
+Copia previa en `Scenes/Archive/SalaServidores_antes_rediseno.unity`.
+
+| Elemento | Justificación |
+|---|---|
+| Se quitan las 30 manchas de la sala | Petición de Jesús (sin gore) y coherencia con el GDD: el jugador anterior no superó el último nivel (Mundo), así que nunca estuvo en la sala. Lo que queda de él son sus datos. Las manchas grises de los niveles 1–3 (pista aprobada) se mantienen. |
+| Recorrido de unas 64 celdas en 4 etapas: del deterioro (racks rotos, rojo oscuro) a lo limpio (racks limpios, verde azulado) | Premisa › Acto 3; Entornos › Zonas Colapsada → Inicial; paleta de Dirección de Arte. Sin luces nuevas (iluminación plana). |
+| Parche de Estabilidad: nodo de datos en la entrada; al tomarlo, aura de código binario verde, inmunidad a las zonas de corrupción y reconstrucción de la pasarela rota. Solo en la sala; sin inventario | Objetos › Parche: "corrige temporalmente los errores del entorno", "código binario verde". La corrupción es un error del entorno y no una trampa, así que "sin trampas" se mantiene. Autor = el nombre borrado de la Partida 0 (motivo narrativo aprobado). |
+| Pantallas: Partida 1 (muertes y tiempo reales), Partida 0 (nombre corrupto, 99 999+ muertes, 26 años que siguen contando, último punto Nivel 3), sus muertes más repetidas (láseres del nivel 2, circuitos en colapso y salto milimétrico del nivel 3), evidencia "RENDIDO · PROCESO ACTIVO: SISTEMA.EXE" con su retrato y "Dos partidas" | Pistas de Premisa (aprobadas: conoce las trampas; **pendiente de confirmar**: registro con nombre corrupto y contador enorme); Mundo (26 años, se rinde en el último nivel). Los textos son contenido nuevo aprobado por Jesús. |
+| Silencio: ventana del Sistema abierta 7 s solo con el cursor, en la evidencia | Diálogos: "guarda silencio por primera vez"; "Después de la línea 8, el Sistema no vuelve a hablar". Sin burlas en la sala (se quitó `NarratorDeathTaunts`) y sin música. |
+| Cierre: al cruzar el portal la Partida 1 pasa a COMPLETADO; la sala se apaga sola de la entrada al portal; solo queda el portal; luego la pantalla final | Mundo, regla 5: el Sistema no produce efectos, es la sala la que se apaga. Personajes › arco de Emmet. |
+| Contradicción del GDD | Eventos #6 ("El Sistema exige que se quede") frente a Diálogos ("no vuelve a hablar"): se toma como exigencia la línea 8 en la puerta del nivel 3 y la sala queda en silencio. |
+
+**Código:** `Level/ServerRoom/StabilityPatch.cs`, `CorruptionZone.cs`, `RebuildingWalkway.cs`, `ServerRoomDirector.cs`; `Narrator.ShowSilence` y su soporte en `NarratorUI` (cursor sin texto). Sprite técnico `Pixel_Blanco.png` para los marcos de las pantallas.
+
+**Prueba (script):** Level_03 → sala; parche aplicado en x 6; barreras y pasarela superadas sin morir; pantallas con datos reales; silencio de 7 s en la evidencia (x 46,5); ninguna frase del Sistema en la sala; portal → COMPLETADO → apagón (51 de 56 sprites; portal intacto; controles bloqueados) → pantalla final → menú. Consola: sin errores (solo el aviso previo del vídeo del menú).
+
+**No probado:** aspecto en pantalla (tamaños de texto, legibilidad, encuadre), y la muerte por corrupción sin parche (no se puede llegar a ella sin tomarlo).
+
+#### Ambiente sonoro de la sala (audio de Jesús)
+
+Copia previa en `Scenes/Archive/SalaServidores_antes_ambiente.unity`. El audio que mandó Jesús (`.mp4` de WhatsApp, solo audio AAC, 32 s) se convirtió a `.wav` con el convertidor de Windows (Media Foundation), sin cambiar su contenido: `Materials/Audio/Amb_SalaServidores.wav`, carga en streaming. En la sala suena en bucle, en 2D (`AmbienteSala`), con el volumen de Música de la Configuración. `ServerRoomDirector` lo baja al 30 % durante los 7 s de silencio del Sistema y lo apaga durante el apagón. La música del nivel sigue cortada en la puerta. **Pendiente:** probarlo en Play; el audio es bajo y ya va al 100 %.
+
+#### Más protagonismo para el parche (propuesta aprobada por Jesús)
+
+Copia previa en `Scenes/Archive/SalaServidores_antes_parche_protagonista.unity`.
+
+- **Etapa 0 propia:** nicho enmarcado por dos columnas de cable, con pedestal y una pantalla verde. Al entrar, la pantalla escribe letra a letra el `LEEME.TXT` (en la pantalla del nodo, no en la ventana del Sistema). El icono del parche aparece cuando termina de escribirse; antes, la primera barrera de corrupción bloquea el paso (colisionador sólido que se retira con el parche).
+- **Aplicarlo es un momento:** Emmet se detiene 1,5 s con "APLICANDO PARCHE..." y una barra de 0 a 100 %, mientras el binario verde sube desde sus pies. Después: "ESTADO: APLICADO / USUARIO: NOVATO" y el aura se queda.
+- **Revelación:** la evidencia añade "AUTOR DE PARCHE_ESTABILIDAD: PARTIDA 0".
+- **Cierre:** "PARCHE_ESTABILIDAD: USADO 1 VEZ" en la pantalla de las dos partidas; el aura del parche es lo último que se apaga antes del portal.
+
+**Textos nuevos (contenido no presente en el GDD, aprobado por Jesús):** `LEEME.TXT - PARCHE_ESTABILIDAD.EXE / AUTOR: #%&#@? / EL JUEGO SE ESTÁ ROMPIENDO. / ESTO CORRIGE LOS ERRORES DEL ENTORNO. / LO HICE PARA SALIR. / SI LEES ESTO, YO NO LO LOGRÉ. / ÚSALO TÚ.` La cuarta línea es la función literal del GDD. Se cambió "LA SALA ESTÁ ROTA" por "EL JUEGO SE ESTÁ ROMPIENDO" porque el autor nunca llegó a la sala (Mundo); el deterioro del juego sí lo vivió como jugador.
+
+**Prueba (script):** bloqueado ante la barrera mientras se escribe el LEEME; parche aplicado a los 6,4 s de entrar, en 1,48 s; silencio en x 46,5; evidencia con la línea del autor; al cruzar el portal: COMPLETADO + "USADO 1 VEZ"; aura visible a los 2,0 s y apagada a los 2,8 s, portal intacto; pantalla final y menú. Consola: sin errores.
+
+### Justificaciones (contradicciones del GDD y lectura elegida)
+
+| Tema | Qué dice el GDD | Lectura elegida |
+|---|---|---|
+| Final | Premisa y Registro de Decisiones: final único "Salir". Niveles, Misión 3 y Enemigos y NPC: elegir Salir o Quedarse. Datos y Persistencia: 3 finales | Final único "Salir": es la decisión registrada y la más reciente |
+| Parche de Estabilidad | Objetos y Coleccionables lo describe; Alcance excluye los ítems recolectables y Datos y Persistencia dice "no hay inventario" | No se implementa: manda el Alcance |
+| Reaparición | Mecánicas: menos de 1 s; Alcance y Requisitos: menos de 0,2 s | 0,15 s: cumple las dos |
+| Dash | No está en Mecánicas; Niveles lo introduce en el nivel 2 | Se respalda en la ficha del nivel 2 |
+| Coyote time | Alcance lo incluye; Mecánicas no lo describe | Se respalda en el Alcance (0,1 s) |
+| Tablas vacías | Controles, Sistemas, Progresión, Reglas y Estados, Pantallas (UI y Menús), Guardado y Configuración, Accesibilidad son plantillas sin rellenar | No piden nada concreto; se sigue lo definido en otras secciones |
+| Palanca y diamante falso | Solo aparecen como arte en Entornos; no están en Mecánicas ni en las fichas de nivel | Recursos de arte sin uso en el diseño de niveles |
+
+---
+
 ## Integración de sprites del Nivel 1 y cambios de `develop` (2026-11-11)
 
 Commits de unión: `0770893` (`feature/sprites_level01`) y `0816ed4` (`develop`); reaplicación en `1d76881`. Respaldo previo: commit `7501225`.
