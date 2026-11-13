@@ -12,6 +12,9 @@ public sealed class TimedLaser : MonoBehaviour
     [SerializeField, Min(0f)] private float openingWarning = 0.2f;
     [SerializeField, Min(0f)] private float closingWarning = 0.1f;
 
+    [Tooltip("Desmárcalo si el láser usa LaserSpriteAnimator: oculta el haz y el núcleo antiguos.")]
+    [SerializeField] private bool useLegacyVisuals = true;
+
     private BoxCollider2D area;
     private Collider2D playerCollider;
     private int phaseStep;
@@ -22,6 +25,11 @@ public sealed class TimedLaser : MonoBehaviour
     private int closingWarningSteps;
 
     public bool IsActive => phaseStep < activeSteps;
+
+    // Para LaserSpriteAnimator: segundos que lleva (encendido o apagado)
+    // y segundos que le faltan para cambiar.
+    public float SecondsInState => (IsActive ? phaseStep : phaseStep - activeSteps) * Time.fixedDeltaTime;
+    public float SecondsLeftInState => (IsActive ? activeSteps - phaseStep : cycleSteps - phaseStep) * Time.fixedDeltaTime;
 
     private void Awake()
     {
@@ -80,6 +88,13 @@ public sealed class TimedLaser : MonoBehaviour
 
     private void UpdateVisuals()
     {
+        if (!useLegacyVisuals)
+        {
+            beam.enabled = false;
+            core.enabled = false;
+            return;
+        }
+
         bool active = IsActive;
         bool opening = active && activeSteps - phaseStep <= openingWarningSteps;
         bool closing = !active && cycleSteps - phaseStep <= closingWarningSteps;

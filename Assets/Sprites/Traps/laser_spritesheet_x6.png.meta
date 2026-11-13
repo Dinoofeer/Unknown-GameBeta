@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: f20e43896e80d454f8891d19f107adee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5663722491099562024
+    second: laser_spritesheet_x6_0
+  - first:
+      213: -7566923591382685881
+    second: laser_spritesheet_x6_1
+  - first:
+      213: 6848294987269329747
+    second: laser_spritesheet_x6_2
+  - first:
+      213: 5533724647976875647
+    second: laser_spritesheet_x6_3
+  - first:
+      213: 4721158232789666485
+    second: laser_spritesheet_x6_4
+  - first:
+      213: -2501655849728427375
+    second: laser_spritesheet_x6_5
+  - first:
+      213: -7596669797370882907
+    second: laser_spritesheet_x6_6
+  - first:
+      213: 5660606136116721471
+    second: laser_spritesheet_x6_7
+  - first:
+      213: -3543053168290532432
+    second: laser_spritesheet_x6_8
+  - first:
+      213: -3077387500675455367
+    second: laser_spritesheet_x6_9
+  - first:
+      213: 8212154046155415941
+    second: laser_spritesheet_x6_10
+  - first:
+      213: -2648429508953283731
+    second: laser_spritesheet_x6_11
+  - first:
+      213: 5528828740606215283
+    second: laser_spritesheet_x6_12
+  - first:
+      213: 8296945449564637022
+    second: laser_spritesheet_x6_13
+  - first:
+      213: 1599794632674832696
+    second: laser_spritesheet_x6_14
+  - first:
+      213: -2459737717474200204
+    second: laser_spritesheet_x6_15
+  - first:
+      213: -1719522330346571718
+    second: laser_spritesheet_x6_16
+  - first:
+      213: -3663814760591684571
+    second: laser_spritesheet_x6_17
+  - first:
+      213: -5167781274794912180
+    second: laser_spritesheet_x6_18
+  - first:
+      213: 1339757770606156672
+    second: laser_spritesheet_x6_19
+  - first:
+      213: -4093196410313362363
+    second: laser_spritesheet_x6_20
+  - first:
+      213: 5524932540330664898
+    second: laser_spritesheet_x6_21
+  - first:
+      213: 5739782188426866882
+    second: laser_spritesheet_x6_22
+  - first:
+      213: 6894317412741601943
+    second: laser_spritesheet_x6_23
+  - first:
+      213: -2399428713870340322
+    second: laser_spritesheet_x6_24
+  - first:
+      213: -7271117717081855949
+    second: laser_spritesheet_x6_25
+  - first:
+      213: -4056603484510621973
+    second: laser_spritesheet_x6_26
+  - first:
+      213: 8697634355948299652
+    second: laser_spritesheet_x6_27
+  - first:
+      213: 1004422327398632859
+    second: laser_spritesheet_x6_28
+  - first:
+      213: -2540528027050666946
+    second: laser_spritesheet_x6_29
+  - first:
+      213: -2855190261303703220
+    second: laser_spritesheet_x6_30
+  - first:
+      213: -4814694122376155507
+    second: laser_spritesheet_x6_31
+  - first:
+      213: -1802590426712687803
+    second: laser_spritesheet_x6_32
+  - first:
+      213: 5911310521499822955
+    second: laser_spritesheet_x6_33
+  - first:
+      213: -4661378258323135850
+    second: laser_spritesheet_x6_34
+  - first:
+      213: 6001868125025731737
+    second: laser_spritesheet_x6_35
+  - first:
+      213: -7086390803897533225
+    second: laser_spritesheet_x6_36
+  - first:
+      213: 3916734742562559990
+    second: laser_spritesheet_x6_37
+  - first:
+      213: 8225034286313735216
+    second: laser_spritesheet_x6_38
+  - first:
+      213: 5298776427052774403
+    second: laser_spritesheet_x6_39
+  - first:
+      213: 8256720301051495690
+    second: laser_spritesheet_x6_40
+  - first:
+      213: 1654298553705466684
+    second: laser_spritesheet_x6_41
+  - first:
+      213: -1050548506239229532
+    second: laser_spritesheet_x6_42
+  - first:
+      213: -3028260999738264210
+    second: laser_spritesheet_x6_43
+  - first:
+      213: -6187996439776437840
+    second: laser_spritesheet_x6_44
+  - first:
+      213: -7692229689797205882
+    second: laser_spritesheet_x6_45
+  - first:
+      213: -2397314075581011567
+    second: laser_spritesheet_x6_46
+  - first:
+      213: 5083591443839947902
+    second: laser_spritesheet_x6_47
+  - first:
+      213: -8093431939586164907
+    second: laser_spritesheet_x6_48
+  - first:
+      213: 2753503308159030935
+    second: laser_spritesheet_x6_49
+  - first:
+      213: 2294801309053172307
+    second: laser_spritesheet_x6_50
+  - first:
+      213: 8532962914360788272
+    second: laser_spritesheet_x6_51
+  - first:
+      213: -3290714838203842895
+    second: laser_spritesheet_x6_52
+  - first:
+      213: -6096737163448185636
+    second: laser_spritesheet_x6_53
+  - first:
+      213: -152129602371717858
+    second: laser_spritesheet_x6_54
+  - first:
+      213: 6601054692607101648
+    second: laser_spritesheet_x6_55
+  - first:
+      213: 2334426678813622875
+    second: laser_spritesheet_x6_56
+  - first:
+      213: -2124393584914373361
+    second: laser_spritesheet_x6_57
+  - first:
+      213: 6822420826113284413
+    second: laser_spritesheet_x6_58
+  - first:
+      213: -143638032909391841
+    second: laser_spritesheet_x6_59
+  - first:
+      213: 6243789659761709807
+    second: laser_spritesheet_x6_60
+  - first:
+      213: -6560771364003576118
+    second: laser_spritesheet_x6_61
+  - first:
+      213: -7174295743629085167
+    second: laser_spritesheet_x6_62
+  - first:
+      213: 8383606491427556663
+    second: laser_spritesheet_x6_63
+  - first:
+      213: 4619879133593380492
+    second: laser_spritesheet_x6_64
+  - first:
+      213: 2546912926196616061
+    second: laser_spritesheet_x6_65
+  - first:
+      213: 354758807123441682
+    second: laser_spritesheet_x6_66
+  - first:
+      213: 8651009058325945283
+    second: laser_spritesheet_x6_67
+  - first:
+      213: 7838330401163258459
+    second: laser_spritesheet_x6_68
+  - first:
+      213: -8453441521959862858
+    second: laser_spritesheet_x6_69
+  - first:
+      213: 6199560677262552911
+    second: laser_spritesheet_x6_70
+  - first:
+      213: 6379636853408060020
+    second: laser_spritesheet_x6_71
+  - first:
+      213: -6946179645304824693
+    second: laser_spritesheet_x6_72
+  - first:
+      213: 3861412895129007088
+    second: laser_spritesheet_x6_73
+  - first:
+      213: 3956683020914800864
+    second: laser_spritesheet_x6_74
+  - first:
+      213: 1346574860171725666
+    second: laser_spritesheet_x6_75
+  - first:
+      213: 3350384951278107163
+    second: laser_spritesheet_x6_76
+  - first:
+      213: 8783926340561227795
+    second: laser_spritesheet_x6_77
+  - first:
+      213: 4002211983340118514
+    second: laser_spritesheet_x6_78
+  - first:
+      213: 2305393371754025349
+    second: laser_spritesheet_x6_79
+  - first:
+      213: 1968283338089135622
+    second: laser_spritesheet_x6_80
+  - first:
+      213: 606348489700874536
+    second: laser_spritesheet_x6_81
+  - first:
+      213: 5386041747505481224
+    second: laser_spritesheet_x6_82
+  - first:
+      213: 7652765411401494943
+    second: laser_spritesheet_x6_83
+  - first:
+      213: 2640367615386396448
+    second: laser_spritesheet_x6_84
+  - first:
+      213: 6858685908033123908
+    second: laser_spritesheet_x6_85
+  - first:
+      213: 2645355800174967288
+    second: laser_spritesheet_x6_86
+  - first:
+      213: 9169227440599846144
+    second: laser_spritesheet_x6_87
+  - first:
+      213: -7594158291569621281
+    second: laser_spritesheet_x6_88
+  - first:
+      213: -7788753927620698411
+    second: laser_spritesheet_x6_89
+  - first:
+      213: -8713418833800327287
+    second: laser_spritesheet_x6_90
+  - first:
+      213: -7702580522720148382
+    second: laser_spritesheet_x6_91
+  - first:
+      213: -2950563321752126197
+    second: laser_spritesheet_x6_92
+  - first:
+      213: 2331156361151494898
+    second: laser_spritesheet_x6_93
+  - first:
+      213: 9127594091220743195
+    second: laser_spritesheet_x6_94
+  - first:
+      213: 1370686290066887890
+    second: laser_spritesheet_x6_95
+  - first:
+      213: -3487278149007527241
+    second: laser_spritesheet_x6_96
+  - first:
+      213: -6269271905373063686
+    second: laser_spritesheet_x6_97
+  - first:
+      213: 1514241527676182595
+    second: laser_spritesheet_x6_98
+  - first:
+      213: 1494007596061124016
+    second: laser_spritesheet_x6_99
+  - first:
+      213: 1262140470992241388
+    second: laser_spritesheet_x6_100
+  - first:
+      213: -7358532726708172448
+    second: laser_spritesheet_x6_101
+  - first:
+      213: 7642455871915869858
+    second: laser_spritesheet_x6_102
+  - first:
+      213: -9215311373781318608
+    second: laser_spritesheet_x6_103
+  - first:
+      213: -3529101089056703389
+    second: laser_spritesheet_x6_104
+  - first:
+      213: -8029315035796956101
+    second: laser_spritesheet_x6_105
+  - first:
+      213: 3303636029550255150
+    second: laser_spritesheet_x6_106
+  - first:
+      213: 6684516268132290692
+    second: laser_spritesheet_x6_107
+  - first:
+      213: 5570572814049741275
+    second: laser_spritesheet_x6_108
+  - first:
+      213: -6404852756367797062
+    second: laser_spritesheet_x6_109
+  - first:
+      213: 2401249367410914757
+    second: laser_spritesheet_x6_110
+  - first:
+      213: -4442516492847572672
+    second: laser_spritesheet_x6_111
+  - first:
+      213: 8535264505568110160
+    second: laser_spritesheet_x6_112
+  - first:
+      213: -4378069266530422915
+    second: laser_spritesheet_x6_113
+  - first:
+      213: -9063028895052453312
+    second: laser_spritesheet_x6_114
+  - first:
+      213: 3112344868656291437
+    second: laser_spritesheet_x6_115
+  - first:
+      213: -4210360754542170643
+    second: laser_spritesheet_x6_116
+  - first:
+      213: -8393725274673840226
+    second: laser_spritesheet_x6_117
+  - first:
+      213: 4704322562377275646
+    second: laser_spritesheet_x6_118
+  - first:
+      213: 7598536846012995888
+    second: laser_spritesheet_x6_119
+  - first:
+      213: -6122185020662254653
+    second: laser_spritesheet_x6_120
+  - first:
+      213: 9001210146861902685
+    second: laser_spritesheet_x6_121
+  - first:
+      213: 715486152662240435
+    second: laser_spritesheet_x6_122
+  - first:
+      213: 5677673009195106538
+    second: laser_spritesheet_x6_123
+  - first:
+      213: -7196358426048489554
+    second: laser_spritesheet_x6_124
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82041641995999e40800000000000000
+      internalID: 5663722491099562024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747ac1db513ecf690800000000000000
+      internalID: -7566923591382685881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353d641d1080a0f50800000000000000
+      internalID: 6848294987269329747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 288
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f763c779f3dbbcc40800000000000000
+      internalID: 5533724647976875647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_4
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 288
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bac6d1266ce48140800000000000000
+      internalID: 4721158232789666485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 288
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ab8ae4245584dd0800000000000000
+      internalID: -2501655849728427375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a415c37115339690800000000000000
+      internalID: -7596669797370882907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3732a42a438e8e40800000000000000
+      internalID: 5660606136116721471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 144
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b378b35aeb84dec0800000000000000
+      internalID: -3543053168290532432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 144
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97623027f5cea45d0800000000000000
+      internalID: -3077387500675455367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 144
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58161e9589e67f170800000000000000
+      internalID: 8212154046155415941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 144
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d636d22c463ee3bd0800000000000000
+      internalID: -2648429508953283731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374cdc352785abc40800000000000000
+      internalID: 5528828740606215283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5708126deba42370800000000000000
+      internalID: 8296945449564637022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831f82a0ebc933610800000000000000
+      internalID: 1599794632674832696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_15
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475f15504914dddd0800000000000000
+      internalID: -2459737717474200204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_16
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38375c0d870328e0800000000000000
+      internalID: -1719522330346571718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_spritesheet_x6_17
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 288
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c891013e3872dc0800000000000000
+      internalID: -3663814760591684571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 80370906599e8c04bb17aa5d04dcfb0c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":288.0,"y":144.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      laser_spritesheet_x6_0: 5663722491099562024
+      laser_spritesheet_x6_1: -7566923591382685881
+      laser_spritesheet_x6_10: 8212154046155415941
+      laser_spritesheet_x6_11: -2648429508953283731
+      laser_spritesheet_x6_12: 5528828740606215283
+      laser_spritesheet_x6_13: 8296945449564637022
+      laser_spritesheet_x6_14: 1599794632674832696
+      laser_spritesheet_x6_15: -2459737717474200204
+      laser_spritesheet_x6_16: -1719522330346571718
+      laser_spritesheet_x6_17: -3663814760591684571
+      laser_spritesheet_x6_2: 6848294987269329747
+      laser_spritesheet_x6_3: 5533724647976875647
+      laser_spritesheet_x6_4: 4721158232789666485
+      laser_spritesheet_x6_5: -2501655849728427375
+      laser_spritesheet_x6_6: -7596669797370882907
+      laser_spritesheet_x6_7: 5660606136116721471
+      laser_spritesheet_x6_8: -3543053168290532432
+      laser_spritesheet_x6_9: -3077387500675455367
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
