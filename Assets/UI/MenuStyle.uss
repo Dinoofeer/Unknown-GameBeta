@@ -166,3 +166,26 @@
     background-color: rgb(236, 227, 173);
     color: rgb(35, 20, 32);
 }
+
+/* Configuración (GDD: UI y Menús, Datos y Persistencia) */
+.settings-section {
+    margin-top: 22px;
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(105, 174, 153);
+}
+
+.settings-slider, .settings-toggle {
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgb(222, 231, 222);
+}
+
+.settings-slider > .unity-label, .settings-toggle > .unity-label {
+    min-width: 300px;
+    color: rgb(222, 231, 222);
+}
+
+.settings-slider:focus > .unity-label, .settings-toggle:focus > .unity-label {
+    color: rgb(236, 227, 173);
+}

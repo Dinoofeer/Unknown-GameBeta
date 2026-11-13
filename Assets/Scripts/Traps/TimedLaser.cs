@@ -3,6 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public sealed class TimedLaser : MonoBehaviour
 {
+    // La cápsula de Emmet sobresale 0,25 unidades por cada lado del sprite de 16 píxeles visibles.
+    private const float SpriteContactMargin = 0.25f;
+
     [SerializeField] private PlayerDeath player;
     [SerializeField] private SpriteRenderer beam;
     [SerializeField] private SpriteRenderer core;
@@ -11,6 +14,9 @@ public sealed class TimedLaser : MonoBehaviour
     [SerializeField, Min(0f)] private float phaseOffset;
     [SerializeField, Min(0f)] private float openingWarning = 0.2f;
     [SerializeField, Min(0f)] private float closingWarning = 0.1f;
+
+    [Tooltip("Desmárcalo si el láser usa LaserSpriteAnimator: oculta el haz y el núcleo antiguos.")]
+    [SerializeField] private bool useLegacyVisuals = true;
 
     private BoxCollider2D area;
     private Collider2D playerCollider;
@@ -22,6 +28,11 @@ public sealed class TimedLaser : MonoBehaviour
     private int closingWarningSteps;
 
     public bool IsActive => phaseStep < activeSteps;
+
+    // Para LaserSpriteAnimator: segundos que lleva (encendido o apagado)
+    // y segundos que le faltan para cambiar.
+    public float SecondsInState => (IsActive ? phaseStep : phaseStep - activeSteps) * Time.fixedDeltaTime;
+    public float SecondsLeftInState => (IsActive ? activeSteps - phaseStep : cycleSteps - phaseStep) * Time.fixedDeltaTime;
 
     private void Awake()
     {
@@ -62,13 +73,23 @@ public sealed class TimedLaser : MonoBehaviour
         UpdateVisuals();
 
         // Comprueba también a quien ya estaba dentro cuando volvió a encenderse.
-        if (IsActive && !player.IsDead && area.Distance(playerCollider).isOverlapped)
-            player.Die();
+        CheckPlayerContact();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (isActiveAndEnabled && IsActive && other == playerCollider)
+        if (isActiveAndEnabled && other == playerCollider)
+            CheckPlayerContact();
+    }
+
+    private void CheckPlayerContact()
+    {
+        if (!IsActive || player.IsDead)
+            return;
+
+        var contact = area.Distance(playerCollider);
+        float margin = useLegacyVisuals ? 0f : SpriteContactMargin;
+        if (contact.isOverlapped && contact.distance <= -margin)
             player.Die();
     }
 
@@ -80,6 +101,13 @@ public sealed class TimedLaser : MonoBehaviour
 
     private void UpdateVisuals()
     {
+        if (!useLegacyVisuals)
+        {
+            beam.enabled = false;
+            core.enabled = false;
+            return;
+        }
+
         bool active = IsActive;
         bool opening = active && activeSteps - phaseStep <= openingWarningSteps;
         bool closing = !active && cycleSteps - phaseStep <= closingWarningSteps;

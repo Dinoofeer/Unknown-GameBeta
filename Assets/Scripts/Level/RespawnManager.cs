@@ -12,8 +12,8 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] private PlayerDeath player;
     [Tooltip("Punto de reaparición inicial. Si está vacío, se usa la posición inicial del jugador.")]
     [SerializeField] private Transform levelStart;
-    [Tooltip("Segundos entre la muerte y la reaparición. GDD: menos de 1 s.")]
-    [SerializeField, Range(0f, 1f)] private float respawnDelay = 0.5f;
+    [Tooltip("Segundos entre la muerte y la reaparición. GDD (Alcance y Requisitos Técnicos): menos de 0,2 s.")]
+    [SerializeField, Range(0f, 0.19f)] private float respawnDelay = 0.15f;
 
     private Vector2 respawnPoint;
     private Checkpoint activeCheckpoint;

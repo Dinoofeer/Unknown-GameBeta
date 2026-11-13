@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Indicaciones contextuales del tutorial (GDD, Interfaz Visual). Solo teclado:
+// el GDD (Alcance) excluye los mandos.
 public sealed class TutorialHints : MonoBehaviour
 {
     [Serializable]
@@ -11,7 +13,6 @@ public sealed class TutorialHints : MonoBehaviour
         public float fromX;
         public float toX;
         public string keyboard;
-        public string gamepad;
     }
 
     [SerializeField] private PlayerDeath player;
@@ -21,20 +22,11 @@ public sealed class TutorialHints : MonoBehaviour
     [SerializeField] private TMP_Text label;
     [SerializeField] private Hint[] hints;
 
-    private bool usingGamepad;
     private string shown;
-
-    private void Awake() => usingGamepad = Keyboard.current == null && Gamepad.current != null;
 
     private void Update()
     {
         var keyboard = Keyboard.current;
-        var gamepad = Gamepad.current;
-        if (keyboard != null && keyboard.anyKey.wasPressedThisFrame)
-            usingGamepad = false;
-        else if (gamepad != null && (gamepad.leftStick.ReadValue().sqrMagnitude > 0.25f
-                                     || gamepad.buttonSouth.wasPressedThisFrame || gamepad.startButton.wasPressedThisFrame))
-            usingGamepad = true;
 
         if (GamePauseState.BlocksGameplayInput || !stats.IsRunning)
         {
@@ -52,7 +44,7 @@ public sealed class TutorialHints : MonoBehaviour
             {
                 if (x >= hint.fromX && x < hint.toX)
                 {
-                    Show(usingGamepad ? hint.gamepad : hint.keyboard);
+                    Show(hint.keyboard);
                     return;
                 }
             }
