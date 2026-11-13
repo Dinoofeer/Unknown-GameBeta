@@ -3,6 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public sealed class TimedLaser : MonoBehaviour
 {
+    // La cápsula de Emmet sobresale 0,25 unidades por cada lado del sprite de 16 píxeles visibles.
+    private const float SpriteContactMargin = 0.25f;
+
     [SerializeField] private PlayerDeath player;
     [SerializeField] private SpriteRenderer beam;
     [SerializeField] private SpriteRenderer core;
@@ -70,13 +73,23 @@ public sealed class TimedLaser : MonoBehaviour
         UpdateVisuals();
 
         // Comprueba también a quien ya estaba dentro cuando volvió a encenderse.
-        if (IsActive && !player.IsDead && area.Distance(playerCollider).isOverlapped)
-            player.Die();
+        CheckPlayerContact();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (isActiveAndEnabled && IsActive && other == playerCollider)
+        if (isActiveAndEnabled && other == playerCollider)
+            CheckPlayerContact();
+    }
+
+    private void CheckPlayerContact()
+    {
+        if (!IsActive || player.IsDead)
+            return;
+
+        var contact = area.Distance(playerCollider);
+        float margin = useLegacyVisuals ? 0f : SpriteContactMargin;
+        if (contact.isOverlapped && contact.distance <= -margin)
             player.Die();
     }
 
