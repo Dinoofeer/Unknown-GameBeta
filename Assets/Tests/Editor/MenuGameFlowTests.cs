@@ -57,7 +57,8 @@ namespace UnknownGame.Save.Tests
             Assert.That(flow.TryStartNew(false, out var previous, out var error), Is.True, error);
             Assert.That(flow.TryStartNew(true, out var replacement, out error), Is.True, error);
             Assert.That(replacement.runId, Is.Not.EqualTo(previous.runId));
-            Assert.That(Directory.GetFiles(directory), Has.Length.EqualTo(1));
+            Assert.That(saves.Load(out var saved, out error), Is.EqualTo(SaveLoadStatus.Loaded), error);
+            Assert.That(saved.runId, Is.EqualTo(replacement.runId));
         }
 
         [Test]

@@ -79,7 +79,7 @@ namespace UnknownGame.Save.Tests
         }
 
         [Test]
-        public void NewGameReplacesPreviousProgressAndKeepsOnlyOneSave()
+        public void NewGameReplacesPreviousProgressAndBacksUpPreviousSave()
         {
             var previous = SaveGameData.CreateNew("Level_02");
             previous.checkpointId = "checkpoint_02";
@@ -95,7 +95,11 @@ namespace UnknownGame.Save.Tests
             Assert.That(loaded.deaths, Is.Zero);
             Assert.That(loaded.elapsedSeconds, Is.Zero);
             Assert.That(loaded.hasSecuredKey, Is.False);
-            Assert.That(Directory.GetFiles(directory), Has.Length.EqualTo(1));
+            string backupPath = Path.ChangeExtension(service.SaveFilePath, ".bak");
+            Assert.That(Directory.GetFiles(directory), Is.EquivalentTo(new[] { service.SaveFilePath, backupPath }));
+            var backup = JsonUtility.FromJson<SaveGameData>(File.ReadAllText(backupPath));
+            Assert.That(backup.runId, Is.EqualTo(previous.runId));
+            Assert.That(backup.checkpointId, Is.EqualTo(previous.checkpointId));
         }
 
         [TestCase("")]

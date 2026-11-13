@@ -32,12 +32,11 @@ public class MenuFadeIn : MonoBehaviour
         rt.offsetMin = Vector2.zero;
         rt.offsetMax = Vector2.zero;
 
-        // Todo el audio empieza en silencio
-        AudioListener.volume = 0f;
     }
 
     IEnumerator Start()
     {
+        AudioListener.volume = 0f;
         yield return new WaitForSecondsRealtime(retraso);
 
         float t = 0f;
@@ -46,13 +45,20 @@ public class MenuFadeIn : MonoBehaviour
             t += Time.unscaledDeltaTime;
             float k = Mathf.SmoothStep(0f, 1f, t / duracion);
             grupo.alpha = 1f - k;
-            AudioListener.volume = k;
+            AudioListener.volume = k * GameSettings.Master;
             yield return null;
         }
 
         grupo.alpha = 0f;
         grupo.blocksRaycasts = false;
-        AudioListener.volume = 1f;
+        AudioListener.volume = GameSettings.Master;
         Destroy(grupo.gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        AudioListener.volume = GameSettings.Master;
+        if (grupo != null)
+            Destroy(grupo.gameObject);
     }
 }

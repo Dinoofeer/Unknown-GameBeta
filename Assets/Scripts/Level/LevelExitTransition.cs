@@ -41,8 +41,8 @@ public sealed class LevelExitTransition : MonoBehaviour
 
                 if (!reported)
                 {
-                    Debug.LogWarning("No se pudo guardar el acceso al siguiente nivel. " + error, this);
-                    Narrator.Say("No se pudo guardar el avance. Reintentando…");
+                    // Solo en consola: el GDD no define ninguna frase de Sistema.exe para este caso.
+                    Debug.LogWarning("No se pudo guardar el acceso al siguiente nivel. Reintentando. " + error, this);
                     reported = true;
                 }
                 yield return new WaitForSeconds(2f);
