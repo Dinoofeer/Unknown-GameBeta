@@ -78,16 +78,16 @@ public class NarratorUI : MonoBehaviour
         PlayNext();
     }
 
-    private void Show(string line)
+    private void Show(string line, AudioClip voice)
     {
         if (!string.IsNullOrEmpty(line))
-            Enqueue(ShowRoutine(line));
+            Enqueue(ShowRoutine(line, voice));
     }
 
-    private void ShowIfIdle(string line)
+    private void ShowIfIdle(string line, AudioClip voice)
     {
         if (!string.IsNullOrEmpty(line) && showRoutine == null)
-            Enqueue(ShowRoutine(line));
+            Enqueue(ShowRoutine(line, voice));
     }
 
     private void ShowSequence(NarratorLine[] lines)
@@ -108,12 +108,14 @@ public class NarratorUI : MonoBehaviour
         showRoutine = pending.Count > 0 ? StartCoroutine(pending.Dequeue()) : null;
     }
 
-    private IEnumerator ShowRoutine(string line)
+    private IEnumerator ShowRoutine(string line, AudioClip voice)
     {
+        float voiceEndTime = Time.time + (voice != null ? voice.length : 0f);
+        SfxPlayer.Play(voice);
         yield return TypeLine(line);
 
         float elapsed = 0f;
-        while (elapsed < (pending.Count > 0 ? holdSecondsWithQueue : holdSeconds))
+        while (Time.time < voiceEndTime || elapsed < (pending.Count > 0 ? holdSecondsWithQueue : holdSeconds))
         {
             elapsed += Time.deltaTime;
             yield return null;

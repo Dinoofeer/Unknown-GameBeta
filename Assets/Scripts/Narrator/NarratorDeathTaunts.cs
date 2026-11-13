@@ -45,6 +45,9 @@ public class NarratorDeathTaunts : MonoBehaviour
             Narrator.Say(firstTrollDeathLine);
         }
         else if (taunts != null && deaths % everyNDeaths == 0)
-            Narrator.SayIfIdle(taunts.GetRandom());
+        {
+            string line = taunts.GetRandom(out AudioClip voice);
+            Narrator.SayIfIdle(line, voice);
+        }
     }
 }

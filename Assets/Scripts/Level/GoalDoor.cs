@@ -26,6 +26,8 @@ public class GoalDoor : MonoBehaviour
     [SerializeField] private string completedLine;
     [Header("Audio")]
     [SerializeField] private AudioClip openClip;
+    [Tooltip("Opcional: la voz del Sistema para la frase de nivel completado.")]
+    [SerializeField] private AudioClip completedVoice;
 
     private bool completed;
 
@@ -69,8 +71,10 @@ public class GoalDoor : MonoBehaviour
             SetOpen(true);
             Debug.Log("Nivel completado.");
             LevelCompleted?.Invoke();
-            if (!string.IsNullOrEmpty(completedLine) && !lineShownByCompleteView)
-                Narrator.Say(completedLine);
+            if (lineShownByCompleteView)
+                SfxPlayer.Play(completedVoice);
+            else if (!string.IsNullOrEmpty(completedLine))
+                Narrator.Say(completedLine, completedVoice);
         }
         else if (lethalWhenLocked && other.attachedRigidbody != null
                  && other.attachedRigidbody.TryGetComponent(out PlayerDeath player))
