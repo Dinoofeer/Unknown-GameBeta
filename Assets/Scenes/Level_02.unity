@@ -3105,10 +3105,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: -0.7335907
+    y: 0.090909086
+    width: 2.4710424
+    height: 0.8181818
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -3626,6 +3626,10 @@ PrefabInstance:
       propertyPath: line
       value: "Ya tienes la llave. Ahora solo falta llegar vivo\u2026 otra vez."
       objectReference: {fileID: 0}
+    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f9856608a1c0e14ca0a4c1976b475bd, type: 3}
     - target: {fileID: 6287793160347093373, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: m_Size.y
       value: 2
@@ -5861,7 +5865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
   jumpClip: {fileID: 8300000, guid: cf6d0d05514219d4f9c2529f76878901, type: 3}
   doubleJumpClip: {fileID: 8300000, guid: cf6d0d05514219d4f9c2529f76878901, type: 3}
-  deathClip: {fileID: 8300000, guid: a553e5236e0dc4c42a5ec69e1a8e8337, type: 3}
+  deathClip: {fileID: 8300000, guid: 89fb5f35cc34c6640bbfca6d1dc21bf3, type: 3}
   jumpVolume: 1.4
   deathVolume: 10
 --- !u!82 &1024690015
@@ -17720,6 +17724,10 @@ PrefabInstance:
       propertyPath: line
       value: "Un punto de control. Disfr\xFAtalo: vas a volver aqu\xED muchas veces."
       objectReference: {fileID: 0}
+    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f5dfbf31c76b6544f8a6d07c9d0aabdd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18071,6 +18079,10 @@ PrefabInstance:
       propertyPath: line
       value: "\xBFSigues aqu\xED? Qu\xE9 terco.\r\nDescansa...\r\nno tengo prisa."
       objectReference: {fileID: 0}
+    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d6592866c146514eafe3e5a15daa973, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

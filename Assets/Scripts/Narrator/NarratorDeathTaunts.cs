@@ -13,8 +13,11 @@ public class NarratorDeathTaunts : MonoBehaviour
 
     private void OnPlayerDied(Vector2 deathPosition)
     {
-        deaths++;
+       deaths++;
         if (taunts != null && (deaths == 1 || deaths % everyNDeaths == 0))
-            Narrator.SayIfIdle(taunts.GetRandom());
+        {
+            string line = taunts.GetRandom(out AudioClip voice);
+            Narrator.SayIfIdle(line, voice);
+        }
     }
 }

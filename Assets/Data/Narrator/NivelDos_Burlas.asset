@@ -13,10 +13,20 @@ MonoBehaviour:
   m_Name: NivelDos_Burlas
   m_EditorClassIdentifier: Assembly-CSharp::NarratorLines
   lines:
-  - ' Muerte registrada. Llevo muy bien la cuenta.'
-  - " \xBFYa? Ni siquiera hab\xEDa empezado a mirar."
+  - "T\xF3mate tu tiempo, Novato...\r\nAqu\xED sobra."
+  - ' Muerte registrada.
+
+    Llevo muy bien la cuenta.'
   - " Esa trampa lleva a\xF1os esperando a alguien como t\xFA."
-  - "Muerte n\xFAmero\u2026 ya perd\xED la cuenta"
+  - "Muerte n\xFAmero\u2026 ah, ya perd\xED la cuenta"
   - Tu terquedad es casi admirable.
   - Soy yo o cada muerte te sale mejor?
-  - "Ya me s\xE9 tu forma de morir de memoria."
+  - "\xBFCansado? Es normal.\r\nAqu\xED uno se cansa...\r\npara siempre."
+  voices:
+  - {fileID: 8300000, guid: bcaad2a736532cc4c831508ea69469b6, type: 3}
+  - {fileID: 8300000, guid: eff40490347ccbb45b556ef51c6337f2, type: 3}
+  - {fileID: 8300000, guid: 134e40ed00e4e1f4bace795cbbdbd5d7, type: 3}
+  - {fileID: 8300000, guid: b85fe27041f714148a4f62f8d9a06f00, type: 3}
+  - {fileID: 8300000, guid: eae32a5baaea344448dbb7a6b0bf7ae3, type: 3}
+  - {fileID: 8300000, guid: a533cacff9adb43408df787c39b645e2, type: 3}
+  - {fileID: 8300000, guid: c467a8f64c1ae7d4d9cf4311f79c8956, type: 3}
