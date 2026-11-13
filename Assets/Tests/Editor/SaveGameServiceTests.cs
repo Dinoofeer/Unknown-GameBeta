@@ -54,6 +54,30 @@ namespace UnknownGame.Save.Tests
             Assert.That(loaded.hasSecuredKey, Is.True);
         }
 
+        [TestCase("Level_01", "Level_03")]
+        [TestCase("Level_02", "Level_02")]
+        public void LegacySaveResumesTheSameSceneWithItsProgress(string legacyScene, string currentScene)
+        {
+            var legacy = SaveGameData.CreateNew(legacyScene);
+            legacy.version = 1;
+            legacy.checkpointId = "level01_cp02";
+            legacy.deaths = 7;
+            legacy.elapsedSeconds = 123.5f;
+            legacy.hasSecuredKey = true;
+            string contents = JsonUtility.ToJson(legacy);
+            File.WriteAllText(service.SaveFilePath, contents);
+
+            Assert.That(service.Load(out var loaded, out var error), Is.EqualTo(SaveLoadStatus.Loaded), error);
+            Assert.That(loaded.version, Is.EqualTo(SaveGameData.CurrentVersion));
+            Assert.That(loaded.runId, Is.EqualTo(legacy.runId));
+            Assert.That(loaded.levelScene, Is.EqualTo(currentScene));
+            Assert.That(loaded.checkpointId, Is.EqualTo(legacy.checkpointId));
+            Assert.That(loaded.deaths, Is.EqualTo(legacy.deaths));
+            Assert.That(loaded.elapsedSeconds, Is.EqualTo(legacy.elapsedSeconds));
+            Assert.That(loaded.hasSecuredKey, Is.True);
+            Assert.That(File.ReadAllText(service.SaveFilePath), Is.EqualTo(contents));
+        }
+
         [Test]
         public void NewGameReplacesPreviousProgressAndKeepsOnlyOneSave()
         {

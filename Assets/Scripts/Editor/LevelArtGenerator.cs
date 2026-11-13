@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Tilemaps;
 
-// Herramienta de editor: genera el arte del Nivel 1 (tiles, fondos, llave y partículas) y lo coloca en la escena.
+// Herramienta de editor: genera el arte de Level_03 (tiles, fondos, llave y partículas) y lo coloca en la escena.
 // Los dibujos usan semillas fijas, así que regenerarlos da siempre lo mismo. No cambia colisiones ni reglas.
 public static class LevelArtGenerator
 {
@@ -43,7 +43,7 @@ public static class LevelArtGenerator
             EnsureTileAsset(name);
     }
 
-    [MenuItem("Unknown Game/Arte/2. Aplicar a Level_01")]
+    [MenuItem("Unknown Game/Arte/2. Aplicar a Level_03")]
     public static void ApplyToScene()
     {
         PaintTilemap();

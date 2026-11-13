@@ -69,16 +69,23 @@ namespace UnknownGame.Save
                 return SaveLoadStatus.Invalid;
             }
 
-            if (loaded != null && loaded.version > 0 && loaded.version != SaveGameData.CurrentVersion)
-            {
-                error = "La versión del guardado no es compatible.";
-                return SaveLoadStatus.UnsupportedVersion;
-            }
-
             if (loaded == null)
             {
                 error = "El archivo de guardado está vacío.";
                 return SaveLoadStatus.Invalid;
+            }
+
+            if (loaded.version == 1)
+            {
+                // Los guardados de la demo apuntaban a este mismo recorrido con su nombre anterior.
+                if (loaded.levelScene == "Level_01")
+                    loaded.levelScene = "Level_03";
+                loaded.version = 2;
+            }
+            else if (loaded.version > SaveGameData.CurrentVersion)
+            {
+                error = "La versión del guardado no es compatible.";
+                return SaveLoadStatus.UnsupportedVersion;
             }
 
             if (!loaded.IsValid(out error))

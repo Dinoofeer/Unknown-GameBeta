@@ -71,6 +71,8 @@ public class FallingSpike : MonoBehaviour
     {
         if (fallRoutine != null || !other.CompareTag("Player"))
             return;
+
+        TrollTrap.Mark();
         SfxPlayer.Play(alertClip);//audio
         fallRoutine = StartCoroutine(ShakeAndFall());
     }
