@@ -3659,7 +3659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "R\xE1pido. Esas plataformas no esperan a nadie. Yo s\xED."
+      value: "R\xE1pido. Estas plataformas no esperan a nadie. Yo s\xED: tengo todo el tiempo del mundo."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5771,7 +5771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "Un p\xEDxel de m\xE1s y se acab\xF3. Siempre es un p\xEDxel."
+      value: "Un p\xEDxel de m\xE1s y se acab\xF3. Aqu\xED no hay segundas oportunidades\u2026 bueno, s\xED: infinitas."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -189569,7 +189569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: line
-      value: "Mira bien d\xF3nde pisas. Esta parte se romp\xEDa distinto."
+      value: "Esta parte se romp\xEDa distinto. Ahora es peor. Mucho peor."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -198402,18 +198402,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
-      propertyPath: sequence.Array.data[0].text
-      value: "Vaya, qu\xE9 sorpresa. Una puerta cerrada."
-      objectReference: {fileID: 0}
-    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
-      propertyPath: sequence.Array.data[1].text
-      value: "\xBFHas probado abrirla con... no s\xE9, una llave?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
-      propertyPath: sequence.Array.data[3].text
-      value: Tranquilo, tampoco esperaba que lo supieras.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
       propertyPath: sequence.Array.data[0].seconds
       value: 1.2
       objectReference: {fileID: 0}
@@ -205538,7 +205526,7 @@ PrefabInstance:
       objectReference: {fileID: 1218882781}
     - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       propertyPath: completedLine
-      value: Umbral de salida alcanzado.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
       propertyPath: lockedColor.b

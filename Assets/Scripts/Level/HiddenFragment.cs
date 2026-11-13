@@ -12,6 +12,6 @@ public sealed class HiddenFragment : MonoBehaviour
 
         gameObject.SetActive(false);
         SfxPlayer.Play(pickupClip);
-        Narrator.Say("¿Cómo encontraste ese fragmento? Estaba fuera del recorrido.");
+        // Sin frase de Sistema.exe: el GDD no define ninguna para el coleccionable oculto.
     }
 }
