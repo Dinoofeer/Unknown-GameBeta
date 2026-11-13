@@ -8,7 +8,7 @@
 
 .menu-root {
     flex-grow: 1;
-    -unity-font: url("project://database/Assets/TextMesh Pro/Fonts/LiberationSans.ttf");
+    -unity-font-definition: url("project://database/Assets/UI/Font/PressStart2P-Regular.ttf");
 }
 
 .menu-background {
@@ -56,7 +56,7 @@
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     color: rgb(105, 174, 153);
-    font-size: 36px;
+    font-size: 30px;
     -unity-font-style: bold;
     -unity-text-align: middle-left;
     white-space: nowrap;

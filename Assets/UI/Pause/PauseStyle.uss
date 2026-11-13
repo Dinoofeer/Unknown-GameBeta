@@ -2,6 +2,8 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.72);
+    -unity-font-definition: url("project://database/Assets/UI/Font/PressStart2P-Regular.ttf");
+
 }
 
 .pause-content {
@@ -15,7 +17,7 @@
 
 .pause-title {
     color: rgb(236, 227, 173);
-    font-size: 52px;
+    font-size: 35px;
     -unity-font-style: bold;
 }
 
