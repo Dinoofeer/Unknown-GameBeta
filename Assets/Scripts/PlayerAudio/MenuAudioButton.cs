@@ -36,6 +36,6 @@ public class MenuAudioButton : MonoBehaviour
     private void Play(AudioClip clip)
     {
         if (audioSource != null && clip != null)
-            audioSource.PlayOneShot(clip);
+            audioSource.PlayOneShot(clip, GameSettings.Sfx);
     }
 }

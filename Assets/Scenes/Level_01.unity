@@ -32010,7 +32010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialHints
   player: {fileID: 1855388511}
-  respawn: {fileID: 4388325580390447423}
   stats: {fileID: 1801643413}
   panel: {fileID: 1290098905}
   label: {fileID: 1248263078}

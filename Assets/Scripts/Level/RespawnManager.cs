@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 // Mecánicas 04 y 05 (GDD): guarda el punto de reaparición y devuelve al jugador tras morir.
 // Uno por escena de nivel.
@@ -18,6 +19,7 @@ public class RespawnManager : MonoBehaviour
     private Vector2 respawnPoint;
     private Checkpoint activeCheckpoint;
     private Coroutine pendingRespawn;
+    private RunStats stats;
 
     private void Awake()
     {
@@ -28,6 +30,16 @@ public class RespawnManager : MonoBehaviour
             return;
         }
         respawnPoint = levelStart != null ? levelStart.position : player.transform.position;
+        stats = FindFirstObjectByType<RunStats>();
+    }
+
+    private void Update()
+    {
+        if (GamePauseState.BlocksGameplayInput || (stats != null && !stats.IsRunning))
+            return;
+
+        if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
+            RestartFromCheckpoint();
     }
 
     private void OnEnable()

@@ -176,14 +176,77 @@
 }
 
 .settings-slider, .settings-toggle {
+    flex-direction: row;
+    align-items: center;
     margin-top: 10px;
+    min-height: 34px;
     font-size: 22px;
     color: rgb(222, 231, 222);
 }
 
 .settings-slider > .unity-label, .settings-toggle > .unity-label {
-    min-width: 300px;
+    width: 48%;
+    min-width: 0;
     color: rgb(222, 231, 222);
+}
+
+.settings-slider .unity-base-slider__input {
+    position: relative;
+    flex-grow: 1;
+    min-width: 80px;
+    height: 34px;
+}
+
+.settings-slider .unity-base-slider__drag-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.settings-slider .unity-base-slider__tracker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13px;
+    height: 8px;
+    background-color: rgb(45, 83, 78);
+    border-width: 1px;
+    border-color: rgb(105, 174, 153);
+}
+
+.settings-slider .unity-base-slider__dragger {
+    position: absolute;
+    top: 3px;
+    width: 20px;
+    height: 28px;
+    background-color: rgb(236, 227, 173);
+    border-width: 1px;
+    border-color: rgb(105, 174, 153);
+}
+
+.settings-slider:focus .unity-base-slider__dragger {
+    background-color: white;
+}
+
+.settings-toggle .unity-toggle__input {
+    flex-grow: 1;
+    min-height: 34px;
+    align-items: center;
+}
+
+.settings-toggle .unity-toggle__checkmark {
+    width: 28px;
+    height: 28px;
+    border-width: 2px;
+    border-color: rgb(105, 174, 153);
+    background-color: rgb(22, 44, 43);
+    background-image: none;
+}
+
+.settings-toggle:checked .unity-toggle__checkmark {
+    background-color: rgb(236, 227, 173);
 }
 
 .settings-slider:focus > .unity-label, .settings-toggle:focus > .unity-label {

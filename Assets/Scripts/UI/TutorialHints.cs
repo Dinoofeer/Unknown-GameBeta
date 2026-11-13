@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 // Indicaciones contextuales del tutorial (GDD, Interfaz Visual). Solo teclado:
 // el GDD (Alcance) excluye los mandos.
@@ -16,7 +15,6 @@ public sealed class TutorialHints : MonoBehaviour
     }
 
     [SerializeField] private PlayerDeath player;
-    [SerializeField] private RespawnManager respawn;
     [SerializeField] private RunStats stats;
     [SerializeField] private GameObject panel;
     [SerializeField] private TMP_Text label;
@@ -26,16 +24,11 @@ public sealed class TutorialHints : MonoBehaviour
 
     private void Update()
     {
-        var keyboard = Keyboard.current;
-
         if (GamePauseState.BlocksGameplayInput || !stats.IsRunning)
         {
             Show(null);
             return;
         }
-
-        if (keyboard != null && keyboard.rKey.wasPressedThisFrame)
-            respawn.RestartFromCheckpoint();
 
         if (!player.IsDead)
         {
