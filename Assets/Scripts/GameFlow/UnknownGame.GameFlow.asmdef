@@ -1,5 +1,19 @@
 {
     "name": "UnknownGame.GameFlow",
     "rootNamespace": "UnknownGame.GameFlow",
-    "references": ["UnknownGame.Save"]
+    "references": [
+        "UnknownGame.Save",
+        "Unity.InputSystem",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
