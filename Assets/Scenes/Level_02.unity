@@ -8835,6 +8835,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2047587112487145656, guid: 659d018f193a2154ebd474b7dbb673de, type: 3}
+      propertyPath: completedVoice
+      value:
+      objectReference: {fileID: 8300000, guid: d353dbaf94dfd07469dad8684931277f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -19481,6 +19485,10 @@ PrefabInstance:
 
         Te lo prometo.'
       objectReference: {fileID: 0}
+    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: voiceClip
+      value:
+      objectReference: {fileID: 8300000, guid: 461e439a7a898344ea9bcbb7dcc6eebe, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20398,6 +20406,10 @@ PrefabInstance:
       propertyPath: line
       value: "Ese l\xE1ser se atasca cada tanto. Antes no lo hac\xEDa."
       objectReference: {fileID: 0}
+    - target: {fileID: 4311196081767224594, guid: 86a6aa60c0a87104896f2913bcb3ccee, type: 3}
+      propertyPath: voiceClip
+      value:
+      objectReference: {fileID: 8300000, guid: aab709e7bb3fa6142a710e5bf42061f7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
