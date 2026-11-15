@@ -2694,7 +2694,7 @@ MonoBehaviour:
   beam: {fileID: 1221401392}
   core: {fileID: 133436821}
   activeTime: 1.44
-  offTime: 0.25
+  offTime: 0.22
   phaseOffset: 1.2
   openingWarning: 0.2
   closingWarning: 0.1
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   beam: {fileID: 1168960477}
   core: {fileID: 783546944}
   activeTime: 1.44
-  offTime: 0.25
+  offTime: 0.22
   phaseOffset: 0.4
   openingWarning: 0.2
   closingWarning: 0.1
@@ -4140,7 +4140,7 @@ MonoBehaviour:
   beam: {fileID: 1197940540}
   core: {fileID: 181448785}
   activeTime: 1.44
-  offTime: 0.25
+  offTime: 0.22
   phaseOffset: 0.8
   openingWarning: 0.2
   closingWarning: 0.1
@@ -9378,7 +9378,7 @@ MonoBehaviour:
   beam: {fileID: 903198185}
   core: {fileID: 1421769751}
   activeTime: 1.44
-  offTime: 0.25
+  offTime: 0.22
   phaseOffset: 0
   openingWarning: 0.2
   closingWarning: 0.1
