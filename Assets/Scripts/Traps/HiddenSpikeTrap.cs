@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 // Trampa troll (Nivel 2): una plataforma que parece segura. Cuando Emmet aterriza encima,
-// unos pinchos escondidos salen de la plataforma y lo matan. Al reaparecer se vuelven a esconder.
+// unos pinchos escondidos salen de la plataforma. Al reaparecer se vuelven a esconder.
 // Va en un hijo de la plataforma: su BoxCollider2D (trigger) es la franja que detecta a Emmet encima.
 [RequireComponent(typeof(BoxCollider2D))]
 public class HiddenSpikeTrap : MonoBehaviour
@@ -31,7 +31,6 @@ public class HiddenSpikeTrap : MonoBehaviour
     private Vector3 shownPosition;
     private Vector3 hiddenPosition;
     private Coroutine popRoutine;
-    private PlayerDeath playerOnTop;
 
     private void Awake()
     {
@@ -59,18 +58,12 @@ public class HiddenSpikeTrap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!enabled || !TryGetPlayer(other, out PlayerDeath player))
+        if (!enabled || popRoutine != null)
             return;
 
-        playerOnTop = player;
-        if (popRoutine == null)
+        Rigidbody2D body = other.attachedRigidbody;
+        if (body != null && body.TryGetComponent<PlayerDeath>(out _))
             popRoutine = StartCoroutine(Pop());
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (TryGetPlayer(other, out PlayerDeath player) && player == playerOnTop)
-            playerOnTop = null;
     }
 
     private IEnumerator Pop()
@@ -88,11 +81,8 @@ public class HiddenSpikeTrap : MonoBehaviour
             yield return null;
         }
         spikes.localPosition = shownPosition;
+        // Los componentes LethalHazard de los pinchos se encargan del contacto.
         SetCollidersEnabled(true);
-
-        // Si sigue encima cuando salen, muere aunque no toque un pincho concreto.
-        if (playerOnTop != null && !playerOnTop.IsDead)
-            playerOnTop.Die();
     }
 
     private void ResetTrap()
@@ -102,7 +92,6 @@ public class HiddenSpikeTrap : MonoBehaviour
             StopCoroutine(popRoutine);
             popRoutine = null;
         }
-        playerOnTop = null;
         Hide();
     }
 
@@ -123,11 +112,5 @@ public class HiddenSpikeTrap : MonoBehaviour
     {
         foreach (Collider2D c in spikeColliders)
             c.enabled = on;
-    }
-
-    private static bool TryGetPlayer(Collider2D other, out PlayerDeath player)
-    {
-        player = null;
-        return other.attachedRigidbody != null && other.attachedRigidbody.TryGetComponent(out player);
     }
 }
