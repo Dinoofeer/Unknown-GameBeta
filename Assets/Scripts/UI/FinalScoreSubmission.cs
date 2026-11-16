@@ -56,6 +56,24 @@ public sealed class FinalScoreSubmission : MonoBehaviour
         }
     }
 
+    [Serializable]
+    private sealed class ScoreError
+    {
+        public string code;
+
+        public static bool IsNicknameTaken(string response)
+        {
+            try
+            {
+                return JsonUtility.FromJson<ScoreError>(response)?.code == "NICKNAME_TAKEN";
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+        }
+    }
+
     private Action returnToMenu;
     private readonly List<Score> scores = new List<Score>();
     private Uri scoresUri;
@@ -192,7 +210,9 @@ public sealed class FinalScoreSubmission : MonoBehaviour
                     continue;
                 }
 
-                ShowSendError(request.responseCode, confirmed);
+                bool nicknameTaken = request.responseCode == 409 &&
+                    ScoreError.IsNicknameTaken(request.downloadHandler.text);
+                ShowSendError(request.responseCode, confirmed, nicknameTaken);
                 yield break;
             }
         }
@@ -231,17 +251,19 @@ public sealed class FinalScoreSubmission : MonoBehaviour
         return request;
     }
 
-    private void ShowSendError(long statusCode, int confirmed)
+    private void ShowSendError(long statusCode, int confirmed, bool nicknameTaken = false)
     {
         sending = false;
         nicknameInput.interactable = confirmed == 0;
         submitButton.interactable = true;
-        string message = statusCode switch
+        string message = nicknameTaken ? "Ese apodo ya está en uso. Elige otro." : statusCode switch
         {
             400 => "El servidor rechazó los datos.",
             429 => "Demasiados envíos. Espera un minuto e inténtalo de nuevo.",
             _ => "No se pudo confirmar el envío. Inténtalo de nuevo.",
         };
         statusText.text = confirmed == 0 ? message : $"{confirmed} de {scores.Count} enviados. {message}";
+        if (nicknameTaken && confirmed == 0)
+            nicknameInput.ActivateInputField();
     }
 }
