@@ -990,7 +990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tu apodo se mostrar\xE1 en la app m\xF3vil."
+  m_text: ""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 37daa3ef79f3e89418925a9d229fd4e8, type: 2}
   m_sharedMaterial: {fileID: 4571566357163866777, guid: 37daa3ef79f3e89418925a9d229fd4e8, type: 2}
