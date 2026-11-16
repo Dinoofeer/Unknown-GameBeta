@@ -61,6 +61,49 @@ namespace UnknownGame.Save.Tests
         }
 
         [Test]
+        public void LevelScoresSubtractPreviousLevelsEvenAfterContinuingFromCheckpoint()
+        {
+            Assert.That(progress.TryAdvance("Level_02", 5, 115f, out var next, out var error), Is.True, error);
+            var levelTwo = new RunProgressService(next, saves);
+            Assert.That(levelTwo.TrySave("level02_cp01", 7, 150f, false, out error), Is.True, error);
+            Assert.That(saves.Load(out var continued, out error), Is.EqualTo(SaveLoadStatus.Loaded), error);
+            var afterReload = new RunProgressService(continued, saves);
+            Assert.That(afterReload.TryAdvance("Level_03", 8, 200f, out var levelThree, out error), Is.True, error);
+
+            var scores = levelThree.levelScores.results;
+            Assert.That(scores.Length, Is.EqualTo(2));
+            Assert.That(scores[0].scene, Is.EqualTo("Level_01"));
+            Assert.That(scores[0].deaths, Is.EqualTo(5));
+            Assert.That(scores[0].timeSeconds, Is.EqualTo(115f));
+            Assert.That(scores[1].scene, Is.EqualTo("Level_02"));
+            Assert.That(scores[1].deaths, Is.EqualTo(3));
+            Assert.That(scores[1].timeSeconds, Is.EqualTo(85f));
+            Assert.That(levelThree.deaths, Is.EqualTo(8));
+            Assert.That(levelThree.elapsedSeconds, Is.EqualTo(200f));
+        }
+
+        [Test]
+        public void LegacySaveWithoutBaselineStartsMeasuringAtTheNextLevel()
+        {
+            current.levelScene = "Level_02";
+            current.levelScores = null;
+            current.deaths = 8;
+            current.elapsedSeconds = 170f;
+            Assert.That(saves.TrySave(current, out var error), Is.True, error);
+            Assert.That(progress.TryAdvance("Level_03", 10, 240f, out var next, out error), Is.True, error);
+            Assert.That(next.levelScores.results, Is.Empty);
+
+            var levelThree = new RunProgressService(next, saves);
+            Assert.That(levelThree.TryAdvance("SalaServidores", 12, 300f, out var serverRoom, out error), Is.True, error);
+            var final = new RunProgressService(serverRoom, saves);
+            Assert.That(final.TryAdvance("Final", 13, 350f, out var finalSave, out error), Is.True, error);
+            Assert.That(finalSave.levelScores.results.Length, Is.EqualTo(1));
+            Assert.That(finalSave.levelScores.results[0].scene, Is.EqualTo("Level_03"));
+            Assert.That(finalSave.levelScores.results[0].deaths, Is.EqualTo(2));
+            Assert.That(finalSave.levelScores.results[0].timeSeconds, Is.EqualTo(60f));
+        }
+
+        [Test]
         public void ClosingUpdatesStatsWithoutMovingLastCheckpoint()
         {
             Assert.That(progress.TrySave("level01_cp01", 2, 60f, false, out var error), Is.True, error);

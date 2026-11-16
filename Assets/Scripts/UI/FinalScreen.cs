@@ -12,21 +12,36 @@ public class FinalScreen : MonoBehaviour
     [SerializeField, Min(0f)] private float minSeconds = 3f;
     [Tooltip("Segundos tras los que se vuelve al menú aunque no se pulse nada.")]
     [SerializeField, Min(1f)] private float maxSeconds = 15f;
+    [SerializeField] private FinalScoreSubmission scoreSubmission;
 
     private float elapsed;
     private bool leaving;
+    private bool checkedScoreSubmission;
 
     private void Update()
+    {
+        if (leaving || (scoreSubmission != null && scoreSubmission.gameObject.activeSelf))
+            return;
+
+        elapsed += Time.unscaledDeltaTime;
+        if (elapsed >= minSeconds && !checkedScoreSubmission)
+        {
+            checkedScoreSubmission = true;
+            if (scoreSubmission != null && scoreSubmission.TryShow(ReturnToMenu))
+                return;
+        }
+
+        bool keyPressed = Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
+        if ((elapsed >= minSeconds && keyPressed) || elapsed >= maxSeconds)
+            ReturnToMenu();
+    }
+
+    private void ReturnToMenu()
     {
         if (leaving)
             return;
 
-        elapsed += Time.unscaledDeltaTime;
-        bool keyPressed = Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
-        if ((elapsed >= minSeconds && keyPressed) || elapsed >= maxSeconds)
-        {
-            leaving = true;
-            SceneManager.LoadSceneAsync(mainMenuScene);
-        }
+        leaving = true;
+        SceneManager.LoadSceneAsync(mainMenuScene);
     }
 }

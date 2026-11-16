@@ -2,10 +2,11 @@ using System;
 using TMPro;
 using UnityEngine;
 
-// Indicaciones contextuales del tutorial (GDD, Interfaz Visual). Solo teclado:
-// el GDD (Alcance) excluye los mandos.
+// Indicaciones de teclado del tutorial y avisos breves de recogida en el panel del HUD.
 public sealed class TutorialHints : MonoBehaviour
 {
+    private const float PickupDuration = 3f;
+
     [Serializable]
     private struct Hint
     {
@@ -21,12 +22,30 @@ public sealed class TutorialHints : MonoBehaviour
     [SerializeField] private Hint[] hints;
 
     private string shown;
+    private string pickupMessage;
+    private float pickupTimeRemaining;
+
+    public void ShowPickup(string message)
+    {
+        if (string.IsNullOrEmpty(message))
+            return;
+
+        pickupMessage = message;
+        pickupTimeRemaining = PickupDuration;
+    }
 
     private void Update()
     {
         if (GamePauseState.BlocksGameplayInput || !stats.IsRunning)
         {
             Show(null);
+            return;
+        }
+
+        if (pickupTimeRemaining > 0f)
+        {
+            Show(pickupMessage);
+            pickupTimeRemaining -= Time.deltaTime;
             return;
         }
 
