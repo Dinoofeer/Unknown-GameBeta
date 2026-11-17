@@ -1,0 +1,7 @@
+{
+    "name": "UnknownGame.Save.EditorTests",
+    "rootNamespace": "UnknownGame.Save.Tests",
+    "references": ["UnknownGame.Save", "UnknownGame.GameFlow"],
+    "includePlatforms": ["Editor"],
+    "optionalUnityReferences": ["TestAssemblies"]
+}

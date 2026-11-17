@@ -13,6 +13,8 @@ public class LevelKey : MonoBehaviour
     [SerializeField, Min(0f)] private float followSharpness = 10f;
     [Tooltip("Diseño troll: lo que se activa al recoger la llave (enemigos, cambios del escenario...).")]
     [SerializeField] private UnityEvent onCollected;
+    [Header("Audio")]
+    [SerializeField] private AudioClip collectedClip;
 
     private Collider2D col;
     private Vector3 startPosition;
@@ -20,6 +22,15 @@ public class LevelKey : MonoBehaviour
     private bool secured; // se activó un checkpoint después de cogerla
 
     public bool IsCollected => carrier != null;
+    public bool IsSecured => IsCollected && secured;
+
+    public void RestoreSecured(Transform player)
+    {
+        carrier = player;
+        secured = true;
+        col.enabled = false;
+        transform.position = player.position + (Vector3)followOffset;
+    }
 
     private void Awake()
     {
@@ -47,6 +58,7 @@ public class LevelKey : MonoBehaviour
         carrier = other.attachedRigidbody != null ? other.attachedRigidbody.transform : other.transform;
         secured = false;
         col.enabled = false;
+            SfxPlayer.Play(collectedClip);   // audio
         onCollected?.Invoke();
     }
 
@@ -73,6 +85,8 @@ public class LevelKey : MonoBehaviour
         // También cubre coger la llave y morir en el mismo instante.
         if (IsCollected && !secured)
             ReturnToPedestal();
+        else if (IsSecured)
+            transform.position = carrier.position + (Vector3)followOffset;
     }
 
     // La puerta la gasta al abrirse.

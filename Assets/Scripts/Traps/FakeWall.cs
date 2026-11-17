@@ -26,7 +26,10 @@ public class FakeWall : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
+        {
             playerInside = true;
+            TrollTrap.Mark();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c6dc61060d6c3458d9907a3291f281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LethalHazard
+  trollTrap: 1

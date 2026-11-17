@@ -24,8 +24,16 @@ public class GoalDoor : MonoBehaviour
     [Tooltip("Opcional: lo que dice el Sistema al completar el nivel.")]
     [TextArea(1, 3)]
     [SerializeField] private string completedLine;
+    [Header("Audio")]
+    [SerializeField] private AudioClip openClip;
+    [Tooltip("Opcional: la voz del Sistema para la frase de nivel completado.")]
+    [SerializeField] private AudioClip completedVoice;
 
     private bool completed;
+
+    public string CompletedLine => completedLine;
+    [Tooltip("Si hay una ventana de nivel completado que muestra la frase, el Sistema no la repite en su cuadro.")]
+    [SerializeField] private bool lineShownByCompleteView = false;
 
     private void Awake()
     {
@@ -57,13 +65,16 @@ public class GoalDoor : MonoBehaviour
         if (requiredKey == null || requiredKey.IsCollected)
         {
             completed = true;
+            SfxPlayer.Play(openClip);   // audio
             if (requiredKey != null)
                 requiredKey.Consume();
             SetOpen(true);
             Debug.Log("Nivel completado.");
             LevelCompleted?.Invoke();
-            if (!string.IsNullOrEmpty(completedLine))
-                Narrator.Say(completedLine);
+            if (lineShownByCompleteView)
+                SfxPlayer.Play(completedVoice);
+            else if (!string.IsNullOrEmpty(completedLine))
+                Narrator.Say(completedLine, completedVoice);
         }
         else if (lethalWhenLocked && other.attachedRigidbody != null
                  && other.attachedRigidbody.TryGetComponent(out PlayerDeath player))

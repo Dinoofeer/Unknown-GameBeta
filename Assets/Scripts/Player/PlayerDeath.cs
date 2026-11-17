@@ -17,12 +17,15 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     private Rigidbody2D rb;
+    private PlayerAudio playerAudio;
 
     public bool IsDead { get; private set; }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerAudio = GetComponent<PlayerAudio>(); 
+
     }
 
     public void Die()
@@ -35,12 +38,16 @@ public class PlayerDeath : MonoBehaviour
         if (deathEffectPrefab != null)
             Instantiate(deathEffectPrefab, deathPosition, Quaternion.identity);
 
+        if (playerAudio != null) playerAudio.PlayDeath();   
+
+
         SetAlive(false);
         Died?.Invoke(deathPosition);
     }
 
     public void Respawn(Vector2 position)
     {
+        SetAlive(false);
         // Se mueven Rigidbody y Transform para que la interpolación no dibuje un "viaje" hasta el checkpoint.
         rb.position = position;
         transform.position = position;

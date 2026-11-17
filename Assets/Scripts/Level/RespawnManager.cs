@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 // Mecánicas 04 y 05 (GDD): guarda el punto de reaparición y devuelve al jugador tras morir.
 // Uno por escena de nivel.
@@ -12,11 +13,13 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] private PlayerDeath player;
     [Tooltip("Punto de reaparición inicial. Si está vacío, se usa la posición inicial del jugador.")]
     [SerializeField] private Transform levelStart;
-    [Tooltip("Segundos entre la muerte y la reaparición. GDD: menos de 1 s.")]
-    [SerializeField, Range(0f, 1f)] private float respawnDelay = 0.5f;
+    [Tooltip("Segundos entre la muerte y la reaparición. GDD (Alcance y Requisitos Técnicos): menos de 0,2 s.")]
+    [SerializeField, Range(0f, 0.19f)] private float respawnDelay = 0.15f;
 
     private Vector2 respawnPoint;
     private Checkpoint activeCheckpoint;
+    private Coroutine pendingRespawn;
+    private RunStats stats;
 
     private void Awake()
     {
@@ -27,6 +30,16 @@ public class RespawnManager : MonoBehaviour
             return;
         }
         respawnPoint = levelStart != null ? levelStart.position : player.transform.position;
+        stats = FindFirstObjectByType<RunStats>();
+    }
+
+    private void Update()
+    {
+        if (GamePauseState.BlocksGameplayInput || (stats != null && !stats.IsRunning))
+            return;
+
+        if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
+            RestartFromCheckpoint();
     }
 
     private void OnEnable()
@@ -39,6 +52,7 @@ public class RespawnManager : MonoBehaviour
     {
         PlayerDeath.Died -= OnPlayerDied;
         Checkpoint.Reached -= OnCheckpointReached;
+        CancelPendingRespawn();
     }
 
     private void OnCheckpointReached(Checkpoint checkpoint)
@@ -52,9 +66,36 @@ public class RespawnManager : MonoBehaviour
         checkpoint.SetActiveVisual(true);
     }
 
+    public void RestoreCheckpoint(Checkpoint checkpoint)
+    {
+        OnCheckpointReached(checkpoint);
+        CancelPendingRespawn();
+        player.Respawn(respawnPoint);
+    }
+
+    public bool RestartFromCheckpoint()
+    {
+        if (!isActiveAndEnabled || player == null)
+            return false;
+
+        CancelPendingRespawn();
+        RespawnAtCurrentPoint();
+        return true;
+    }
+
     private void OnPlayerDied(Vector2 deathPosition)
     {
-        StartCoroutine(RespawnAfterDelay());
+        CancelPendingRespawn();
+        pendingRespawn = StartCoroutine(RespawnAfterDelay());
+    }
+
+    private void CancelPendingRespawn()
+    {
+        if (pendingRespawn == null)
+            return;
+
+        StopCoroutine(pendingRespawn);
+        pendingRespawn = null;
     }
 
     private IEnumerator RespawnAfterDelay()
@@ -62,7 +103,13 @@ public class RespawnManager : MonoBehaviour
         yield return new WaitForSeconds(respawnDelay);
         // El punto se lee ahora y no al morir: si en el mismo frame se tocó un checkpoint,
         // ya cuenta (caso límite del GDD).
-        PlayerRespawned?.Invoke();
+        pendingRespawn = null;
+        RespawnAtCurrentPoint();
+    }
+
+    private void RespawnAtCurrentPoint()
+    {
         player.Respawn(respawnPoint);
+        PlayerRespawned?.Invoke();
     }
 }

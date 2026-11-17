@@ -13,6 +13,9 @@ public class NarratorTrigger : MonoBehaviour
     [Tooltip("La secuencia solo suena entera la primera vez; después se usa la frase simple, que puede estar vacía.")]
     [SerializeField] private bool fullOnlyFirstTime = false;
 
+    [Tooltip("Opcional: la voz del Sistema para esta frase. Suena cuando el jugador entra.")]
+    [SerializeField] private AudioClip voiceClip;
+
     private bool said;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -25,6 +28,6 @@ public class NarratorTrigger : MonoBehaviour
         if (sequence != null && sequence.Length > 0 && (firstTime || !fullOnlyFirstTime))
             Narrator.SaySequence(sequence);
         else
-            Narrator.Say(line);
+            Narrator.Say(line, voiceClip);
     }
 }
